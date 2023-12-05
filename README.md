@@ -3,7 +3,7 @@ Ce répôt stock toutes les étapes à faire pour compléter une installation de
 
 ## Installer les fonts
 Les télécharger
-`wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip`
+```wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip```
 
 Créer le dossier des fonts s'il n'existe pas
 `mkdir -p ~/.local/share/fonts`
