@@ -12,5 +12,11 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip
 mkdir -p ~/.local/share/fonts
 unzip Hack.zip -d ~/.local/share/fonts
 rm -fr Hack.zip
+```
+
+## Créer un lien vers le thème de zsh
 
 ```
+ln .oh-my-zsh/themes/agnoster.zsh-theme ~/agnoster.zsh-theme
+```
+

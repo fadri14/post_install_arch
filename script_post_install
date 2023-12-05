@@ -6,3 +6,5 @@ mkdir -p ~/.local/share/fonts
 unzip Hack.zip -d ~/.local/share/fonts
 rm -fr Hack.zip
 
+# Le thème zsh
+ln .oh-my-zsh/themes/agnoster.zsh-theme ~/agnoster.zsh-theme
