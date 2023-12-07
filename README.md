@@ -36,6 +36,22 @@ unzip Hack.zip -d ~/.local/share/fonts
 rm -fr Hack.zip
 ```
 
+## Réinstaller enhancd pour zsh
+- Éfface l'ancien
+- Retélécharge le nouveau
+
+```
+rm -fr .oh-my-zsh/custom/plugins/enhancd
+$ git clone https://github.com/b4b4r07/enhancd.git $ZSH_CUSTOM/plugins/enhancd
+```
+
+## Changer de shell
+- Choisis zsh comme shell par défaut
+
+```
+chsh -s /bin/zsh $USER
+```
+
 ## Créer un lien vers le thème de zsh
 
 ```
