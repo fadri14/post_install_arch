@@ -111,3 +111,14 @@ sudo pacman -S --needed bluez bluez-utils bluez-plugins
 sudo systemctl enable --now  bluetooth.service
 ```
 
+## Imprimantes
+- Installe les paquets essenstiels
+- Installe les drivers
+- Activer le démon cups
+
+```
+sudo pacman -S --needed ghostscript gsfonts cups cups-filters cups-pdf system-config-printer avahi
+sudo pacman -S --needed foomatic-db-engine foomatic-db foomatic-db-ppds foomatic-db-nonfree foomatic-db-nonfree-ppds gutenprint foomatic-db-gutenprint-ppds
+sudo systemctl enable --now avahi-daemon cups
+```
+
