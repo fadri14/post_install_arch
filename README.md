@@ -39,6 +39,7 @@ rm -fr Hack.zip
 ## Activer l'autologin de sddm
 - Créer le dossier de config de sddm s'il n'existe pas
 - Créer un fichier de configuration pour se connecter automatiquement
+
 Notez qu'il choisira l'utilisateur actuel ainsi que la session actuelle
 
 ```
