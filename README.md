@@ -27,13 +27,26 @@ swaymsg reload
 - Les télécharger.
 - Créer le dossier des fonts s'il n'existe pas.
 - Dézipper les fonts dans le dossier que l'on vient de créer.
-- Effacer les zip télécharger.
+- Éffacer les zip télécharger.
 
 ```
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip
 mkdir -p ~/.local/share/fonts
 unzip Hack.zip -d ~/.local/share/fonts
 rm -fr Hack.zip
+```
+
+## Activer l'autologin de sddm
+- Créer le dossier de config de sddm s'il n'existe pas
+- Créer un fichier de configuration pour se connecter automatiquement
+Notez qu'il choisira l'utilisateur actuel ainsi que la session actuelle
+
+```
+mkdir /etc/sddm.conf.d
+echo "
+[Autologin]
+User=$USER
+Session=$XDG_SESSION_DESKTOP" > /etc/sddm.conf.d/autologin.conf
 ```
 
 ## Réinstaller enhancd pour zsh
