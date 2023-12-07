@@ -1,5 +1,5 @@
 # post_install_arch
-Ce répôt stock toutes les étapes à faire pour compléter une installation de arch
+Ce répôt stock toutes les étapes à faire pour compléter une installation d'arch
 
 ## Configurer le clavier de sway
 - créer le dossier de config
@@ -27,7 +27,7 @@ swaymsg reload
 - Les télécharger.
 - Créer le dossier des fonts s'il n'existe pas.
 - Dézipper les fonts dans le dossier que l'on vient de créer.
-- Éffacer les zip télécharger.
+- Éffacer les zips téléchargés.
 
 ```
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip
@@ -77,7 +77,7 @@ ln .oh-my-zsh/themes/agnoster.zsh-theme ~/agnoster.zsh-theme
 ## Configuration de pacman
 - Active la couleur
 - Active le mode verbeux
-- Active le téléchargement en parrallèle
+- Active le téléchargement en parallèle
 
 ```
 sudo sed -i "34 s/.*/Color/" /etc/pacman.conf
@@ -94,7 +94,7 @@ sudo systemctl enable --now paccache.timer
 ```
 
 ## Mettre à jour les mirroirs
-- Mets à jour les meilleurs dépôt mirroir
+- Mets à jour les meilleurs dépôts miroirs
 - Active le timer de reflector pour mettre à jour chaque semaine
 
 ```
@@ -112,7 +112,7 @@ sudo systemctl enable --now  bluetooth.service
 ```
 
 ## Imprimantes
-- Installe les paquets essenstiels
+- Installe les paquets essentiels
 - Installe les drivers
 - Activer le démon cups
 
