@@ -23,6 +23,8 @@ input * {
 swaymsg reload
 ```
 
+## C'est ici qu'il faut installer tous les paquets souhaités ainsi que la config
+
 ## Installer les fonts
 - Les télécharger.
 - Créer le dossier des fonts s'il n'existe pas.
