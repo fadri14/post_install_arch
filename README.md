@@ -1,7 +1,7 @@
 # post_install_arch
 Ce répôt stock toutes les étapes à faire pour compléter une installation de arch
 
-## Copier la config de base de sway
+## Configurer le clavier de sway
 - créer le dossier de config
 - écrire un fichier de config de base pour changer le clavier
 - relancer la config de sway
@@ -19,7 +19,7 @@ input * {
     middle_emulation enabled # activer l'émulation du bouton du milieu
     xkb_options altwin:swap_lalt_lwin,caps:swapescape
 }
-' > ~/.config/sway/config
+' >> ~/.config/sway/config
 swaymsg reload
 ```
 
