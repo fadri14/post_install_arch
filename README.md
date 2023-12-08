@@ -70,12 +70,6 @@ $ git clone https://github.com/b4b4r07/enhancd.git $ZSH_CUSTOM/plugins/enhancd
 chsh -s /bin/zsh $USER
 ```
 
-### Créer un lien vers le thème de zsh
-
-```
-ln .oh-my-zsh/themes/agnoster.zsh-theme ~/agnoster.zsh-theme
-```
-
 ## Configuration de pacman
 - Active la couleur
 - Active le mode verbeux
