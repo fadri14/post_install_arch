@@ -1,0 +1,27 @@
+#général
+THEMEFOND=white
+THEMEWRITE=#090c0c
+THEMEGTK=Adwaita
+
+COLOR1=#dbd6b7
+COLOR3=#10ce75
+COLOR2=$(python $HOME/script/hexa_middle.py $(echo $COLOR1 | sed 's/^.//') $(echo $COLOR3 | sed 's/^.//'))
+
+#waybar
+BUTTONFOCUS=blue
+BUTTONHOVER=red
+COLORMODE=black
+
+#alacritty
+OPACITETERM=0.9
+THEMETERM=github_light
+
+#sway
+WALLPAPER=soleil_aurore.jpg
+
+#rofi
+BACKGROUND0=#E6E6E6F2
+BACKGROUND1=#E6E6E6
+BACKGROUND3=${COLOR2}F2
+FOREGROUND0=#212121
+

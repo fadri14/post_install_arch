@@ -16,6 +16,7 @@ declare -a configs=(
     "workstyle"
     "starship.toml"
     "myzshrc"
+    "mythemes"
 )
 
 path2="$HOME/Documents/post_install_arch/myconfig"
@@ -38,7 +39,7 @@ do
 
     {
         rsync -a --delete --exclude='.cache' "${path1}" "${path2}" &> /dev/null
-        echo "${path1} -> ${path2}"
+        echo "${path1} -> ${path2}/${config}"
     } &
 done
 

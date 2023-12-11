@@ -1,0 +1,27 @@
+#général
+THEMEFOND=black
+THEMEWRITE=#f1efef
+THEMEGTK=Adwaita
+
+COLOR1=#493636
+COLOR3=#cda3cd
+COLOR2=$(python $HOME/script/hexa_middle.py $(echo $COLOR1 | sed 's/^.//') $(echo $COLOR3 | sed 's/^.//'))
+
+#waybar
+BUTTONFOCUS=orange
+BUTTONHOVER=red
+COLORMODE=white
+
+#alacritty
+OPACITETERM=0.6
+THEMETERM=default_color
+
+#sway
+WALLPAPER=panda.jpeg
+
+#rofi
+BACKGROUND0=#212121F2
+BACKGROUND1=#2A2A2A
+BACKGROUND3=${COLOR2}F2
+FOREGROUND0=#E6E6E6
+
