@@ -1,0 +1,39 @@
+#!/bin/bash
+
+declare -a configs=(
+    "alacritty"
+    "dunst"
+    "flashfocus"
+    "nvim"
+    "ranger"
+    "rofi"
+    "sway"
+    "swaylock"
+    "waybar"
+    "zathura"
+    "fusuma"
+    "mpd"
+    "workstyle"
+    "starship.toml"
+)
+
+for config in "${configs[@]}"
+do
+    path="$HOME/.config/${config}"
+
+    if [[ ! -e "$path" ]]
+    then
+        echo "Le chemin "$path" n'existe pas!!!"
+        exit 1
+    fi
+
+    {
+        sudo rsync -a --delete --exclude='.cache' "${path}" "$HOME/Documents/post_install_arch/myconfig" &> /dev/null
+        echo "La config suivante a été mise à jour ${path}"
+    } &
+done
+
+wait
+
+notify-send "Le refresh est terminé!"
+
