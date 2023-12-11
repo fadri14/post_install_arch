@@ -1,29 +1,29 @@
 # post_install_arch
 Ce répôt stock toutes les étapes à faire pour compléter une installation d'arch
 
-## Configurer le clavier de sway
-- créer le dossier de config
-- écrire un fichier de config de base pour changer le clavier
-- relancer la config de sway
+## Décompresser l'archive
+- Installer zip et unzip
+- Se déplacer dans les téléchargements
+- Décompresser l'archive
+- La supprimer
 
 ```
-mkdir -p ~/.config/sway
-echo '
-input * {
-    xkb_layout "fr"
-    xkb_variant "bepo"
-    xkb_numlock enabled
-    dwt enabled # suivre le doigt de manière plus précise
-    tap enabled # activer la tape rapide
-    natural_scroll enabled # activer le défilement naturelle (si haut alors bas)
-    middle_emulation enabled # activer l'émulation du bouton du milieu
-    xkb_options altwin:swap_lalt_lwin,caps:swapescape
-}
-' >> ~/.config/sway/config
+sudo pacman -S zip unzip
+cd Téléchargements
+unzip post_install_arch-main.zip
+rm -fr post_install_arch-main.zip
+```
+
+## C'est ici qu'il faut installer tous les paquets souhaités
+
+## Déplacer les fichiers de configuration
+- Déplacer les fichiers de configuration dans $HOME/.config
+- Relancer le config de sway
+
+```
+mv -f post_install_arch-main/myconfig/* $HOME/.config
 swaymsg reload
 ```
-
-## C'est ici qu'il faut installer tous les paquets souhaités ainsi que la config
 
 ## Installer les fonts
 - Les télécharger.
