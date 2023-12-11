@@ -1,0 +1,37 @@
+sw_volume: 45
+audio_device_state:1:My Pulse Output
+state: stop
+current: 0
+random: 0
+repeat: 0
+single: 0
+consume: 1
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Davodka Flemme Olympique Clip Officiel.mp3
+1:Distrion ElectroLight Drakkar NCS Release.mp3
+2:Nightcore AMV Ce Que La Vie a Fait De Moi.mp3
+3:Nightcore AMV Je vais bien Ridsa lyrics HD.mp3
+4:Nightcore Phoenix LBLVNC RIELL Lyrics.mp3
+5:Nightcore Thunder Gabry Ponte LUMX Prezioso Lyrics.mp3
+6:Nightcore Who You Are.mp3
+7:Ninho Jefe Paroles Jefe.mp3
+8:Project X Pursuit Of Happiness.mp3
+9:Cascada Everytime We Touch Fallen Superhero Hardstyle Remix(1).mp3
+10:DA Uzi Croismoi feat Ninho Clip officiel.mp3
+11:DADJU Amour Toxic Audio Officiel.mp3
+12:DADJU Compliqu Clip Officiel.mp3
+13:DADJU Jaloux Clip Officiel.mp3
+14:Dadju Ma vie Paroles.mp3
+15:Davodka Flemme Olympique Clip Officiel.mp3
+16:Distrion ElectroLight Drakkar NCS Release.mp3
+17:Nightcore AMV Ce Que La Vie a Fait De Moi.mp3
+18:Nightcore AMV Je vais bien Ridsa lyrics HD.mp3
+19:Nightcore Phoenix LBLVNC RIELL Lyrics.mp3
+20:Nightcore Thunder Gabry Ponte LUMX Prezioso Lyrics.mp3
+21:Nightcore Who You Are.mp3
+22:Ninho Jefe Paroles Jefe.mp3
+23:Project X Pursuit Of Happiness.mp3
+playlist_end

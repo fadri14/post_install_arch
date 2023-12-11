@@ -1,0 +1,24 @@
+import:
+  - ~/.config/alacritty/github_light.yaml
+
+window:
+  opacity: 0.9
+  size:
+    columns: 80
+    lines: 24
+  padding:
+    x: 10
+    y: 10
+  decorations: full
+
+cursor:
+  style:
+    shape: underline
+    blinking: off
+    vi_mode_style: underline
+
+font:
+  size: 14
+  family:
+    - .local/share/fonts/'HackNerdFontMono-Regular.ttf'
+

@@ -1,0 +1,81 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Nerd Font Hack;
+    font-size: 14px;
+    transition: none;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#window {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 26px;
+    color: #090c0c;
+    background-image: linear-gradient(144deg, #dbd6b7, #10ce75);
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+}
+
+#workspaces {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 26px;
+    color: #090c0c;
+    background-image: linear-gradient(144deg, #dbd6b7, #10ce75);
+}
+
+#workspaces button {
+    background: transparent;
+    font-size: 16px;
+    color: #090c0c;
+}
+
+#workspaces button.focused {
+    color: blue;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    color: red;
+}
+
+#mpd.disconnected,
+#mpd.stopped,
+#mpd,
+#clock,
+#pulseaudio,
+#backlight,
+#tray,
+#network,
+#memory,
+#cpu,
+#battery {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 26px;
+    color: #090c0c;
+    background-image: linear-gradient(144deg, #dbd6b7, #10ce75);
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+}
+
+#mode {
+    color: black;
+}

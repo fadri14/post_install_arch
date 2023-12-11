@@ -1,0 +1,15 @@
+swipe:
+  3:
+    left:
+      command: "swaymsg 'workspace next'"
+    right:
+      command: "swaymsg 'workspace prev'"
+    up:
+      command: "firefox"
+    down:
+      command: "alacritty -e ranger"
+  4:
+    down:
+      command: "systemctl poweroff"
+    up:
+      command: "swaylock -f -c 000000"

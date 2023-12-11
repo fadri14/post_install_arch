@@ -1,0 +1,88 @@
+Hello, here is my problem. When I launch a notification myself with the notify-send command, everything works fine, my icon is displayed with the notification, no problem. But when I receive a notification via something else for example discord or signal then it's the application icon that is displayed and once I close the notification then dmenu launches for some reason and that's my problem.
+
+Please note:
+There are no errors in the terminal. I'm using version 1.9.2. I installed it via fedora packages. I'm on sway.
+
+I'd also like to point out that I've taken over someone else's configuration. Here it is:
+```
+
+[global]
+    follow = keyboard
+    width = (0, 700)
+    height = (0, 700)
+    origin = top-center
+    offset = 20x20
+    scale = 0
+    notification_limit = 20
+    progress_bar = true
+    progress_bar_height = 10
+    progress_bar_frame_width = 0
+    progress_bar_min_width = 125
+    progress_bar_max_width = 250
+    progress_bar_corner_radius = 4
+    icon_corner_radius = 20
+    indicate_hidden = yes
+    transparency = 30
+    separator_height = 2
+    padding = 8
+    horizontal_padding = 8
+    text_icon_padding = 10
+    frame_width = 3
+    gap_size = 5
+    separator_color = auto
+    sort = yes
+    font = mononoki Nerd Font 11
+    line_height = 3
+    markup = full
+    format = "󰁕 %a\n<b>󱞪 %s</b>\n%b"
+    alignment = center
+    vertical_alignment = center
+    show_age_threshold = 60
+    ellipsize = middle
+    ignore_newline = no
+    stack_duplicates = true
+    hide_duplicate_count = false
+    show_indicators = yes
+    icon_position = left
+    min_icon_size = 32
+    max_icon_size = 100
+    sticky_history = yes
+    history_length = 20
+    browser = /usr/bin/xdg-open
+    always_run_script = true
+    title = Dunst
+    class = Dunst
+    corner_radius = 50
+    ignore_dbusclose = false
+    force_xwayland = false
+    force_xinerama = false
+    mouse_left_click = context, close_current, close_all
+    mouse_middle_click = do_action, close_current
+    mouse_right_click = close_all
+[experimental]
+    per_monitor_dpi = false
+
+[urgency_low]
+    background = "#181825"
+    foreground = "#f5e0dc"
+    frame_color = "#0000ff"
+    timeout = 0
+    default_icon = /home/adrien/.config/dunst/icons/kyogre.png
+
+[urgency_normal]
+    background = "#181825"
+    foreground = "#f5e0dc"
+    frame_color = "#00ff00"
+    timeout = 0
+    default_icon = /home/adrien/.config/dunst/icons/mega_rayquaza.png
+
+[urgency_critical]
+    background = "#181825"
+    foreground = "#f5e0dc"
+    frame_color = "#ff0000"
+    timeout = 0
+    default_icon = /home/adrien/.config/dunst/icons/groudon.png
+
+```
+
+Thanks to those who will take the time to help me.
