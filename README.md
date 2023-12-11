@@ -73,11 +73,11 @@ sudo ./install_package_arch
 ```
 
 ## Déplacer les fichiers de configuration
-- Déplacer les fichiers de configuration dans $HOME/.config
+- Déplacer les fichiers de configuration dans ~/.config
 - Relancer le config de sway
 
 ```
-mv -f ~/Téléchargements/post_install_arch-main/myconfig/* $HOME/.config
+mv -f ~/Téléchargements/post_install_arch-main/myconfig/* ~/.config
 swaymsg reload
 ```
 
@@ -110,16 +110,6 @@ Session=$XDG_SESSION_DESKTOP" > /etc/sddm.conf.d/autologin.conf
 
 ## Zsh
 
-### Réinstaller enhancd pour zsh
-(à vérifier)
-- Éfface l'ancien
-- Retélécharge le nouveau
-
-```
-rm -fr ~/.oh-my-zsh/custom/plugins/enhancd
-$ git clone https://github.com/b4b4r07/enhancd.git $ZSH_CUSTOM/plugins/enhancd
-```
-
 ### Changer de shell
 - Choisis zsh comme shell par défaut
 
@@ -127,11 +117,31 @@ $ git clone https://github.com/b4b4r07/enhancd.git $ZSH_CUSTOM/plugins/enhancd
 chsh -s /bin/zsh $USER
 ```
 
-### Changer la config de base de zsh
-- Dit à zsh que la vrai config est dans myzshrc
+### Installation de oh-my-zsh
+- Se déplacer dans le dossier personnel
+- Télécharger oh-my-zsh
+- Le déplacer dans le fichier de config
 
 ```
-echo "source $HOME/.config/myzshrc" > ~/.zshrc
+cd ~
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+mv .oh-my-zsh .config/oh-my-zsh
+```
+
+### Changer la config de base de zsh
+- Dire à zsh que la vrai config est dans myzshrc
+- Relancer la config de zsh
+
+```
+echo "source ~/.config/myzshrc" > ~/.zshrc
+source ~/.zshrc
+```
+
+### Réinstaller enhancd pour zsh
+- Retélécharge le nouveau
+
+```
+$ git clone https://github.com/b4b4r07/enhancd.git $ZSH_CUSTOM/plugins/enhancd
 ```
 
 ## Configuration de pacman

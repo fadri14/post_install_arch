@@ -16,7 +16,6 @@ declare -a configs=(
     "workstyle"
     "starship.toml"
     "myzshrc"
-    "oh-my-zsh"
 )
 
 path2="$HOME/Documents/post_install_arch/myconfig"
