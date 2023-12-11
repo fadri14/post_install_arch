@@ -15,21 +15,31 @@ declare -a configs=(
     "mpd"
     "workstyle"
     "starship.toml"
+    "myzshrc"
+    "oh-my-zsh"
 )
+
+path2="$HOME/Documents/post_install_arch/myconfig"
+
+if [[ ! -e "$path2" ]]
+then
+    echo "Le chemin "$path2" n'existe pas!!!"
+    exit 2
+fi
 
 for config in "${configs[@]}"
 do
-    path="$HOME/.config/${config}"
+    path1="$HOME/.config/${config}"
 
-    if [[ ! -e "$path" ]]
+    if [[ ! -e "$path1" ]]
     then
-        echo "Le chemin "$path" n'existe pas!!!"
+        echo "Le chemin "$path1" n'existe pas!!!"
         exit 1
     fi
 
     {
-        sudo rsync -a --delete --exclude='.cache' "${path}" "$HOME/Documents/post_install_arch/myconfig" &> /dev/null
-        echo "La config suivante a été mise à jour ${path}"
+        rsync -a --delete --exclude='.cache' "${path1}" "${path2}" &> /dev/null
+        echo "${path1} -> ${path2}"
     } &
 done
 

@@ -127,6 +127,13 @@ $ git clone https://github.com/b4b4r07/enhancd.git $ZSH_CUSTOM/plugins/enhancd
 chsh -s /bin/zsh $USER
 ```
 
+### Changer la config de base de zsh
+- Dit à zsh que la vrai config est dans myzshrc
+
+```
+echo "source $HOME/.config/myzshrc" > ~/.zshrc
+```
+
 ## Configuration de pacman
 - Active la couleur
 - Active le mode verbeux

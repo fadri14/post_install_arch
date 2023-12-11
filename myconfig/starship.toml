@@ -1,22 +1,22 @@
 format = """
-[░▒▓](fg:#dbd6b7)\                              
-[    ](fg:#090c0c bg:#dbd6b7)\                              
-[](fg:#dbd6b7 bg:#75D296)\                               
+[░▒▓](fg:#d03333)\                                                 
+[    ](fg:#090c0c bg:#d03333)\                                                 
+[](fg:#d03333 bg:#E77752)\                                                  
 $directory\
-[](fg:#75D296 bg:#10ce75)\                               
+[](fg:#E77752 bg:#ffbb71)\                                                  
 $git_branch\
 $git_status\
 $git_metrics\
-[](fg:#10ce75 bg:#10ce75)\                             
-[ ](fg:#10ce75)\                             
+[](fg:#ffbb71 bg:#ffbb71)\                                                
+[ ](fg:#ffbb71)\                                                
 """
 
 right_format = """
-[](fg:#75D296)\                             
+[](fg:#E77752)\                                                
 $time\
 $cmd_duration\
 $character\
-[▓▒░](fg:#75D296)\                              
+[▓▒░](fg:#E77752)\                                                 
 """
 
 add_newline = false
@@ -26,31 +26,31 @@ home_symbol = " "
 truncation_symbol = "…/"
 truncate_to_repo = false
 read_only = "󰒃"
-style = "fg:#090c0c bg:#75D296"
+style = "fg:#090c0c bg:#E77752"
 format = "[ $path ]($style)[$read_only]($read_only_style)"
 
 [git_branch]
 symbol = ""
-style = "fg:#090c0c bg:#10ce75"
+style = "fg:#090c0c bg:#ffbb71"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
 untracked = "±"
-style = "fg:#090c0c bg:#10ce75"
+style = "fg:#090c0c bg:#ffbb71"
 format = '[($all_status$ahead_behind )]($style)'
 
 [time]
 disabled = false
 time_format = "%R"
-style = "fg:#090c0c bg:#75D296"
+style = "fg:#090c0c bg:#E77752"
 format = '[$time ]($style)'
 
 [character]
 format = "$symbol"
-success_symbol = '[ ](fg:#090c0c bg:#75D296)' 
-error_symbol = '[ ](fg:#090c0c bg:#75D296)'
+success_symbol = '[ ](fg:#090c0c bg:#E77752)' 
+error_symbol = '[ ](fg:#090c0c bg:#E77752)'
 
 [cmd_duration]
-style = "fg:#090c0c bg:#75D296"
+style = "fg:#090c0c bg:#E77752"
 format = "[$duration]($style)"
 
