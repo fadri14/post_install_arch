@@ -1,0 +1,161 @@
+#!/bin/bash
+
+if [[ $(whoami) != "root" ]]
+then
+    echo "Il faut être root"
+    exit 1
+fi
+
+packages="
+neovim
+alacritty
+zathura
+zathura-plugins-all
+ranger
+xournalpp
+fzf
+acpi
+feh
+glances
+git
+ripgrep
+light
+rofi
+waybar
+mpd
+mpc
+libffi
+python3-devel
+python-cffi
+grim
+swappy
+flatpak
+python-pip
+zsh
+util-linux
+base-devel
+python-certifi
+cronie
+network-manager-applet
+blueman
+libinput
+discord
+sddm
+zip
+unzip
+wtype
+starship
+btrfs-progs
+vim
+man-db
+man-pages
+texinfo
+reflector
+btrfs-progs
+btrfs-assistant
+ttf-liberation
+noto-fonts-emoji
+adobe-source-code-pro-fonts
+otf-font-awesome
+ttf-droid
+ntfs-3g
+p7zip
+xdg-utils
+downgrade
+gstreamer
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-ugly
+gst-plugin-pipewire
+gstreamer-vaapi
+gst-plugins-good
+gst-libav
+gstreamer-vaapi
+intel-media-driver
+intel-gmmlib
+bluez
+bluez-utils
+bluez-plugins
+ghostscript
+gsfonts
+cups
+cups-filters
+cups-pdf
+system-config-printer
+avahi
+foomatic-db-engine
+foomatic-db
+foomatic-db-ppds
+foomatic-db-nonfree
+foomatic-db-nonfree-ppds
+foomatic-db-gutenprint-ppds
+gutenprint
+"
+
+packages_aur="
+wlsunset
+signal-desktop-beta
+librewolf
+melonds
+texstudio-git
+flashfocus
+fusuma
+swayfx
+btrfs-assistant
+"
+
+packages_pip="
+pynvim
+"
+
+#swaylock-effects
+#waylock
+
+for package in $packages
+do
+    pacman -S --needed --noconfirm $package 2>&1 > /dev/null
+
+    if [[ $? = "0" ]]
+    then 
+        echo "Le paquet $package a été installé"
+    else
+        echo "Une erreur s'est produite lors de l'installation de $package"
+    fi
+done
+
+for package in $packages_aur
+do
+    yay -S --noconfirm $package 2>&1 > /dev/null
+
+    if [[ $? = "0" ]]
+    then 
+        echo "Le paquet $package a été installé"
+    else
+        echo "Une erreur s'est produite lors de l'installation de $package"
+    fi
+
+
+for package in $packages_flatpak
+do
+    flatpak install $package
+
+    if [[ $? = "0" ]]
+    then 
+        echo "Le paquet $package a été installé"
+    else
+        echo "Une erreur s'est produite lors de l'installation de $package"
+    fi
+done
+
+for package in $packages_pip
+do
+    pip install $package
+
+    if [[ $? = "0" ]]
+    then 
+        echo "Le paquet $package a été installé"
+    else
+        echo "Une erreur s'est produite lors de l'installation de $package"
+    fi
+done
+

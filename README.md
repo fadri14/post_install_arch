@@ -1,5 +1,29 @@
 # post_install_arch
-Ce répôt stock toutes les étapes à faire pour compléter une installation d'arch
+Ce répôt stock toutes les étapes à faire pour finaliser ma config sur arch
+linux avec sway.
+
+## Configurer le clavier de sway
+
+- créer le dossier de config
+- écrire un fichier de config de base pour changer le clavier
+- relancer la config de sway
+
+```
+mkdir -p ~/.config/sway
+echo '
+input * {
+    xkb_layout "fr"
+    xkb_variant "bepo"
+    xkb_numlock enabled
+    dwt enabled # suivre le doigt de manière plus précise
+    tap enabled # activer la tape rapide
+    natural_scroll enabled # activer le défilement naturelle (si haut alors bas)
+    middle_emulation enabled # activer l'émulation du bouton du milieu
+    xkb_options altwin:swap_lalt_lwin,caps:swapescape
+}
+' >> ~/.config/sway/config
+swaymsg reload
+```
 
 ## Décompresser l'archive
 - Installer zip et unzip
@@ -9,19 +33,51 @@ Ce répôt stock toutes les étapes à faire pour compléter une installation d'
 
 ```
 sudo pacman -S zip unzip
-cd Téléchargements
+cd ~/Téléchargements
 unzip post_install_arch-main.zip
 rm -fr post_install_arch-main.zip
 ```
 
-## C'est ici qu'il faut installer tous les paquets souhaités
+## Installation de yay
+- Cloner le répôt
+- Se déplacer dedans
+- Le compiler
+
+```
+git clone https://aur.archlinux.org/yay.git
+cd ~/Téléchargements/yay
+makepkg -si
+```
+
+## Installer le répôt flathub
+- Ajouter le répôt flathub à la liste des répôts de flatpak
+
+```
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+```
+
+## Prérequis pour fusuma
+- S'ajouter au groupe input
+
+```
+sudo gpasswd -a $USER input
+newgrp input
+```
+
+## Installer tous les programmes souhaités
+
+```
+cd ~/Téléchargements/post_install_arch
+chmod +x install_package_arch
+sudo ./install_package_arch
+```
 
 ## Déplacer les fichiers de configuration
 - Déplacer les fichiers de configuration dans $HOME/.config
 - Relancer le config de sway
 
 ```
-mv -f post_install_arch-main/myconfig/* $HOME/.config
+mv -f ~/Téléchargements/post_install_arch-main/myconfig/* $HOME/.config
 swaymsg reload
 ```
 
@@ -55,11 +111,12 @@ Session=$XDG_SESSION_DESKTOP" > /etc/sddm.conf.d/autologin.conf
 ## Zsh
 
 ### Réinstaller enhancd pour zsh
+(à vérifier)
 - Éfface l'ancien
 - Retélécharge le nouveau
 
 ```
-rm -fr .oh-my-zsh/custom/plugins/enhancd
+rm -fr ~/.oh-my-zsh/custom/plugins/enhancd
 $ git clone https://github.com/b4b4r07/enhancd.git $ZSH_CUSTOM/plugins/enhancd
 ```
 
@@ -83,6 +140,7 @@ sudo sed -i 's/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j\$(nproc)\"/' /etc/makepkg.conf"
 ```
 
 ## Gérer la cache de pacman
+(voir pour changer les paramètres du timer)
 - Active le timer de paccache
 
 ```
@@ -99,22 +157,16 @@ sudo systemctl enable --now reflector.service
 ```
 
 ## Bluetooth
-- Installe les paquets nécessaires
-- Active le bluetooth
+- Activer le bluetooth
 
 ```
-sudo pacman -S --needed bluez bluez-utils bluez-plugins
 sudo systemctl enable --now  bluetooth.service
 ```
 
 ## Imprimantes
-- Installe les paquets essentiels
-- Installe les drivers
-- Activer le démon cups
+- Activer les démons avahi et cups
 
 ```
-sudo pacman -S --needed ghostscript gsfonts cups cups-filters cups-pdf system-config-printer avahi
-sudo pacman -S --needed foomatic-db-engine foomatic-db foomatic-db-ppds foomatic-db-nonfree foomatic-db-nonfree-ppds gutenprint foomatic-db-gutenprint-ppds
 sudo systemctl enable --now avahi-daemon cups
 ```
 
