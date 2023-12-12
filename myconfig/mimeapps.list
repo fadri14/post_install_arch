@@ -1,8 +1,14 @@
 [Default Applications]
 application/pdf=org.gnome.Evince.desktop
 application/x-xopp=com.github.xournalpp.xournalpp.desktop
-application/octet-stream=nvim.desktop
+application/x-shellscript=nvim.desktop
+text/x-java=nvim.desktop
+text/x-lua=nvim.desktop
+text/x-python=nvim.desktop
+text/x-csrc=nvim.desktop
+text/x-c++src=nvim.desktop
 text/plain=nvim.desktop
+application/octet-stream=nvim.desktop
 x-scheme-handler/http=librewolf.desktop
 application/xhtml+xml=librewolf.desktop
 text/html=librewolf.desktop
