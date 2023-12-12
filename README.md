@@ -39,6 +39,7 @@ rm -fr post_install_arch-main.zip
 ```
 
 ## Installation de yay
+(Je suppose que base-devel est installé)
 - Cloner le répôt
 - Se déplacer dedans
 - Le compiler
@@ -111,7 +112,7 @@ Session=$XDG_SESSION_DESKTOP" > /etc/sddm.conf.d/autologin.conf
 ## Zsh
 
 ### Changer de shell
-- Choisis zsh comme shell par défaut
+- Choisir zsh comme shell par défaut
 
 ```
 chsh -s /bin/zsh $USER
@@ -142,17 +143,17 @@ source $HOME/.config/mythemes/Dhiver_spatial
 source ~/.zshrc
 ```
 
-### Réinstaller enhancd pour zsh
-- Retélécharge le nouveau
+### Installer enhancd pour zsh
+- Cloner le répôt dans les plugins customs de zsh
 
 ```
 $ git clone https://github.com/b4b4r07/enhancd.git $ZSH_CUSTOM/plugins/enhancd
 ```
 
 ## Configuration de pacman
-- Active la couleur
-- Active le mode verbeux
-- Active le téléchargement en parallèle
+- Activer la couleur
+- Activer le mode verbeux
+- Activer le téléchargement en parallèle
 
 ```
 sudo sed -i "34 s/.*/Color/" /etc/pacman.conf
@@ -163,15 +164,15 @@ sudo sed -i 's/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j\$(nproc)\"/' /etc/makepkg.conf"
 
 ## Gérer la cache de pacman
 (voir pour changer les paramètres du timer)
-- Active le timer de paccache
+- Activer le timer de paccache
 
 ```
 sudo systemctl enable --now paccache.timer
 ```
 
 ## Mettre à jour les mirroirs
-- Mets à jour les meilleurs dépôts miroirs
-- Active le timer de reflector pour mettre à jour chaque semaine
+- Mettre à jour les meilleurs dépôts miroirs
+- Activer le timer de reflector pour mettre à jour chaque semaine
 
 ```
 reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
