@@ -165,10 +165,12 @@ sudo sed -i 's/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j\$(nproc)\"/' /etc/makepkg.conf"
 ```
 
 ## Gérer la cache de pacman
-(voir pour changer les paramètres du timer)
+(Vérifier la ligne où se trouve ExecStart)
+- Changer la commande pour ne garder que 1 version antérieure et supprimer la cache des paquets désinstallés
 - Activer le timer de paccache
 
 ```
+#sudo sed -i "n s/.*/ExecStart=/usr/bin/paccache -rk1 ; /usr/bin/paccache -ruk0/" /etc/systemd/system/paccache.service.d/override.conf
 sudo systemctl enable --now paccache.timer
 ```
 
