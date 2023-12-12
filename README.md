@@ -214,10 +214,16 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 ## Activation du pare-feu
+- Autoriser les connections http
+- Autoriser les connections https$
+- Autoriser les connections ssh
 - Activer le pare-feu
 - Activer le service du pare-feu
 
 ```
+sudo ufw allow http
+sudo ufw allow https
+sudo ufw allow ssh
 sudo ufw enable
 sudo systemctl enable ufw.service
 ```
