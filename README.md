@@ -26,7 +26,7 @@ swaymsg reload
 ```
 
 ## Décompresser l'archive
-- Installer zip et unzip
+- Installer zip et unzip
 - Se déplacer dans les téléchargements
 - Décompresser l'archive
 - La supprimer
