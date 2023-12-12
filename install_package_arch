@@ -58,6 +58,7 @@ otf-font-awesome
 ttf-droid
 ntfs-3g
 p7zip
+xdg-user-dirs
 xdg-utils
 downgrade
 gstreamer

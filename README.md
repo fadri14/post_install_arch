@@ -25,6 +25,13 @@ input * {
 swaymsg reload
 ```
 
+## Création des répertoires par défauts
+- Mettre à jour les répertoires utilisateurs
+
+```
+xdg-user-dirs-update
+```
+
 ## Décompresser l'archive
 - Installer zip et unzip
 - Se déplacer dans les téléchargements
