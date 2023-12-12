@@ -30,6 +30,7 @@ HIST_STAMPS="mm/dd/yyyy"
 plugins=(zsh-autosuggestions git sudo web-search enhancd zsh-vi-mode)
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.zshenv
 
 eval "$(starship init zsh)"
 

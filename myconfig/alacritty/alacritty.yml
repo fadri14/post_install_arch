@@ -2,7 +2,7 @@ import:
   - ~/.config/alacritty/default_color.yaml
 
 window:
-  opacity: 0.7
+  opacity: 0.6
   size:
     columns: 80
     lines: 24
