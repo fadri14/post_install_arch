@@ -116,6 +116,27 @@ User=$USER
 Session=$XDG_SESSION_DESKTOP" > /etc/sddm.conf.d/autologin.conf
 ```
 
+## Ajouter batteriecheck dans cron
+(Vérifier que son démon est en cours)
+- Entrer dans le fichier de config de cron
+Copier la ligne suivante:
+`*/2 * * * * /home/adrien/script/batteriecheck`
+
+```
+crontab -e
+```
+
+## Ajouter trashTmp dans anacron
+(Vérifier le fonctionnement)
+- Créer la poubelle
+- Écrire la config pour trashTmp dans anacrontab
+
+```
+mkdir ~/.Trash
+sudo echo "
+1       5       empty_trash     /home/adrien/script/trashTmp" >> /etc/anacrontab
+```
+
 ## Zsh
 
 ### Changer de shell
