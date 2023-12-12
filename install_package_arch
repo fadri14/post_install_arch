@@ -102,6 +102,9 @@ swayfx
 btrfs-assistant
 "
 
+packages_flatpak="
+"
+
 packages_pip="
 pynvim
 "
@@ -109,51 +112,37 @@ pynvim
 #swaylock-effects
 #waylock
 
+check_install()
+{
+    if [[ "$1" == "0" ]]
+    then
+        echo "OK $package"
+    else
+        echo "ERREUR $package"
+    fi
+}
+
 for package in $packages
 do
     pacman -S --needed --noconfirm $package 2>&1 > /dev/null
-
-    if [[ $? = "0" ]]
-    then 
-        echo "Le paquet $package a été installé"
-    else
-        echo "Une erreur s'est produite lors de l'installation de $package"
-    fi
+    check_install $? $package
 done
 
 for package in $packages_aur
 do
     yay -S --noconfirm $package 2>&1 > /dev/null
-
-    if [[ $? = "0" ]]
-    then 
-        echo "Le paquet $package a été installé"
-    else
-        echo "Une erreur s'est produite lors de l'installation de $package"
-    fi
-
+    check_install $? $package
+done
 
 for package in $packages_flatpak
 do
-    flatpak install $package
-
-    if [[ $? = "0" ]]
-    then 
-        echo "Le paquet $package a été installé"
-    else
-        echo "Une erreur s'est produite lors de l'installation de $package"
-    fi
+    flatpak install $package 2>&1 > /dev/null
+    check_install $? $package
 done
 
 for package in $packages_pip
 do
-    pip install $package
-
-    if [[ $? = "0" ]]
-    then 
-        echo "Le paquet $package a été installé"
-    else
-        echo "Une erreur s'est produite lors de l'installation de $package"
-    fi
+    pip install $package 2>&1 > /dev/null
+    check_install $? $package
 done
 
