@@ -117,7 +117,7 @@ Session=$XDG_SESSION_DESKTOP" > /etc/sddm.conf.d/autologin.conf
 ```
 
 ## Ajouter batteriecheck dans cron
-(Vérifier que son démon est en cours)
+(Vérifier que le démon crond est en cours)
 - Entrer dans le fichier de config de cron
 Copier la ligne suivante:
 `*/2 * * * * /home/adrien/script/batteriecheck`
@@ -235,6 +235,7 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 ## Activation du pare-feu
+- Mettre la configuration par défaut pour les sorties
 - Autoriser les connections http
 - Autoriser les connections https$
 - Autoriser les connections ssh
@@ -242,6 +243,7 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 - Activer le service du pare-feu
 
 ```
+sudo ufw default allow outgoing
 sudo ufw allow http
 sudo ufw allow https
 sudo ufw allow ssh
