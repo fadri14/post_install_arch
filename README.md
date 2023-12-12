@@ -160,8 +160,6 @@ mv .oh-my-zsh .config/oh-my-zsh
 ### Changer la config de base de zsh
 - Dire à zsh que la vrai config est dans myzshrc
 - Configurer l'envirronement pour les thèmes
-- Relancer l'envirronement de zsh
-- Relancer la config de zsh
 
 ```
 echo "source ~/.config/myzshrc" > ~/.zshrc
@@ -169,7 +167,6 @@ echo "
 export NUMBERTHEME=7
 source $HOME/.config/mythemes/Dhiver_spatial
 " > ~/.zshenv
-source ~/.zshenv
 source ~/.zshrc
 ```
 
