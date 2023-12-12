@@ -1,0 +1,16 @@
+[Default Applications]
+application/pdf=org.gnome.Evince.desktop
+application/x-xopp=com.github.xournalpp.xournalpp.desktop
+application/octet-stream=nvim.desktop
+text/plain=nvim.desktop
+x-scheme-handler/http=librewolf.desktop
+application/xhtml+xml=librewolf.desktop
+text/html=librewolf.desktop
+x-scheme-handler/https=librewolf.desktop
+
+[Added Associations]
+application/pdf=org.gnome.Evince.desktop;com.github.xournalpp.xournalpp.desktop;
+x-scheme-handler/http=librewolf.desktop;
+application/xhtml+xml=librewolf.desktop;
+text/html=librewolf.desktop;
+x-scheme-handler/https=librewolf.desktop;

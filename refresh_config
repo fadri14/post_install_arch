@@ -17,6 +17,7 @@ declare -a configs=(
     "starship.toml"
     "myzshrc"
     "mythemes"
+    "mimeapps.list"
 )
 
 path2="$HOME/Documents/post_install_arch/myconfig"
