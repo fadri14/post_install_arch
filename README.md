@@ -213,3 +213,12 @@ sudo echo "GRUB_TIMEOUT_STYLE=hidden" >> /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+## Activation du pare-feu
+- Activer le pare-feu
+- Activer le service du pare-feu
+
+```
+sudo ufw enable
+sudo systemctl enable ufw.service
+```
+
