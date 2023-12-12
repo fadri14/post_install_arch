@@ -204,3 +204,12 @@ sudo systemctl enable --now  bluetooth.service
 sudo systemctl enable --now avahi-daemon cups
 ```
 
+## Supprimer le délai dans grub
+- Ajouter une valeur de configuration pour le timer dans grub
+- Mettre à jour la configuration de grub
+
+```
+sudo echo "GRUB_TIMEOUT_STYLE=hidden" >> /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
