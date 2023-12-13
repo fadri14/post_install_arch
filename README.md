@@ -4,9 +4,9 @@ linux avec sway.
 
 ## Configurer le clavier de sway
 
-- créer le dossier de config
-- écrire un fichier de config de base pour changer le clavier
-- relancer la config de sway
+- Créer le dossier de config
+- Écrire un fichier de config de base pour changer le clavier
+- Relancer la config de sway
 
 ```
 mkdir -p ~/.config/sway
@@ -25,10 +25,19 @@ input * {
 swaymsg reload
 ```
 
+## Mettre le système à jour
+- Mettre à jour le système
+
+```
+sudo pacman -Syu
+```
+
 ## Création des répertoires par défauts
+- Installer le paquet nécessaire
 - Mettre à jour les répertoires utilisateurs
 
 ```
+sudo pacman -S xdg-user-dirs
 xdg-user-dirs-update
 ```
 
