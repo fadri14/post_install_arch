@@ -122,6 +122,7 @@ fusuma
 swayfx
 btrfs-assistant
 pacman-contrib
+arc-gtk-theme
 "
 
 packages_flatpak="

@@ -90,6 +90,8 @@ sudo ./install_package_arch
 ```
 
 ## Déplacer les fichiers de configuration
+(Vérifier que ce soit le bon thème et la bonne font.
+Peut-être utiliser lxappearance)
 - Déplacer les fichiers de configuration dans ~/.config
 - Relancer le config de sway
 
