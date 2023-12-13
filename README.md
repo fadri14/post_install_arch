@@ -149,7 +149,7 @@ Copier la ligne suivante:
 ```
 mkdir ~/.Trash
 sudo echo "
-1       5       empty_trash     /home/adrien/script/trashTmp" >> /etc/anacrontab
+1       5       empty_trash     $HOME/script/trashTmp" >> /etc/anacrontab
 ```
 
 ## Zsh
