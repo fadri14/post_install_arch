@@ -35,7 +35,6 @@ flatpak
 python-pip
 zsh
 util-linux
-base-devel
 python-certifi
 cronie
 network-manager-applet

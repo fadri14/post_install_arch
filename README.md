@@ -55,12 +55,13 @@ rm -fr post_install_arch-main.zip
 ```
 
 ## Installation de yay
-(Je suppose que base-devel est installé)
+- Installer le paquet nécessaire à la compilation
 - Cloner le répôt
 - Se déplacer dedans
 - Le compiler
 
 ```
+sudo pacman -S base-devel
 git clone https://aur.archlinux.org/yay.git
 cd ~/Téléchargements/yay
 makepkg -si
