@@ -133,7 +133,7 @@ Session=$XDG_SESSION_DESKTOP" > /etc/sddm.conf.d/autologin.conf
 - Écrire la config pour batteriecheck dans crontab
 
 ```
-sudo echo"*/2 * * * * adrien /home/adrien/script/batteriecheck" >> /etc/crontab
+sudo echo"*/2 * * * * $USER $HOME/script/batteriecheck" >> /etc/crontab
 ```
 
 Si la commande ne fonctionne pas, il faut l'écrire manuellement
