@@ -90,17 +90,6 @@ chmod +x install_package_arch
 sudo ./install_package_arch
 ```
 
-## Déplacer les fichiers de configuration
-(Vérifier que ce soit le bon thème et la bonne font.
-Peut-être utiliser lxappearance)
-- Déplacer les fichiers de configuration dans ~/.config
-- Relancer le config de sway
-
-```
-mv -f ~/Téléchargements/post_install_arch-main/myconfig/* ~/.config
-swaymsg reload
-```
-
 ## Installer les fonts
 - Les télécharger.
 - Créer le dossier des fonts s'il n'existe pas.
@@ -112,6 +101,17 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip
 mkdir -p ~/.local/share/fonts
 unzip Hack.zip -d ~/.local/share/fonts
 rm -fr Hack.zip
+```
+
+## Déplacer les fichiers de configuration
+(Vérifier que ce soit le bon thème et la bonne font.
+Peut-être utiliser lxappearance)
+- Déplacer les fichiers de configuration dans ~/.config
+- Relancer le config de sway
+
+```
+mv -f ~/Téléchargements/post_install_arch-main/myconfig/* ~/.config
+swaymsg reload
 ```
 
 ## Activer l'autologin de sddm
@@ -130,13 +130,16 @@ Session=$XDG_SESSION_DESKTOP" > /etc/sddm.conf.d/autologin.conf
 
 ## Ajouter batteriecheck dans cron
 (Vérifier que le démon crond est en cours)
-- Entrer dans le fichier de config de cron
-Copier la ligne suivante:
-`*/2 * * * * /home/adrien/script/batteriecheck`
+- Écrire la config pour batteriecheck dans crontab
 
 ```
-crontab -e
+sudo echo"*/2 * * * * adrien /home/adrien/script/batteriecheck" >> /etc/crontab
 ```
+
+Si la commande ne fonctionne pas, il faut l'écrire manuellement
+avec la commande suivante `crontab -e`
+Copier la ligne suivante:
+`*/2 * * * * /home/adrien/script/batteriecheck`
 
 ## Ajouter trashTmp dans anacron
 (Vérifier le fonctionnement)
