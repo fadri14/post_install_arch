@@ -92,6 +92,23 @@ foomatic-db-nonfree
 foomatic-db-nonfree-ppds
 foomatic-db-gutenprint-ppds
 gutenprint
+a52dec
+faac
+faad2
+flac
+jasper
+lame
+libdca
+libdv
+libmad
+libmpeg2
+libtheora
+libvorbis
+libxv
+wavpack
+x264
+xvidcore
+gstreamer0.10-plugins
 "
 
 packages_aur="
