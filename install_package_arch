@@ -31,7 +31,6 @@ python3-devel
 python-cffi
 grim
 swappy
-flatpak
 python-pip
 zsh
 util-linux
