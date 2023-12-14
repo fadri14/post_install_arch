@@ -152,6 +152,17 @@ sudo echo "
 1       5       empty_trash     $HOME/script/trashTmp" >> /etc/anacrontab
 ```
 
+## Installation de mon application time_use
+- Se déplacer dans les scripts
+- Autoriser le programme se s'exécuter
+- Lancer l'installation de time_use
+
+```
+cd ~/scripts
+chmod +x install_time_use
+sudo ./install_time_use
+```
+
 ## Zsh
 
 ### Changer de shell

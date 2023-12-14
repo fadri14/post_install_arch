@@ -130,6 +130,7 @@ packages_flatpak="
 
 packages_pip="
 pynvim
+matplotlib
 "
 
 #swaylock-effects
