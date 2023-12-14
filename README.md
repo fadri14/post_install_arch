@@ -261,15 +261,13 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 ## Activation du pare-feu
 - Mettre la configuration par défaut pour les sorties
-- Autoriser les connections http
-- Autoriser les connections https$
+- Autoriser les connections https
 - Autoriser les connections ssh
 - Activer le pare-feu
 - Activer le service du pare-feu
 
 ```
 sudo ufw default allow outgoing
-sudo ufw allow http
 sudo ufw allow https
 sudo ufw allow ssh
 sudo ufw enable
