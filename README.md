@@ -68,9 +68,11 @@ makepkg -si
 ```
 
 ## Installer le répôt flathub
+- Installer flatpak
 - Ajouter le répôt flathub à la liste des répôts de flatpak
 
 ```
+sudo pacman -S flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
