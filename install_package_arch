@@ -139,9 +139,9 @@ check_install()
 {
     if [[ "$1" == "0" ]]
     then
-        echo "OK $package"
+        echo -e "\033[32mOK\033[0m $package"
     else
-        echo "ERREUR $package"
+        echo -e "\033[31mERREUR\033[0m $package"
     fi
 }
 
