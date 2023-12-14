@@ -39,7 +39,7 @@ bindsym $mod+v splitv
 
 bindsym $mod+f fullscreen
 
-bindsym $mod+space floating toggle
+bindsym $mod+Shift+space floating toggle
 
 mode "resize" {
     bindsym $left resize shrink width 20px
@@ -67,7 +67,7 @@ bindsym $mod+i exec $menu
 bindsym $mod+Shift+c exec swaymsg reload
 
 bindsym $mod+Shift+m move scratchpad
-bindsym $mod+m scratchpad show
+bindsym $mod+Ctrl+m scratchpad show
 
 bindsym $mod+tab exec rofi -show window -display-window-icons -display-drun -theme .config/rofi/theme.rasi
 

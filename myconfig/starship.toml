@@ -1,22 +1,22 @@
 format = """
-[░▒▓](fg:#2acaea)\                                                                 
-[    ](fg:#090c0c bg:#2acaea)\                                                                 
-[](fg:#2acaea bg:#15E4B4)\                                                                  
+[░▒▓](fg:#2acaea)\                                                                                     
+[    ](fg:#090c0c bg:#2acaea)\                                                                                     
+[](fg:#2acaea bg:#15E4B4)\                                                                                      
 $directory\
-[](fg:#15E4B4 bg:#00ff7f)\                                                                  
+[](fg:#15E4B4 bg:#00ff7f)\                                                                                      
 $git_branch\
 $git_status\
 $git_metrics\
-[](fg:#00ff7f bg:#00ff7f)\                                                                
-[ ](fg:#00ff7f)\                                                                
+[](fg:#00ff7f bg:#00ff7f)\                                                                                    
+[ ](fg:#00ff7f)\                                                                                    
 """
 
 right_format = """
-[](fg:#15E4B4)\                                                                
+[](fg:#15E4B4)\                                                                                    
 $time\
 $cmd_duration\
 $character\
-[▓▒░](fg:#15E4B4)\                                                                 
+[▓▒░](fg:#15E4B4)\                                                                                     
 """
 
 add_newline = false
@@ -27,7 +27,7 @@ truncation_symbol = "…/"
 truncate_to_repo = false
 read_only = "󰒃"
 style = "fg:#090c0c bg:#15E4B4"
-format = "[ $path ]($style)[$read_only]($read_only_style)"
+format = "[ $path $read_only ]($style)"
 
 [git_branch]
 symbol = ""
