@@ -45,6 +45,7 @@ wtype
 starship
 ufw
 lutris
+libnotify
 btrfs-progs
 vim
 man-db
