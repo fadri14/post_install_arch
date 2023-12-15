@@ -43,6 +43,7 @@ sddm
 wtype
 starship
 ufw
+wget
 lutris
 libnotify
 btrfs-progs
