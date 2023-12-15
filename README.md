@@ -274,3 +274,12 @@ sudo ufw enable
 sudo systemctl enable ufw.service
 ```
 
+## Supprimer ce répôt
+- Se déplacer dans Téléchargements
+- Éffacer le répôt
+
+```
+cd ~/Téléchargements
+rm -fr post_install_arch-main
+```
+
