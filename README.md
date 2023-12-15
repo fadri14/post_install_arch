@@ -42,14 +42,16 @@ xdg-user-dirs-update
 ```
 
 ## Décompresser l'archive
-- Installer zip et unzip
+- Installer zip et unzip ainsi que git
 - Se déplacer dans les téléchargements
+- Cloner le répôt
 - Décompresser l'archive
 - La supprimer
 
 ```
-sudo pacman -S zip unzip
+sudo pacman -S zip unzip git
 cd ~/Téléchargements
+git clone git@github.com:fadri14/post_install_arch.git
 unzip post_install_arch-main.zip
 rm -fr post_install_arch-main.zip
 ```
