@@ -214,7 +214,6 @@ Il faut y copier la ligne ci-dessous
 ```
 
 ## Ajouter trashTmp dans anacron
-(Vérifier le fonctionnement)
 - Créer la poubelle
 - Écrire la config pour trashTmp dans anacrontab
 
