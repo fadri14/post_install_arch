@@ -124,10 +124,11 @@ sudo ./install_package_arch
     - texstudio
     - flashfocus
     - swayfx
-    - btrfs-assistant
     - pacman-contrib
     - downgrade
     - workstyle-git
+    - timeshift
+    - timeshift-autosnap
 
 ```
 yay -S wlsunset
@@ -148,9 +149,6 @@ yay -S flashfocus
 yay -S swayfx
 ```
 ```
-yay -S btrfs-assistant
-```
-```
 yay -S pacman-contrib
 ```
 ```
@@ -159,7 +157,12 @@ yay -S downgrade
 ```
 yay -S workstyle-git
 ```
-
+```
+yay -S timeshift
+```
+```
+yay -S timeshift-autosnap
+```
 ## Installer les fonts
 - Les télécharger.
 - Créer le dossier des fonts s'il n'existe pas.
@@ -237,6 +240,29 @@ Il faut y copier la ligne ci-dessous
 cd ~/scripts
 chmod +x install_time_use
 sudo ./install_time_use
+```
+
+## Configurer timeshift
+- Créer un premier instantané
+
+```
+timeshift --create
+```
+- Modifier les paramètres de grub
+
+```
+sudo systemctl edit --full grub-btrfsd
+```
+avec la ligne suivante
+```
+ExecStart=/usr/bin/grub-btrfsd --syslog --timeshift-auto
+```
+- Mettre à jour la config de grub
+- Activer le service de grub-btrfs
+
+```
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo systemctl enable --now grub-btrfsd
 ```
 
 ## Zsh

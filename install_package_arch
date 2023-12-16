@@ -35,6 +35,7 @@ grim
 swappy
 python-pip
 rsync
+grub-btrfs
 zsh
 util-linux
 python-certifi
