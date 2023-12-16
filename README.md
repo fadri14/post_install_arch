@@ -35,6 +35,7 @@ xdg-user-dirs-update
 ```
 
 ## Décompresser l'archive
+(Il faut télécharger l'archive)
 - Installer zip et unzip ainsi que git
 - Se déplacer dans les téléchargements
 - Décompresser l'archive
