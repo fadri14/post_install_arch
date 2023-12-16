@@ -127,6 +127,7 @@ sudo ./install_package_arch
     - btrfs-assistant
     - pacman-contrib
     - downgrade
+    - workstyle-git
 
 ```
 yay -S wlsunset
@@ -154,6 +155,9 @@ yay -S pacman-contrib
 ```
 ```
 yay -S downgrade
+```
+```
+yay -S workstyle-git
 ```
 
 ## Installer les fonts
