@@ -25,6 +25,13 @@ input * {
 swaymsg reload
 ```
 
+## Activer root
+- Donner un mot de passe à root pour l'activer
+
+```
+sudo passwd root
+```
+
 ## Création des répertoires par défauts
 - Installer le paquet nécessaire
 - Mettre à jour les répertoires utilisateurs
