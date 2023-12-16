@@ -13,6 +13,7 @@ packages="
 neovim
 alacritty
 evince
+nautilus
 ranger
 xournalpp
 fzf
@@ -23,14 +24,17 @@ ripgrep
 light
 rofi
 waybar
+dunst
 mpd
 mpc
 libffi
-python3-devel
 python-cffi
+python-matplotlib
+python-pynvim
 grim
 swappy
 python-pip
+rsync
 zsh
 util-linux
 python-certifi
@@ -38,6 +42,7 @@ cronie
 network-manager-applet
 blueman
 libinput
+ruby
 discord
 sddm
 wtype
@@ -46,14 +51,13 @@ ufw
 wget
 lutris
 libnotify
-btrfs-progs
 vim
+wl-clipboard
 man-db
 man-pages
 texinfo
 reflector
 btrfs-progs
-btrfs-assistant
 ttf-liberation
 noto-fonts-emoji
 adobe-source-code-pro-fonts
@@ -62,7 +66,6 @@ ttf-droid
 ntfs-3g
 p7zip
 xdg-utils
-downgrade
 gstreamer
 gst-plugins-bad
 gst-plugins-base
@@ -113,25 +116,16 @@ gstreamer0.10-plugins
 
 packages_aur="
 wlsunset
-signal-desktop-beta
-librewolf
-melonds
-texstudio-git
+signal-desktop
+librewolf-bin
+texstudio
 flashfocus
-fusuma
 swayfx
 btrfs-assistant
 pacman-contrib
 arc-gtk-theme
 "
 
-packages_flatpak="
-"
-
-packages_pip="
-pynvim
-matplotlib
-"
 
 #swaylock-effects
 #waylock
@@ -148,25 +142,7 @@ check_install()
 
 for package in $packages
 do
-    pacman -S --needed --noconfirm $package 2>&1 > /dev/null
-    check_install $? $package
-done
-
-for package in $packages_aur
-do
-    yay -S --noconfirm $package 2>&1 > /dev/null
-    check_install $? $package
-done
-
-for package in $packages_flatpak
-do
-    flatpak install $package 2>&1 > /dev/null
-    check_install $? $package
-done
-
-for package in $packages_pip
-do
-    pip install $package 2>&1 > /dev/null
+    pacman -S --needed --noconfirm $package &> /dev/null
     check_install $? $package
 done
 

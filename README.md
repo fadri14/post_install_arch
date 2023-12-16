@@ -10,10 +10,10 @@ linux avec sway.
 
 ```
 mkdir -p ~/.config/sway
-echo '
+echo "
 input * {
-    xkb_layout "fr"
-    xkb_variant "bepo"
+    xkb_layout 'fr'
+    xkb_variant 'bepo'
     xkb_numlock enabled
     dwt enabled # suivre le doigt de manière plus précise
     tap enabled # activer la tape rapide
@@ -21,15 +21,8 @@ input * {
     middle_emulation enabled # activer l'émulation du bouton du milieu
     xkb_options altwin:swap_lalt_lwin,caps:swapescape
 }
-' >> ~/.config/sway/config
+" > ~/.config/sway/config
 swaymsg reload
-```
-
-## Mettre le système à jour
-- Mettre à jour le système
-
-```
-sudo pacman -Syu
 ```
 
 ## Création des répertoires par défauts
@@ -37,21 +30,19 @@ sudo pacman -Syu
 - Mettre à jour les répertoires utilisateurs
 
 ```
-sudo pacman -S xdg-user-dirs
+sudo pacman --noconfirm -S xdg-user-dirs
 xdg-user-dirs-update
 ```
 
 ## Décompresser l'archive
 - Installer zip et unzip ainsi que git
 - Se déplacer dans les téléchargements
-- Cloner le répôt
 - Décompresser l'archive
 - La supprimer
 
 ```
-sudo pacman -S zip unzip git
+sudo pacman --noconfirm -S zip unzip git
 cd ~/Téléchargements
-git clone git@github.com:fadri14/post_install_arch.git
 unzip post_install_arch-main.zip
 rm -fr post_install_arch-main.zip
 ```
@@ -61,12 +52,16 @@ rm -fr post_install_arch-main.zip
 - Cloner le répôt
 - Se déplacer dedans
 - Le compiler
+- Sortir du répertoire
+- Supprimer le répôt
 
 ```
-sudo pacman -S base-devel
+sudo pacman --noconfirm -S base-devel
 git clone https://aur.archlinux.org/yay.git
 cd ~/Téléchargements/yay
 makepkg -si
+cd ..
+rm -fr yay
 ```
 
 ## Installer le répôt flathub
@@ -74,24 +69,85 @@ makepkg -si
 - Ajouter le répôt flathub à la liste des répôts de flatpak
 
 ```
-sudo pacman -S flatpak
+sudo pacman --noconfirm -S flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
-## Prérequis pour fusuma
-- S'ajouter au groupe input
+## Rejoindre les groupes
+- Rejoindre le groupe input
+- Rejoindre le groupe video
+- Rejoindre le groupe audio
 
 ```
 sudo gpasswd -a $USER input
 newgrp input
+sudo gpasswd -a $USER video
+newgrp video
+sudo gpasswd -a $USER audio
+newgrp audio
+```
+
+## Installer fusuma
+- Installer fusuma
+
+```
+sudo gem install fusuma
 ```
 
 ## Installer tous les programmes souhaités
 
+### Avec pacman
+
+- Se déplacer dans le dossier de post installation
+- Lancer le script pour installer les paquets
+
 ```
-cd ~/Téléchargements/post_install_arch
-chmod +x install_package_arch
+cd ~/Téléchargements/post_install_arch-main
 sudo ./install_package_arch
+```
+
+### Avec yay
+- Installation des paquets suivants
+    - wlsunset
+    - signal-desktop
+    - librewolf-bin
+    - texstudio
+    - flashfocus
+    - swayfx
+    - btrfs-assistant
+    - pacman-contrib
+    - arc-gtk-theme
+    - downgrade
+
+```
+yay -S wlsunset
+```
+```
+yay -S signal-desktop
+```
+```
+yay -S librewolf-bin
+```
+```
+yay -S texstudio
+```
+```
+yay -S flashfocus
+```
+```
+yay -S swayfx
+```
+```
+yay -S btrfs-assistant
+```
+```
+yay -S pacman-contrib
+```
+```
+yay -S arc-gtk-theme
+```
+```
+yay -S downgrade
 ```
 
 ## Installer les fonts
@@ -110,10 +166,12 @@ rm -fr Hack.zip
 ## Déplacer les fichiers de configuration
 (Vérifier que ce soit le bon thème et la bonne font.
 Peut-être utiliser lxappearance)
+- Supprimer le dossier de config de sway
 - Déplacer les fichiers de configuration dans ~/.config
 - Relancer le config de sway
 
 ```
+rm -fr ~/.config/sway
 mv -f ~/Téléchargements/post_install_arch-main/myconfig/* ~/.config
 swaymsg reload
 ```
@@ -126,24 +184,26 @@ Notez qu'il choisira l'utilisateur actuel ainsi que la session actuelle
 
 ```
 mkdir /etc/sddm.conf.d
-echo "
+sudo echo "
 [Autologin]
 User=$USER
 Session=$XDG_SESSION_DESKTOP" > /etc/sddm.conf.d/autologin.conf
 ```
 
+## C'est ici qu'il faut restaurer les scripts
+
 ## Ajouter batteriecheck dans cron
-(Vérifier que le démon crond est en cours)
+- Activer le démon cronie
 - Écrire la config pour batteriecheck dans crontab
 
 ```
-sudo echo"*/2 * * * * $USER $HOME/script/batteriecheck" >> /etc/crontab
+sudo systemctl enable --now cronie
+crontab -e
 ```
-
-Si la commande ne fonctionne pas, il faut l'écrire manuellement
-avec la commande suivante `crontab -e`
-Copier la ligne suivante:
-`*/2 * * * * /home/adrien/script/batteriecheck`
+Il faut y copier la ligne ci-dessous
+```
+*/2 * * * * /home/adrien/script/batteriecheck
+```
 
 ## Ajouter trashTmp dans anacron
 (Vérifier le fonctionnement)
@@ -152,8 +212,11 @@ Copier la ligne suivante:
 
 ```
 mkdir ~/.Trash
-sudo echo "
-1       5       empty_trash     $HOME/script/trashTmp" >> /etc/anacrontab
+sudo nvim /etc/anacrontab
+```
+Il faut y copier la ligne ci-dessous
+```
+1       5       empty_trash     nice run-parts /home/adrien/script/trashTmp
 ```
 
 ## Installation de mon application time_use
@@ -169,14 +232,8 @@ sudo ./install_time_use
 
 ## Zsh
 
-### Changer de shell
-- Choisir zsh comme shell par défaut
-
-```
-chsh -s /bin/zsh $USER
-```
-
 ### Installation de oh-my-zsh
+(Il faut refuser de changer de shell)
 - Se déplacer dans le dossier personnel
 - Télécharger oh-my-zsh
 - Le déplacer dans le fichier de config
@@ -197,14 +254,26 @@ echo "
 export NUMBERTHEME=7
 source $HOME/.config/mythemes/Dhiver_spatial
 " > ~/.zshenv
-source ~/.zshrc
 ```
 
-### Installer enhancd pour zsh
-- Cloner le répôt dans les plugins customs de zsh
+### Installer les plugins pour zsh
+- Définir l'emplacement d'installation
+- Cloner enhancd
+- Cloner vi mode
+- Cloner autosuggestions
 
 ```
-$ git clone https://github.com/b4b4r07/enhancd.git $ZSH_CUSTOM/plugins/enhancd
+ZSH_CUSTOM="$HOME/.config/oh-my-zsh/custom"
+git clone https://github.com/b4b4r07/enhancd.git $ZSH_CUSTOM/plugins/enhancd
+git clone https://github.com/jeffreytse/zsh-vi-mode $ZSH_CUSTOM/plugins/zsh-vi-mode
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+```
+
+### Changer de shell
+- Choisir zsh comme shell par défaut
+
+```
+chsh -s /bin/zsh $USER
 ```
 
 ## Configuration de pacman
@@ -216,16 +285,13 @@ $ git clone https://github.com/b4b4r07/enhancd.git $ZSH_CUSTOM/plugins/enhancd
 sudo sed -i "34 s/.*/Color/" /etc/pacman.conf
 sudo sed -i "37 s/.*/VerbosePkgLists/" /etc/pacman.conf
 sudo sed -i "38 s/.*/ParallelDownloads = 5\n/" /etc/pacman.conf
-sudo sed -i 's/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j\$(nproc)\"/' /etc/makepkg.conf" "Enabling multithread compilation
+sudo sed -i '49 s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j\$(nproc)\"/' /etc/makepkg.conf
 ```
 
 ## Gérer la cache de pacman
-(Vérifier la ligne où se trouve ExecStart)
-- Changer la commande pour ne garder que 1 version antérieure et supprimer la cache des paquets désinstallés
 - Activer le timer de paccache
 
 ```
-#sudo sed -i "n s/.*/ExecStart=/usr/bin/paccache -rk1 ; /usr/bin/paccache -ruk0/" /etc/systemd/system/paccache.service.d/override.conf
 sudo systemctl enable --now paccache.timer
 ```
 
@@ -234,7 +300,7 @@ sudo systemctl enable --now paccache.timer
 - Activer le timer de reflector pour mettre à jour chaque semaine
 
 ```
-reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
+sudo reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
 sudo systemctl enable --now reflector.service
 ```
 
@@ -257,7 +323,7 @@ sudo systemctl enable --now avahi-daemon cups
 - Mettre à jour la configuration de grub
 
 ```
-sudo echo "GRUB_TIMEOUT_STYLE=hidden" >> /etc/default/grub
+sudo sed -i "17 s/.*/GRUB_TIMEOUT_STYLE=hidden/" /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
@@ -274,6 +340,30 @@ sudo ufw allow https
 sudo ufw allow ssh
 sudo ufw enable
 sudo systemctl enable ufw.service
+```
+
+## Configuration pour github
+
+### Configuration de git
+- Définir l'adresse mail
+- Définir le pseudo
+
+```
+git config --global user.email "lebotdufutur@proton.me"
+git config --global user.name "fadri14"
+```
+
+### Créer la clé ssh pour github
+- Créer une clé ssh
+- Démarrer l'agent ssh
+- Ajouter la nouvelle clé à l'agent ssh
+- Afficher la clé publique
+
+```
+ssh-keygen -t ed25519 -C "lebotdufutur@proton.me"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
 ```
 
 ## Supprimer ce répôt
