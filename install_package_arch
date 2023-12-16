@@ -114,35 +114,18 @@ xvidcore
 gstreamer0.10-plugins
 "
 
-packages_aur="
-wlsunset
-signal-desktop
-librewolf-bin
-texstudio
-flashfocus
-swayfx
-btrfs-assistant
-pacman-contrib
-arc-gtk-theme
-"
-
-
 #swaylock-effects
 #waylock
 
-check_install()
-{
+for package in $packages
+do
+    pacman -S --needed --noconfirm $package &> /dev/null
+
     if [[ "$1" == "0" ]]
     then
         echo -e "\033[32mOK\033[0m $package"
     else
         echo -e "\033[31mERREUR\033[0m $package"
     fi
-}
-
-for package in $packages
-do
-    pacman -S --needed --noconfirm $package &> /dev/null
-    check_install $? $package
 done
 
