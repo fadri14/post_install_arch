@@ -129,6 +129,8 @@ sudo ./install_package_arch
     - workstyle-git
     - timeshift
     - timeshift-autosnap
+    - todoist-appimage
+    - netflix
 
 ```
 yay -S wlsunset
@@ -163,6 +165,13 @@ yay -S timeshift
 ```
 yay -S timeshift-autosnap
 ```
+```
+yay -S todoist-appimage
+```
+```
+yay -S netflix
+```
+
 ## Installer les fonts
 - Les télécharger.
 - Créer le dossier des fonts s'il n'existe pas.
