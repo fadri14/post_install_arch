@@ -97,9 +97,11 @@ newgrp audio
 
 ## Installer fusuma
 - Installer fusuma
+- Déplacer l'exécutable
 
 ```
 sudo gem install fusuma
+mv .local/share/gem/ruby/3.0.0/bin/fusuma /usr/local/bin
 ```
 
 ## Installer tous les programmes souhaités
@@ -124,7 +126,6 @@ sudo ./install_package_arch
     - swayfx
     - btrfs-assistant
     - pacman-contrib
-    - arc-gtk-theme
     - downgrade
 
 ```
@@ -150,9 +151,6 @@ yay -S btrfs-assistant
 ```
 ```
 yay -S pacman-contrib
-```
-```
-yay -S arc-gtk-theme
 ```
 ```
 yay -S downgrade
