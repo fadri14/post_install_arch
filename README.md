@@ -257,23 +257,13 @@ sudo ./install_time_use
 
 ## Configurer timeshift
 - Créer un premier instantané
-
-```
-timeshift --create
-```
 - Modifier les paramètres de grub
-
-```
-sudo systemctl edit --full grub-btrfsd
-```
-avec la ligne suivante
-```
-ExecStart=/usr/bin/grub-btrfsd --syslog --timeshift-auto
-```
 - Mettre à jour la config de grub
 - Activer le service de grub-btrfs
 
 ```
+timeshift --create
+sudo sed -i 's|ExecStart=/usr/bin/grub-btrfsd --syslog /.snapshots|ExecStart=/usr/bin/grub-btrfsd --syslog --timeshift-auto|' /usr/lib/systemd/system/grub-btrfsd.service
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 sudo systemctl enable --now grub-btrfsd
 ```
