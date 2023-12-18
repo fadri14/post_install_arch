@@ -9,28 +9,58 @@ declare -a folders=(
     "Vidéos"
 )
 
-read -p "Êtes-vous sûr de vouloir faire le backup dans $(pwd) [y|N] " res
+read -p "Voulez-vous faire un backup ou une installation $(pwd) [b|i] " res
 
-if [[ "$res" = "y" ]]
+if [[ "$res" = "b" ]]
 then
-    for folder in "${folders[@]}"
-    do
-        path="${HOME}/${folder}"
+    read -p "Êtes-vous sûr de vouloir faire le backup dans $(pwd) [y|N] " res
 
-        if [[ ! -e "$path" ]]
-        then
-            echo "Le chemin "$path" n'existe pas!!!"
-            exit 1
-        fi
+    if [[ "$res" = "y" ]]
+    then
+        for folder in "${folders[@]}"
+        do
+            path="${HOME}/${folder}"
 
-        {
-            sudo rsync -a --delete --exclude='.cache' "${path}" .
-            echo "Le dossier suivant a été mis à jour ${path}"
-        } &
-    done
+            if [[ ! -e "$path" ]]
+            then
+                echo "Le chemin "$path" n'existe pas!!!"
+                exit 1
+            fi
 
-    wait
+            {
+                sudo rsync -a --delete --exclude='.cache' "${path}" .
+                echo "Le dossier suivant a été mis à jour ${path}"
+            } &
+        done
 
-    notify-send "Le backup est terminé!"
+        wait
+
+        notify-send "Le backup est terminé!"
+    fi
+elif [[ "$res" = "i" ]]
+then
+    read -p "Êtes-vous sûr de vouloir faire l'installation avec ce dossier
+    comme départ $(pwd) [y|N] " res
+
+    if [[ "$res" = "y" ]]
+    then
+        for folder in "${folders[@]}"
+        do
+            if [[ ! -e "$folder" ]]
+            then
+                echo "Le chemin "$folder" n'existe pas!!!"
+                exit 1
+            fi
+
+            {
+                sudo rsync -a --delete --exclude='.cache' "${path}" $HOME
+                echo "Le dossier suivant a été installé ${path}"
+            } &
+        done
+
+        wait
+
+        notify-send "L'installation est terminée!"
+    fi
 fi
 

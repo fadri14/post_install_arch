@@ -26,7 +26,6 @@ echo "export NUMBERTHEME=$id" > $HOME/.zshenv
 echo "source $HOME/.config/mythemes/$(ls $HOME/.config/mythemes/ | sed -n $id'p')" >> $HOME/.zshenv
 
 source $HOME/.zshrc
-source $HOME/.zshenv
 
 # neovim
 if [[ $theme_prev = "white" && $THEMEFOND = "black" ]]

@@ -3,7 +3,7 @@
 idfocus=$(swaymsg -t get_tree | jq '.. | select(.type?) | select(.focused==true).pid')
 eval 'swaymsg [pid="$idfocus"] move scratchpad'
 
-json_file="$HOME/script/output.txt"
+json_file="$HOME/.config/script/output.txt"
 
 swaymsg -t get_tree > $json_file
 
