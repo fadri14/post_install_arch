@@ -14,6 +14,7 @@ neovim
 alacritty
 evince
 nautilus
+gnome-calculator
 ranger
 xournalpp
 fzf
@@ -51,6 +52,7 @@ starship
 ufw
 wget
 lutris
+libreoffice-still
 libnotify
 vim
 wl-clipboard
