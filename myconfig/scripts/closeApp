@@ -1,0 +1,48 @@
+#!/bin/bash
+
+idfocus=$(swaymsg -t get_tree | jq '.. | select(.type?) | select(.focused==true).pid')
+eval 'swaymsg [pid="$idfocus"] move scratchpad'
+
+json_file="$HOME/script/output.txt"
+
+swaymsg -t get_tree > $json_file
+
+flag=$(( 0 ))
+
+visit()
+{
+    commandDepth=".pid // empty"
+
+    for ((i=1; i<=$1; i++))
+    do
+        commandDepth=".nodes[]${commandDepth}"
+    done
+
+    pids=($(jq -r "$commandDepth" "$json_file"))
+
+    for pid in "${pids[@]}"
+    do
+        flag=$(( $flag + 1 ))
+    done
+
+    if [[ "$flag" = "true" ]]
+    then
+        visit $(( $1 + 1 ))
+    fi
+}
+
+visit 3
+
+rm -f $json_file
+
+if [[ "$flag" -lt 2 ]]
+then
+    shutdown now
+else
+    response=$(zenity --question --text="Voulez-vous continuer ?" --title="Confirmation")
+
+    if [ "$?" = 0 ]; then
+        shutdown now
+    fi
+fi
+

@@ -1,0 +1,112 @@
+#!/bin/bash
+
+if [[ $(whoami) != "root" ]]
+then
+    echo "Il faut être root"
+    exit 1
+fi
+
+packages="
+neovim
+alacritty
+zathura
+zathura-plugins-all
+ranger
+xournalpp
+fzf
+acpi
+feh
+glances
+gitui
+git
+ripgrep
+sway
+light
+rofi
+waybar
+mpd
+mpc
+libffi-devel
+python3-devel
+python3-cffi
+wlsunset
+grimshot
+swappy
+flatpak
+python-pip
+zsh
+util-linux-user
+python-certifi
+cronie
+network-manager-applet
+blueman
+libinput
+ruby
+"
+
+#swaylock-effects
+#waylock
+
+packages_flatpak="
+org.signal.Signal
+io.gitlab.librewolf-community
+net.kuribo64.melonDS
+org.texstudio.TeXstudio
+"
+
+packages_pip="
+flashfocus
+pynvim
+"
+
+for package in $packages
+do
+    dnf install -y $package 2>&1 > /dev/null
+
+    if [[ $? = "0" ]]
+    then 
+        echo "Le paquet $package a été installé"
+    else
+        echo "Une erreur s'est produite lors de l'installation de $package"
+    fi
+done
+
+sudo gpasswd -a $USER input
+newgrp input
+
+gem install fusuma
+
+if [[ $? = "0" ]]
+then 
+    echo "Le paquet fusuma a été installé"
+else
+    echo "Une erreur s'est produite lors de l'installation de fusuma"
+fi
+
+
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+for package in $packages_flatpak
+do
+    flatpak install $package
+
+    if [[ $? = "0" ]]
+    then 
+        echo "Le paquet $package a été installé"
+    else
+        echo "Une erreur s'est produite lors de l'installation de $package"
+    fi
+done
+
+for package in $packages_pip
+do
+    pip install $package
+
+    if [[ $? = "0" ]]
+    then 
+        echo "Le paquet $package a été installé"
+    else
+        echo "Une erreur s'est produite lors de l'installation de $package"
+    fi
+done
+

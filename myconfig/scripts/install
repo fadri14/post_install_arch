@@ -1,0 +1,34 @@
+#!/bin/bash
+
+declare -a folders=("Bureau" "Documents" "Téléchargements" "Musique" "Images" "Vidéos")
+
+if [[ "$1" = "c" ]]
+then
+    sudo mount -t cifs //192.168.1.39/famille/Adrien /mnt
+fi
+
+for folder in "${folders[@]}"
+do
+    path="/mnt/${folder}"
+
+    if [[ ! -e "$path" ]]
+    then
+        echo "Le chemin "$path" n'existe pas!!!"
+        exit 1
+    fi
+
+    {
+        sudo rsync -a --delete --exclude='.cache' "${path}" "/home/adrien" &> /dev/null
+        echo "Le dossier suivant a été mis à jour ${path}"
+    } &
+done
+
+wait
+
+if [[ "$1" = "c" ]]
+then
+    sudo umount /mnt
+fi
+
+notify-send "L'installation est terminée!"
+

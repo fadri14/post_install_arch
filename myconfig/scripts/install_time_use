@@ -1,0 +1,64 @@
+#!/bin/bash
+
+#Pour l'exécuter:
+#chmod +x install_time_use
+#sudo ./install_time_use
+#
+#pour faire un raccourci clavier
+#python /usr/local/bin/graphe_time_use.p
+
+if [[ $(whoami) != "root" ]]
+then
+    echo "Il faut être root"
+    exit 1
+fi
+
+if [[ ! -d "/usr/local/bin/" ]]
+then
+    echo "Le dossier /usr/local/bin n'existe pas !"
+    exit 1
+fi
+
+sed -i "3 s|.*|file_save='$HOME/.time_use.txt'|" time_use
+
+if [[ "$(pip --version)" = "0" ]]
+then
+    pip install matplotlib
+else
+    #sudo dnf install python3-pip
+    echo "Il faut installer matplotlib avec pip mais la commande pip n'est pas installée"
+fi
+
+chmod +x time_use
+cp -f time_use /usr/local/bin
+cp -f graphe_time_use.py /usr/local/bin
+
+echo "[Unit]
+Description=Count time use
+
+[Service]
+RemainAfterExit=true
+ExecStop=time_use c
+
+[Install]
+WantedBy=multi-user.target" > /etc/systemd/system/time_use.service
+
+echo "[Unit]
+Description=Setup time use
+
+[Service]
+ExecStart=time_use s
+
+[Install]
+WantedBy=default.target" > /etc/systemd/system/time_use_setup.service
+
+chown root:root /etc/systemd/system/time_use.service
+chown root:root /etc/systemd/system/time_use_setup.service
+
+chcon -v --type=systemd_unit_file_t /etc/systemd/system/time_use.service
+chcon -v --type=systemd_unit_file_t /etc/systemd/system/time_use_setup.service
+
+systemctl daemon-reload
+systemctl enable time_use.service
+systemctl enable time_use_setup.service
+

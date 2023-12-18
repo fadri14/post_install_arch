@@ -1,0 +1,227 @@
+#!/bin/bash
+
+file_save='/home/adrien/.time_use.txt'
+
+initialize()
+{
+    echo "\
+lun. 0
+mar. 0
+mer. 0
+jeu. 0
+ven. 0
+sam. 0
+dim. 0
+1970-01-01 00:00:00
+0" > $file_save
+}
+
+if [[ ! -f "$file_save" ]]
+then
+    initialize
+fi
+
+days=("lun." "mar." "mer." "jeu." "ven." "sam." "dim.")
+value_uptime="$(uptime -p)" #Durée depuis lequel le pc est allumé
+values=$(echo $value_uptime | grep -oE '[0-9]+' | tr '\n' ' ' && echo) #Récupère les valeurs du uptime
+day=$(date '+%a') #Stock le jour de la semaine comme dans la liste days
+date_now=$(date +"%F %X") #Stock la date actuelle sous la forme YYYY-MM-JJ hh:mm:ss
+date_old=$(sed -n '8p' $file_save) #Récupère la dernière date de sauvegarde
+time_already_count=$(sed -n '9p' $file_save) #Récupère le temps qu'on a déjà sauvegarder depuis que le pc est allumé
+n_semaine=$(date +"%u") #Stock le numéro du jour de la semaine
+index=$((1))
+hours=$((0))
+minutes=$((0))
+secondes=$((0))
+print=""
+
+sum_today()
+{
+    #Prendre le nombre d'heures s'il y est
+    if [[ $(echo "$value_uptime" | grep "hour") ]]
+    then
+        hours=$(($(echo $values | cut -d " " -f $index) * 3600))
+        index=$(($index + 1))
+    fi
+
+    #Prendre le nombre de minutes s'il y est
+    if [[ $(echo "$value_uptime" | grep "minute") ]]
+    then
+        minutes=$(($(echo $values | cut -d " " -f $index) * 60))
+        index=$(($index + 1))
+    fi
+
+    #Calculer le nombre de secondes depuis que le pc est allumé
+    secondes=$(($hours + $minutes - $time_already_count))
+
+    #Récupère le nombre déjà accumulé aujourd'hui
+    old_value=$(eval sed -n '${n_semaine}p' $file_save | cut -d " " -f 2)
+
+    new_value=$(($secondes + $old_value))
+
+    return $new_value
+}
+
+diff_day()
+{
+    timestamp_now=$(date -d "$date_now" +"%s")
+    timestamp_old=$(date -d "$date_old" +"%s")
+
+    diff=$(( (timestamp_now - timestamp_old) / 86400 ))
+
+    return $diff
+}
+
+reset_day()
+{
+    #Remet tout à 0 si la dernière sauvegarde date d'il y a plus de 7 jours
+    if [[ "$1" -ge 7 ]]
+    then
+        echo "\
+lun. 0
+mar. 0
+mer. 0
+jeu. 0
+ven. 0
+sam. 0
+dim. 0" > $file_save
+    
+        echo "$date_now" >> $file_save
+    else
+        iter=$(($1))
+        index=$((n_semaine))
+        index=$(($index - 1))
+        
+        if [[ "$index" = 0 ]]
+        then
+            index=$((7))
+        fi
+
+        #Remet à 0 les jours précédents en fonction de la différence de jour
+        while [[ "$iter" != 0 ]]
+        do
+            sed -i "$index s/.*/${days[$index]} 0/" "$file_save"
+
+            iter=$(($iter - 1))
+            index=$(($index - 1))
+
+            if [[ "$index" = 0 ]]
+            then
+                index=$((7))
+            fi
+        done
+
+        sed -i "8 s/.*/$date_now/" "$file_save"
+    fi
+}
+
+count()
+{
+    #Vérifie si on a déjà fait une sauvegarde aujourd'hui
+    #Si non, on remet à 0 aujourd'hui
+    if [[ "$(echo $date_now | cut -d ' ' -f 1)" != "$(echo $date_old | cut -d ' ' -f 1)" ]]
+    then
+            sed -i "$n_semaine s/.*/${days[$n_semaine]} 0/" "$file_save"
+    fi
+
+    sum_today
+
+    reset_day $(diff_day)
+
+    #Sauvegarder la valeur finale
+    sed -i "$n_semaine s/.*/$day $new_value/" "$file_save"
+
+    #Augmenter la quantité déjà comptée
+    sed -i "9 s/.*/$(($secondes + $time_already_count))/" "$file_save"
+}
+
+convert_true_time()
+{
+    secondes=$(($1))
+    hours=$((($secondes / 3600)))
+    secondes=$(($secondes % 3600))
+    minutes=$((($secondes / 60)))
+
+    if [[ "$hours" = "0" ]]
+    then
+        print="$minutes min"
+    else
+        print="$hours h $minutes min"
+    fi
+}
+
+display_table()
+{
+    count
+
+    iter=$((0))
+    index=$((n_semaine))
+    sum_all=$((0))
+    data=$((0))
+
+    while [[ "$iter" != "7" ]]
+    do
+        value=$(eval sed -n '${index}p' $file_save)
+        date=$(echo $value | cut -d ' ' -f 1)
+        data=$(echo $value | cut -d ' ' -f 2)
+
+        convert_true_time $data
+
+        echo "$date : $print"
+
+        sum_all=$((sum_all + data))
+
+        index=$((index -1))
+        if [[ "$index" = "0" ]]
+        then
+            index=$((7))
+        fi
+
+        iter=$(($iter + 1))
+    done
+
+    data=$(($sum_all / 7))
+
+    echo ""
+    convert_true_time $sum_all
+    echo "tôt : $print"
+    convert_true_time $data
+    echo "moy : $print"
+}
+
+reset_counter_session()
+{
+    sed -i "9 s/.*/0/" "$file_save"
+}
+
+list_options()
+{
+    echo  "Paramètres:
+    i : réinitialise les données.
+    c : sauvegarde le temps actuel depuis que le pc est allumé
+    t : affiche le temps passé sur l'ordinateur durant les 7 derniers jours ainsi que des statistiques (cette commande commence par faire une sauvegarde)
+    s : remets à zéro le compteur de la session actuelle"
+}
+
+case "$1" in
+
+    "i")
+        initialize
+        ;;
+
+    "c")
+        count
+        ;;
+
+    "t")
+        display_table
+        ;;
+
+    "s")
+        reset_counter_session
+        ;;
+
+    *)
+        list_options
+        ;;
+esac

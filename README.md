@@ -220,8 +220,6 @@ User=$USER
 Session=$XDG_SESSION_DESKTOP" > /etc/sddm.conf.d/autologin.conf
 ```
 
-## C'est ici qu'il faut restaurer les scripts
-
 ## Ajouter batteriecheck dans cron
 - Activer le démon cronie
 - Écrire la config pour batteriecheck dans crontab
@@ -232,7 +230,7 @@ crontab -e
 ```
 Il faut y copier la ligne ci-dessous
 ```
-*/2 * * * * /home/adrien/script/batteriecheck
+*/2 * * * * /home/adrien/.config/myscripts/batteriecheck
 ```
 
 ## Ajouter trashTmp dans anacron
@@ -245,7 +243,7 @@ sudo nvim /etc/anacrontab
 ```
 Il faut y copier la ligne ci-dessous
 ```
-1       5       empty_trash     nice run-parts /home/adrien/script/trashTmp
+1       5       empty_trash     nice run-parts /home/adrien/.config/myscripts/trashTmp
 ```
 
 ## Installation de mon application time_use
@@ -254,7 +252,7 @@ Il faut y copier la ligne ci-dessous
 - Lancer l'installation de time_use
 
 ```
-cd ~/scripts
+cd ~/.config/myscripts
 chmod +x install_time_use
 sudo ./install_time_use
 ```

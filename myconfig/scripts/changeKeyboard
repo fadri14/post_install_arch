@@ -1,0 +1,40 @@
+#!/bin/bash
+
+pathConfig="$HOME/.config/sway/config.d"
+pathNeo="$HOME/.config/nvim/lua/adrien-config/keymaps.lua"
+state="$HOME/script/.keyboardState.txt"
+value=$(cat $state)
+
+if [[ "$value" = "azerty" ]]
+then
+    # sway
+    mv "$pathConfig/01-defines-bp" "$pathConfig/01-defines-bp.conf"
+    mv "$pathConfig/01-defines-fr.conf" "$pathConfig/01-defines-fr"
+    mv "$pathConfig/20-binding-general-bp" "$pathConfig/20-binding-general-bp.conf"
+    mv "$pathConfig/20-binding-general-fr.conf" "$pathConfig/20-binding-general-fr"
+
+    sed -i '8 s/# //' "$pathConfig/10-input.conf"
+
+    # neovim
+    sed -i '8,46 s/^-- //' $pathNeo
+
+    echo "bepo" > $state
+elif [[ "$value" = "bepo" ]]
+then
+    # sway
+    mv "$pathConfig/01-defines-bp.conf" "$pathConfig/01-defines-bp"
+    mv "$pathConfig/01-defines-fr" "$pathConfig/01-defines-fr.conf"
+    mv "$pathConfig/20-binding-general-bp.conf" "$pathConfig/20-binding-general-bp"
+    mv "$pathConfig/20-binding-general-fr" "$pathConfig/20-binding-general-fr.conf"
+
+    sed -i '8 s/^/# /' "$pathConfig/10-input.conf"
+
+    # neovim
+    sed -i '8,16 s/^/-- /' $pathNeo
+
+    echo "azerty" > $state
+fi
+
+swaymsg reload
+source $HOME/.config/nvim/init.lua
+

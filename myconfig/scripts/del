@@ -1,0 +1,13 @@
+#!/bin/bash
+
+while [[ -e "$1" ]]
+do
+    if [[ -e "$HOME/.Trash/$1" ]]
+    then
+        rm -fr "$HOME/.Trash/$1"
+    fi
+    touch "$1"
+    mv -f "$1" $HOME/.Trash/
+
+    shift
+done

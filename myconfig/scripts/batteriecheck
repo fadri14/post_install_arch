@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#crontab -e
+#*/2 * * * * /home/adrien/.config/myscripts/batteriecheck
+
+if [[ "$(acpi -a | cut -f 3 -d ' ')" = "off-line" ]]
+then
+    level=$(acpi -b | cut -d ',' -f 2 | cut -d ' ' -f 2 | tr -d '%')
+
+    if [[ "$level" -le 20 ]] && [[ "$BATTERIE_NOTIF_STATE" = "" ]]
+    then
+        notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur"
+        BATTERIE_NOTIF_STATE=1
+    elif [[ "$level" -le 10 ]] && [[ "$BATTERIE_NOTIF_STATE" = "1" ]]
+    then
+        notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur !!!!!"
+        BATTERIE_NOTIF_STATE=2
+    fi
+else
+    BATTERIE_NOTIF_STATE=""
+fi
+

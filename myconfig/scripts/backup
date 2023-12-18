@@ -1,0 +1,36 @@
+#!/bin/bash
+
+declare -a folders=(
+    "Bureau"
+    "Documents"
+    "Téléchargements"
+    "Musique"
+    "Images"
+    "Vidéos"
+)
+
+read -p "Êtes-vous sûr de vouloir faire le backup dans $(pwd) [y|N] " res
+
+if [[ "$res" = "y" ]]
+then
+    for folder in "${folders[@]}"
+    do
+        path="${HOME}/${folder}"
+
+        if [[ ! -e "$path" ]]
+        then
+            echo "Le chemin "$path" n'existe pas!!!"
+            exit 1
+        fi
+
+        {
+            sudo rsync -a --delete --exclude='.cache' "${path}" .
+            echo "Le dossier suivant a été mis à jour ${path}"
+        } &
+    done
+
+    wait
+
+    notify-send "Le backup est terminé!"
+fi
+

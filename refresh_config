@@ -17,6 +17,7 @@ declare -a configs=(
     "starship.toml"
     "myzshrc"
     "mythemes"
+    "scripts"
     "mimeapps.list"
 )
 

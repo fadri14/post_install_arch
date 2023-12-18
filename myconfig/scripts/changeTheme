@@ -1,0 +1,93 @@
+#!/bin/zsh
+
+if [[ $1 = "+" ]]
+then
+    id=$(( $NUMBERTHEME + 1 ))
+
+    if [[ $id -gt $(ls $HOME/.config/mythemes/ | wc -l) ]]
+    then
+        id=$((1))
+    fi
+elif [[ $1 = "-" ]]
+then
+    id=$(( $NUMBERTHEME - 1 ))
+
+    if [[ $id -lt 1 ]]
+    then
+        id=$(ls $HOME/.config/mythemes/ | wc -l)
+    fi
+else
+    id=$(($NUMBERTHEME))
+fi
+
+theme_prev=$THEMEFOND
+
+echo "export NUMBERTHEME=$id" > $HOME/.zshenv
+echo "source $HOME/.config/mythemes/$(ls $HOME/.config/mythemes/ | sed -n $id'p')" >> $HOME/.zshenv
+
+source $HOME/.zshrc
+source $HOME/.zshenv
+
+# neovim
+if [[ $theme_prev = "white" && $THEMEFOND = "black" ]]
+then
+    sed -i '51 s/^/-- /' "$HOME/.config/nvim/after/plugin/catppuccin.lua"
+    sed -i '46 s/^-- //' "$HOME/.config/nvim/after/plugin/onedark.lua"
+elif [[ $theme_prev = "black" && $THEMEFOND = "white" ]]
+then
+    sed -i '51 s/^-- //' "$HOME/.config/nvim/after/plugin/catppuccin.lua"
+    sed -i '46 s/^/-- /' "$HOME/.config/nvim/after/plugin/onedark.lua"
+fi
+
+# alacritty
+sed -i "2 s/.*/  - ~\/.config\/alacritty\/$THEMETERM.yaml/" "$HOME/.config/alacritty/alacritty.yml"
+sed -i "5 s/.*/  opacity: $OPACITETERM/" "$HOME/.config/alacritty/alacritty.yml"
+
+# sway
+sed -i "5 s/.*/        gsettings set $gnome-schema gtk-theme '$THEMEGTK'/" "$HOME/.config/sway/config.d/10-theme.conf"
+sed -i "15 s/.*/output * bg \/home\/adrien\/.config\/sway\/Images\/$WALLPAPER fill/" "$HOME/.config/sway/config.d/10-theme.conf"
+
+# waybar
+sed -i "25 s/.*/    color: $THEMEWRITE;/" "$HOME/.config/waybar/style.css"
+sed -i "36 s/.*/    color: $THEMEWRITE;/" "$HOME/.config/waybar/style.css"
+sed -i "43 s/.*/    color: $THEMEWRITE;/" "$HOME/.config/waybar/style.css"
+sed -i "47 s/.*/    color: $BUTTONFOCUS;/" "$HOME/.config/waybar/style.css"
+sed -i "53 s/.*/    color: $BUTTONHOVER;/" "$HOME/.config/waybar/style.css"
+sed -i "74 s/.*/    color: $THEMEWRITE;/" "$HOME/.config/waybar/style.css"
+sed -i "80 s/.*/    color: $THEMEWRITE;/" "$HOME/.config/waybar/style.css"
+sed -i "26 s/.*/    background-image: linear-gradient(144deg, $COLOR1, $COLOR3);/" "$HOME/.config/waybar/style.css"
+sed -i "37 s/.*/    background-image: linear-gradient(144deg, $COLOR1, $COLOR3);/" "$HOME/.config/waybar/style.css"
+sed -i "75 s/.*/    background-image: linear-gradient(144deg, $COLOR1, $COLOR3);/" "$HOME/.config/waybar/style.css"
+sed -i "80 s/.*/    color: $COLORMODE;/" "$HOME/.config/waybar/style.css"
+
+# rofi
+sed -i "96 s/.*/    bg0:    $BACKGROUND0;/" "$HOME/.config/rofi/theme.rasi"
+sed -i "97 s/.*/    bg1:    $BACKGROUND1;/" "$HOME/.config/rofi/theme.rasi"
+sed -i "99 s/.*/    bg3:    $BACKGROUND3;/" "$HOME/.config/rofi/theme.rasi"
+sed -i "100 s/.*/    fg0:    $FOREGROUND0;/" "$HOME/.config/rofi/theme.rasi"
+
+# starship
+sed -i "2 s/fg:[^ ]*/fg:$COLOR1)\\\ /" "$HOME/.config/starship.toml"
+sed -i "3 s/fg:[^ ]*/fg:$THEMEWRITE/" "$HOME/.config/starship.toml"
+sed -i "3 s/bg:[^ ]*/bg:$COLOR1)\\\ /" "$HOME/.config/starship.toml"
+sed -i "4 s/fg:[^ ]*/fg:$COLOR1/" "$HOME/.config/starship.toml"
+sed -i "4 s/bg:[^ ]*/bg:$COLOR2)\\\ /" "$HOME/.config/starship.toml"
+sed -i "6 s/fg:[^ ]*/fg:$COLOR2/" "$HOME/.config/starship.toml"
+sed -i "6 s/bg:[^ ]*/bg:$COLOR3)\\\ /" "$HOME/.config/starship.toml"
+sed -i "10 s/fg:[^ ]*/fg:$COLOR3/" "$HOME/.config/starship.toml"
+sed -i "10 s/bg:[^ ]*/bg:$COLOR3)\\\ /" "$HOME/.config/starship.toml"
+sed -i "11 s/fg:[^ ]*/fg:$COLOR3)\\\ /" "$HOME/.config/starship.toml"
+sed -i "15 s/fg:[^ ]*/fg:$COLOR2)\\\ /" "$HOME/.config/starship.toml"
+sed -i "19 s/fg:[^ ]*/fg:$COLOR2)\\\ /" "$HOME/.config/starship.toml"
+sed -i "29 s/.*/style = \"fg:$THEMEWRITE bg:$COLOR2\"/" "$HOME/.config/starship.toml"
+sed -i "34 s/.*/style = \"fg:$THEMEWRITE bg:$COLOR3\"/" "$HOME/.config/starship.toml"
+sed -i "39 s/.*/style = \"fg:$THEMEWRITE bg:$COLOR3\"/" "$HOME/.config/starship.toml"
+sed -i "45 s/.*/style = \"fg:$THEMEWRITE bg:$COLOR2\"/" "$HOME/.config/starship.toml"
+sed -i "50 s/fg:[^ ]*/fg:$THEMEWRITE/" "$HOME/.config/starship.toml"
+sed -i "50 s/bg:[^ ]*/bg:$COLOR2)'/" "$HOME/.config/starship.toml"
+sed -i "51 s/fg:[^ ]*/fg:$THEMEWRITE/" "$HOME/.config/starship.toml"
+sed -i "51 s/bg:[^ ]*/bg:$COLOR2)'/" "$HOME/.config/starship.toml"
+sed -i "54 s/.*/style = \"fg:$THEMEWRITE bg:$COLOR2\"/" "$HOME/.config/starship.toml"
+
+swaymsg reload
+

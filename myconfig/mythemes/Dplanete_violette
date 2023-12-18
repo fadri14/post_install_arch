@@ -5,7 +5,7 @@ THEMEGTK=Adwaita-dark
 
 COLOR1=#2181d5
 COLOR3=#9b0bab
-COLOR2=$(python $HOME/script/hexa_middle.py $(echo $COLOR1 | sed 's/^.//') $(echo $COLOR3 | sed 's/^.//'))
+COLOR2=$(python $HOME/.config/myscripts/hexa_middle.py $(echo $COLOR1 | sed 's/^.//') $(echo $COLOR3 | sed 's/^.//'))
 
 #waybar
 BUTTONFOCUS=orange

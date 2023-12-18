@@ -40,7 +40,7 @@ eval "$(starship init zsh)"
 # export ARCHFLAGS="-arch x86_64"
 
 export EDITOR=/usr/bin/nvim
-export PATH="$HOME/script/:$PATH"
+export PATH="$HOME/.config/myscripts/:$PATH"
 export PATH="$PATH:$HOME/Applications/"
 export PATH="$PATH:$HOME/.cargo/bin/"
 export PATH="$PATH:/opt/go/bin/"

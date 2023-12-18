@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [[ "$1" == "r" ]]
+then
+    if [[ "$2" == "" ]]
+    then
+        sudo mount -t cifs //192.168.1.39/famille/Adrien /mnt
+    else
+        sudo mount -t cifs //"$2"/famille/Adrien /mnt
+    fi
+
+    cd /mnt
+
+    echo "Le nas a été monté"
+elif [[ "$1" == "s" ]]
+then
+    sudo umount /mnt
+    echo "Le nas a été démonté"
+fi

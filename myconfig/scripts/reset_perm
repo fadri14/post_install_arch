@@ -1,0 +1,24 @@
+#!/bin/bash
+
+declare -a folders=("Bureau" "Documents" "Téléchargements" "Musique" "Images" "Vidéos")
+
+for folder in "${folders[@]}"
+do
+	sudo chown -R adrien:adrien /home/adrien/$folder
+
+	for file in $1/*
+	do
+		echo $file
+		then
+			sudo chmod 755 $file
+		elif [[ -f $file ]]
+		then
+			sudo chmod 644 $file
+		elif [[ -d $file ]]
+		then
+			sudo chmod 755 $file
+			path $file
+		fi
+	done
+done
+
