@@ -131,6 +131,7 @@ sudo ./install_package_arch
     - timeshift-autosnap
     - todoist-appimage
     - netflix
+    - grimshot
 
 ```
 yay -S wlsunset
@@ -170,6 +171,9 @@ yay -S todoist-appimage
 ```
 ```
 yay -S netflix
+```
+```
+yay -S grimshot
 ```
 
 ## Installer les fonts
