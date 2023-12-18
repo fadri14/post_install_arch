@@ -25,10 +25,12 @@ input * {
 swaymsg reload
 ```
 
-## Activer root
-- Donner un mot de passe à root pour l'activer
+## Changer les mot de passes
+- Changer le mot de passe utilisateur
+- Donner un mot de passe à root
 
 ```
+passwd
 sudo passwd root
 ```
 
