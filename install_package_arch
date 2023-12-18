@@ -28,6 +28,7 @@ waybar
 dunst
 mpd
 mpc
+fastfetch
 libffi
 python-cffi
 python-matplotlib
