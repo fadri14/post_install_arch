@@ -181,12 +181,16 @@ yay -S grimshot
 - Créer le dossier des fonts s'il n'existe pas.
 - Dézipper les fonts dans le dossier que l'on vient de créer.
 - Éffacer les zips téléchargés.
+- Supprimer la license des fonts
+- Supprimer le readme des fonts
 
 ```
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.zip
 mkdir -p ~/.local/share/fonts
 unzip Hack.zip -d ~/.local/share/fonts
 rm -fr Hack.zip
+rm ~/.local/share/fonts/LICENSE.md
+rm ~/.local/share/fonts/README.md
 ```
 
 ## Déplacer les fichiers de configuration

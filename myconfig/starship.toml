@@ -43,7 +43,7 @@ format = '[($all_status$ahead_behind )]($style)'
 disabled = false
 time_format = "%R"
 style = "fg:#090c0c bg:#E77752"
-format = '[$time ]($style)'
+format = '[$time ]($style)'
 
 [character]
 format = "$symbol"

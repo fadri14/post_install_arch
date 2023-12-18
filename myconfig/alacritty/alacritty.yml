@@ -20,5 +20,4 @@ cursor:
 font:
   size: 14
   family:
-    - .local/share/fonts/'HackNerdFontMono-Regular.ttf'
-
+    - /home/adrien/.local/share/fonts/ttf/'HackNerdFontMono-Bold.ttf'

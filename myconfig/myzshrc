@@ -40,7 +40,7 @@ eval "$(starship init zsh)"
 # export ARCHFLAGS="-arch x86_64"
 
 export EDITOR=/usr/bin/nvim
-export PATH="$PATH:$HOME/script/"
+export PATH="$HOME/script/:$PATH"
 export PATH="$PATH:$HOME/Applications/"
 export PATH="$PATH:$HOME/.cargo/bin/"
 export PATH="$PATH:/opt/go/bin/"
@@ -71,6 +71,7 @@ alias ra='ranger'
 alias gt='github'
 alias ds='ddg'
 alias gp='git_push "$(pwd)"'
+alias nas='source nas_connection'
 
 function sh() { history | grep "$1"; }
 
