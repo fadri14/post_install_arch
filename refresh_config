@@ -19,6 +19,7 @@ declare -a configs=(
     "mythemes"
     "myscripts"
     "mimeapps.list"
+    "xournalpp"
 )
 
 path2="$HOME/Documents/post_install_arch/myconfig"

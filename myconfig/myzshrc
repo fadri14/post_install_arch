@@ -75,6 +75,7 @@ alias ds='ddg'
 alias gp='git_push "$(pwd)"'
 alias nas='source nas_connection'
 alias signoff='ARCHWEB_PASSWORD="$(pass arch)" signoff'
+alias gitco='eval "$(ssh-agent -s)" ; ssh-add ~/.ssh/github'
 
 function sh() { history | grep "$1"; }
 
