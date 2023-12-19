@@ -275,3 +275,9 @@ Dec 18 17:55 : player: played "DADJU Amour Toxic Audio Officiel.mp3"
 Dec 18 18:00 : player: played "DADJU Compliqu Clip Officiel.mp3"
 Dec 18 18:04 : player: played "DADJU Jaloux Clip Officiel.mp3"
 Dec 18 18:06 : player: played "Dadju Ma vie Paroles.mp3"
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
