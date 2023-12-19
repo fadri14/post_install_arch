@@ -7,6 +7,7 @@ declare -a folders=(
     "Musique"
     "Images"
     "Vidéos"
+    ".password-store"
 )
 
 read -p "Voulez-vous faire un backup ou une installation $(pwd) [b|i] " res

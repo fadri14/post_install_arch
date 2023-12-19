@@ -83,5 +83,3 @@ bindsym $mod+w exec flash_window
 
 bindsym $mod+t exec systemctl suspend
 
-bindsym $mod+x exec swaymsg exit
-

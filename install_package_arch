@@ -120,9 +120,6 @@ xvidcore
 gstreamer0.10-plugins
 "
 
-#swaylock-effects
-#waylock
-
 for package in $packages
 do
     pacman -S --needed --noconfirm $package &> /dev/null
