@@ -29,6 +29,8 @@ dunst
 mpd
 mpc
 fastfetch
+arch-signoff
+pass
 libffi
 python-cffi
 python-matplotlib
