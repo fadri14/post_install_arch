@@ -14,7 +14,7 @@
   <property name="zoomStep" value="10"/>
   <property name="zoomStepScroll" value="2"/>
   <property name="displayDpi" value="72"/>
-  <property name="mainWndWidth" value="1902"/>
+  <property name="mainWndWidth" value="948"/>
   <property name="mainWndHeight" value="1020"/>
   <property name="maximized" value="true"/>
   <property name="showToolbar" value="true"/>
@@ -165,6 +165,10 @@
     </data>
   </data>
   <data name="deviceClasses">
+    <data name="Hanvon Ugee Deco M">
+      <attribute name="deviceClass" type="int" value="2"/>
+      <attribute name="deviceSource" type="int" value="1"/>
+    </data>
     <data name="Wayland Finger Scrolling">
       <attribute name="deviceClass" type="int" value="1"/>
       <attribute name="deviceSource" type="int" value="6"/>

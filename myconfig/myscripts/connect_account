@@ -1,0 +1,4 @@
+#!/bin/bash
+
+pass -c $1 && wtype -M ctrl -M shift -k v -m shift -m ctrl
+
