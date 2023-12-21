@@ -9,15 +9,15 @@ fi
 if [[ "$1" = "start" ]]
 then
     echo 0 > /sys/module/zswap/parameters/enabled
+    modprobe zram
     swapoff --all
-    modprobe zram num_devices=1
-    echo zstd > /sys/block/zram0/comp_algorithm
-    echo 8G > /sys/block/zram0/disksize
-    mkswap --label zram0 /dev/zram0
-    swapon --priority 32767 /dev/zram0
+    zramctl /dev/zram0 --algorithm zstd --size 8G
+    mkswap -U clear /dev/zram0
+    swapon --priority 100 /dev/zram0
 elif [[ "$1" = "stop" ]]
 then
     swapoff /dev/zram0
-    echo 1 > /sys/block/zram0/reset
     modprobe -r zram
+    echo 1 > /sys/module/zswap/parameters/enabled
 fi
+
