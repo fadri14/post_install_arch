@@ -1,0 +1,28 @@
+#!/bin/bash
+
+#Pour l'exécuter:
+#chmod +x install_zram_state
+#sudo ./install_zram_state
+
+if [[ $(whoami) != "root" ]]
+then
+    echo "Il faut être root"
+    exit 1
+fi
+
+echo "[Unit]
+Description=Configure zram swap device
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/adrien/.config/myscripts/zram_state start
+ExecStop=/home/adrien/.config/myscripts/zram_state stop
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target" > /etc/systemd/system/zram-swap.service
+
+systemctl daemon-reload
+systemctl enable --now zram_state.service
+
