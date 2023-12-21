@@ -228,11 +228,7 @@ Session=$XDG_SESSION_DESKTOP" > /etc/sddm.conf.d/autologin.conf
 
 ```
 sudo systemctl enable --now cronie
-crontab -e
-```
-Il faut y copier la ligne ci-dessous
-```
-*/2 * * * * /home/adrien/.config/myscripts/batteriecheck
+sudo bash -c 'echo "*/2 * * * * adrien /home/adrien/.config/myscripts/batteriecheck" >> /etc/crontab'
 ```
 
 ## Ajouter trashTmp dans anacron
@@ -241,11 +237,7 @@ Il faut y copier la ligne ci-dessous
 
 ```
 mkdir ~/.Trash
-sudo nvim /etc/anacrontab
-```
-Il faut y copier la ligne ci-dessous
-```
-1       5       empty_trash     nice run-parts /home/adrien/.config/myscripts/trashTmp
+sudo bash -c 'echo "1       5       empty_trash     nice run-parts /home/adrien/.config/myscripts/trashTmp" >> /etc/anacrontab'
 ```
 
 ## Installation de mon application time_use
@@ -393,19 +385,6 @@ sudo systemctl enable ufw.service
 ```
 git config --global user.email "lebotdufutur@proton.me"
 git config --global user.name "fadri14"
-```
-
-### Créer la clé ssh pour github
-- Créer une clé ssh
-- Démarrer l'agent ssh
-- Ajouter la nouvelle clé à l'agent ssh
-- Afficher la clé publique
-
-```
-ssh-keygen -t ed25519 -C "lebotdufutur@proton.me"
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519
-cat ~/.ssh/id_ed25519.pub
 ```
 
 ## Supprimer ce répôt
