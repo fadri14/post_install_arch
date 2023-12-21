@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [[ "$1" = "start" ]]
+then
+    export SIZE_ZRAM=$(cat /proc/meminfo | grep -e MemTotal | tr -d " ")
+    SIZE_ZRAM=${SIZE_ZRAM:9}
+
+    bash -c "echo 0 > /sys/module/zswap/parameters/enabled"
+    swapoff --all
+    modprobe zram num_devices=1
+    bash -c "echo zstd > /sys/block/zram0/comp_algorithm"
+    bash -c "echo $SIZE_ZRAM > /sys/block/zram0/disksize"
+    mkswap --label zram0 /dev/zram0
+    swapon --priority 32767 /dev/zram0
+elif [[ "$1" = "stop" ]]
+then
+    swapoff /dev/zram0
+    bash -c "echo 1 > /sys/block/zram0/reset"
+    modprobe -r zram
+fi
