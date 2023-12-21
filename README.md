@@ -361,6 +361,35 @@ sudo sed -i "17 s/.*/GRUB_TIMEOUT_STYLE=hidden/" /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+## Les hooks pour grub
+- Créer un hook pour mettre à jour l'installation de grub
+- Créer un hook pour mettre à jour la configuration de grub
+
+```
+sudo bash -c "echo '[Trigger]
+Operation = Upgrade
+Type = Package
+Target = grub
+
+[Action]
+Description = Executing Grub-install...
+When = PostTransaction
+Exec = /usr/bin/grub-install --target=x86_64-efi --efi-directory=/boot/efi --disable-shim-lock' > /usr/share/libalpm/hooks/99-grub_install.hook"
+
+sudo bash -c "echo '[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = File
+Target = usr/lib/modules/*/vmlinuz
+
+[Action]
+Description = Updating GRUB Config
+Depends = grub
+When = PostTransaction
+Exec = /usr/bin/grub-mkconfig -o /boot/grub/grub.cfg' > /usr/share/libalpm/hooks/99-grub_update_conf.hook"
+```
+
 ## Activation du pare-feu
 - Mettre la configuration par défaut pour les sorties
 - Autoriser les connections https
