@@ -310,6 +310,27 @@ git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/z
 chsh -s /bin/zsh $USER
 ```
 
+## Paramètre de discord
+(Pour que l'application s'ouvre même si elle n'est pas jour)
+- Change les paramètres
+
+```
+if [[ -e "~/.config/discord ]]
+then
+    echo "{ 
+      "IS_MAXIMIZED": true,
+      "IS_MINIMIZED": false,
+      "WINDOW_BOUNDS": {
+        "x": 2240,
+        "y": 219,
+        "width": 1280,
+        "height": 720
+      },
+      "SKIP_HOST_UPDATE": true
+    }" > ~/.config/discord/settings.json
+fi
+```
+
 ## Configuration de pacman
 - Activer la couleur
 - Activer le mode verbeux
