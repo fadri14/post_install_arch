@@ -10,6 +10,6 @@ swipe:
       command: "alacritty -e ranger"
   4:
     down:
-      command: "systemctl poweroff"
+      command: "/home/adrien/.config/myscripts/closeApp"
     up:
       command: "swaylock -f -c 000000"

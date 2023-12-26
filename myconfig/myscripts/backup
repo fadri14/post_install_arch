@@ -25,12 +25,11 @@ then
 
             if [[ ! -e "$path" ]]
             then
-                echo "\033[31mERREUR\033[0m Le chemin "$path" n'existe pas!!!"
+                echo -e "\033[31mERREUR\033[0m Le chemin "$path" n'existe pas!!!"
             else
-            then
                 {
                     sudo rsync -a --delete --exclude='.cache' "${path}" .
-                    echo "\033[32mOK\033[0m ${path}"
+                    echo -e "\033[32mOK\033[0m ${path}"
                 } &
             fi
         done
@@ -50,11 +49,11 @@ then
         do
             if [[ ! -e "$folder" ]]
             then
-                echo "\033[31mERREUR\033[0m Le chemin "$folder" n'existe pas!!!"
+                echo -e "\033[31mERREUR\033[0m Le chemin "$folder" n'existe pas!!!"
             else
                 {
                     sudo rsync -a --delete --exclude='.cache' "${folder}" $HOME
-                    echo "\033[32mOK\033[0m ${folder}"
+                    echo -e "\033[32mOK\033[0m ${folder}"
                 } &
             fi
         done

@@ -76,7 +76,7 @@
         "memory": {
             "interval": 10,
             "format": "{percentage}%   {swapPercentage}% 󰾴",
-            "format-alt": "{used:0.2f}   {swapUsed:0.2f}% 󰾴",
+            "format-alt": "{used:0.2f}   {swapUsed:0.2f} 󰾴",
             "states": {
                 "warning": 70,
                 "critical": 90
