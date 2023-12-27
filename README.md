@@ -232,12 +232,10 @@ sudo bash -c 'echo "*/2 * * * * adrien /home/adrien/.config/myscripts/batteriech
 ```
 
 ## Ajouter trashTmp dans anacron
-- Créer la poubelle
-- Écrire la config pour trashTmp dans anacrontab
+- Copier le script dans le dossier des scripts journaliers de cron
 
 ```
-mkdir ~/.Trash
-sudo bash -c 'echo "1       5       empty_trash     nice run-parts /home/adrien/.config/myscripts/trashTmp" >> /etc/anacrontab'
+sudo cp ~/.config/myscripts/trashTmp /etc/cron.daily
 ```
 
 ## Installation de mon application time_use
