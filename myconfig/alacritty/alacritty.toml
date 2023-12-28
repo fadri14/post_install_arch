@@ -1,0 +1,31 @@
+import = ["/home/adrien/.config/alacritty/github_light.toml"]
+
+[window]
+decorations = "none"
+opacity = 0.9
+
+[window.padding]
+x = 10
+y = 10
+
+[cursor]
+style = "Underline"
+
+[font]
+size = 14
+
+[font.bold]
+family = "Hack Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "Hack Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "Hack Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "Hack Nerd Font"
+style = "Regular"

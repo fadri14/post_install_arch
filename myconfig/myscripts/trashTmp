@@ -12,7 +12,7 @@ do
     diff=$((now - last_modification))
     diff_day=$((diff / (60 * 60 * 24)))
 
-    if [ "$diff_day" -gt 3 ]
+    if [ "$diff_day" -gt 7 ]
     then
         rm -fr "$file"
     fi
