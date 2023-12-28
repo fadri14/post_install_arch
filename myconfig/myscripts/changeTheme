@@ -22,8 +22,16 @@ fi
 
 theme_prev=$THEMEFOND
 
+name=$(ls $HOME/.config/mythemes/ | sed -n $id'p')
 echo "export NUMBERTHEME=$id" > $HOME/.zshenv
-echo "source $HOME/.config/mythemes/$(ls $HOME/.config/mythemes/ | sed -n $id'p')" >> $HOME/.zshenv
+echo "source $HOME/.config/mythemes/$name" >> $HOME/.zshenv
+
+if [[ ${name:0:1} = "D" ]]
+then
+    echo "export GTK_THEME=Adwaita:dark" >> $HOME/.zshenv
+else
+    echo "export GTK_THEME=Adwaita" >> $HOME/.zshenv
+fi
 
 source $HOME/.zshrc
 
@@ -43,8 +51,8 @@ sed -i "2 s/.*/  - ~\/.config\/alacritty\/$THEMETERM.yaml/" "$HOME/.config/alacr
 sed -i "5 s/.*/  opacity: $OPACITETERM/" "$HOME/.config/alacritty/alacritty.yml"
 
 # sway
-sed -i "5 s/.*/        gsettings set $gnome-schema gtk-theme '$THEMEGTK'/" "$HOME/.config/sway/config.d/10-theme.conf"
-sed -i "15 s/.*/output * bg \/home\/adrien\/.config\/sway\/Images\/$WALLPAPER fill/" "$HOME/.config/sway/config.d/10-theme.conf"
+sed -i "6 s/.*/output * bg \/home\/adrien\/.config\/sway\/Images\/$WALLPAPER fill/" "$HOME/.config/sway/config.d/10-theme.conf"
+sed -i "s/GTK_THEME[^[:space:]]*/GTK_THEME=$GTK_THEME/" "$HOME/.config/sway/config.d/70-launcher-apps.conf"
 
 # waybar
 sed -i "25 s/.*/    color: $THEMEWRITE;/" "$HOME/.config/waybar/style.css"

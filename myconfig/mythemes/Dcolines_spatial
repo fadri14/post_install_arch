@@ -9,7 +9,7 @@ COLOR2=$(python $HOME/.config/myscripts/hexa_middle.py $(echo $COLOR1 | sed 's/^
 
 #waybar
 BUTTONFOCUS=red
-BUTTONHOVER=green
+BUTTONHOVER=orange
 COLORMODE=white
 
 #alacritty

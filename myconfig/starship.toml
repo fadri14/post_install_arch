@@ -1,22 +1,22 @@
 format = """
-[░▒▓](fg:#493636)\                                                                                                                                             
-[    ](fg:#f1efef bg:#493636)\                                                                                                                                             
-[](fg:#493636 bg:#8B6C81)\                                                                                                                                              
+[░▒▓](fg:#13074b)\                                                                                                                                                                 
+[    ](fg:#f1efef bg:#13074b)\                                                                                                                                                                 
+[](fg:#13074b bg:#270767)\                                                                                                                                                                  
 $directory\
-[](fg:#8B6C81 bg:#cda3cd)\                                                                                                                                              
+[](fg:#270767 bg:#3c0783)\                                                                                                                                                                  
 $git_branch\
 $git_status\
 $git_metrics\
-[](fg:#cda3cd bg:#cda3cd)\                                                                                                                                            
-[ ](fg:#cda3cd)\                                                                                                                                            
+[](fg:#3c0783 bg:#3c0783)\                                                                                                                                                                
+[ ](fg:#3c0783)\                                                                                                                                                                
 """
 
 right_format = """
-[](fg:#8B6C81)\                                                                                                                                            
+[](fg:#270767)\                                                                                                                                                                
 $time\
 $cmd_duration\
 $character\
-[▓▒░](fg:#8B6C81)\                                                                                                                                             
+[▓▒░](fg:#270767)\                                                                                                                                                                 
 """
 
 add_newline = false
@@ -26,31 +26,31 @@ home_symbol = " "
 truncation_symbol = "…/"
 truncate_to_repo = false
 read_only = "󰒃"
-style = "fg:#f1efef bg:#8B6C81"
+style = "fg:#f1efef bg:#270767"
 format = "[ $path $read_only ]($style)"
 
 [git_branch]
 symbol = ""
-style = "fg:#f1efef bg:#cda3cd"
+style = "fg:#f1efef bg:#3c0783"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
 untracked = "±"
-style = "fg:#f1efef bg:#cda3cd"
+style = "fg:#f1efef bg:#3c0783"
 format = '[($all_status$ahead_behind )]($style)'
 
 [time]
 disabled = false
 time_format = "%R"
-style = "fg:#f1efef bg:#8B6C81"
+style = "fg:#f1efef bg:#270767"
 format = '[$time ]($style)'
 
 [character]
 format = "$symbol"
-success_symbol = '[ ](fg:#f1efef bg:#8B6C81)' 
-error_symbol = '[ ](fg:#f1efef bg:#8B6C81)'
+success_symbol = '[ ](fg:#f1efef bg:#270767)' 
+error_symbol = '[ ](fg:#f1efef bg:#270767)'
 
 [cmd_duration]
-style = "fg:#f1efef bg:#8B6C81"
+style = "fg:#f1efef bg:#270767"
 format = "[$duration]($style)"
 
