@@ -31,6 +31,9 @@ swaymsg reload
 
 ```
 passwd
+```
+
+```
 sudo passwd root
 ```
 
@@ -313,19 +316,20 @@ chsh -s /bin/zsh $USER
 - Change les paramètres
 
 ```
-if [[ -e "~/.config/discord ]]
+if [[ -e "~/.config/discord" ]]
 then
-    echo "{ 
-      "IS_MAXIMIZED": true,
-      "IS_MINIMIZED": false,
-      "WINDOW_BOUNDS": {
-        "x": 2240,
-        "y": 219,
-        "width": 1280,
-        "height": 720
-      },
-      "SKIP_HOST_UPDATE": true
-    }" > ~/.config/discord/settings.json
+    echo "
+{ 
+  "IS_MAXIMIZED": true,
+  "IS_MINIMIZED": false,
+  "WINDOW_BOUNDS": {
+    "x": 2240,
+    "y": 219,
+    "width": 1280,
+    "height": 720
+  },
+  "SKIP_HOST_UPDATE": true
+}" > ~/.config/discord/settings.json
 fi
 ```
 
@@ -393,7 +397,7 @@ Target = grub
 [Action]
 Description = Executing Grub-install...
 When = PostTransaction
-Exec = /usr/bin/grub-install --target=x86_64-efi --efi-directory=/boot/efi --disable-shim-lock' > /usr/share/libalpm/hooks/99-grub_install.hook"
+Exec = /usr/bin/grub-install --target=x86_64-efi --efi-directory=/boot --disable-shim-lock' > /usr/share/libalpm/hooks/99-grub_install.hook"
 
 sudo bash -c "echo '[Trigger]
 Operation = Install
