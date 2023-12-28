@@ -234,13 +234,6 @@ sudo systemctl enable --now cronie
 sudo bash -c 'echo "*/2 * * * * adrien /home/adrien/.config/myscripts/batteriecheck" >> /etc/crontab'
 ```
 
-## Ajouter trashTmp dans anacron
-- Copier le script dans le dossier des scripts journaliers de cron
-
-```
-sudo cp ~/.config/myscripts/trashTmp /etc/cron.daily
-```
-
 ## Installation de mon application time_use
 - Se déplacer dans les scripts
 - Autoriser le programme se s'exécuter
