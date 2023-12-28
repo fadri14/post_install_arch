@@ -127,6 +127,7 @@ sudo ./install_package_arch
     - signal-desktop
     - librewolf-bin
     - texstudio
+    - melonds
     - flashfocus
     - swayfx
     - pacman-contrib
@@ -149,6 +150,9 @@ yay -S librewolf-bin
 ```
 ```
 yay -S texstudio
+```
+```
+yay -S melonds
 ```
 ```
 yay -S flashfocus

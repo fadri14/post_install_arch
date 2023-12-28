@@ -20,6 +20,7 @@ declare -a configs=(
     "myscripts"
     "mimeapps.list"
     "xournalpp"
+    "melonDS"
 )
 
 path2="$HOME/Documents/post_install_arch/myconfig"
