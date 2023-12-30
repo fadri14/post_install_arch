@@ -137,6 +137,7 @@ sudo ./install_package_arch
     - timeshift-autosnap
     - todoist-appimage
     - netflix
+    - freetube
     - grimshot
 
 ```
@@ -180,6 +181,9 @@ yay -S todoist-appimage
 ```
 ```
 yay -S netflix
+```
+```
+yay -S freetube
 ```
 ```
 yay -S grimshot
