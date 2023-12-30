@@ -42,6 +42,7 @@ python-pip
 rsync
 grub-btrfs
 zsh
+zenity
 util-linux
 python-certifi
 cronie
