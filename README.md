@@ -139,6 +139,7 @@ sudo ./install_package_arch
     - netflix
     - freetube
     - grimshot
+    - pdfsam
 
 ```
 yay -S wlsunset
@@ -187,6 +188,9 @@ yay -S freetube
 ```
 ```
 yay -S grimshot
+```
+```
+yay -S pdfsam
 ```
 
 ## Installer les fonts
