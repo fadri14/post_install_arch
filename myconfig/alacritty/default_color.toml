@@ -1,8 +1,6 @@
 [colors.primary]
 background = "0x000000"
 foreground = "0xffffff"
-text = "0xF81CE5"
-cursor = "0xffffff"
 
 [colors.normal]
 black = "0x000000"

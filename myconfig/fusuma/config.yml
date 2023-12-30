@@ -5,11 +5,11 @@ swipe:
     right:
       command: "swaymsg 'workspace prev'"
     up:
-      command: "firefox"
+      command: "librewolf"
     down:
       command: "alacritty -e ranger"
   4:
     down:
       command: "/home/adrien/.config/myscripts/closeApp"
     up:
-      command: "swaylock -f -c 000000"
+      command: "waylock -init-color 0x000000 -input-color 0x505050 -fail-color 0xa0a0a0"

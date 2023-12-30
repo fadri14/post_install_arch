@@ -1,7 +1,8 @@
-sw_volume: 50
+sw_volume: 70
 audio_device_state:1:My Pulse Output
-state: stop
+state: play
 current: 0
+time: 72.073000
 random: 0
 repeat: 0
 single: 0
@@ -10,14 +11,7 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Dadju Ma vie Paroles.mp3
-1:Davodka Flemme Olympique Clip Officiel.mp3
-2:Distrion ElectroLight Drakkar NCS Release.mp3
-3:Nightcore AMV Ce Que La Vie a Fait De Moi.mp3
-4:Nightcore AMV Je vais bien Ridsa lyrics HD.mp3
-5:Nightcore Phoenix LBLVNC RIELL Lyrics.mp3
-6:Nightcore Thunder Gabry Ponte LUMX Prezioso Lyrics.mp3
-7:Nightcore Who You Are.mp3
-8:Ninho Jefe Paroles Jefe.mp3
-9:Project X Pursuit Of Happiness.mp3
+0:Egzod & Maestro Chives & Alaina Cross - No Rival.mp3
+1:Egzod, Maestro Chives - Royalty (Wiguez & Alltair Remix).mp3
+2:TheFatRat NEFFEX Back One Day Outro Song.mp3
 playlist_end

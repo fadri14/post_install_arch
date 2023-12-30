@@ -1,30 +1,15 @@
 #!/bin/zsh
 
-if [[ $1 = "+" ]]
-then
-    id=$(( $NUMBERTHEME + 1 ))
+name="$1"
+path_theme="$HOME/.config/mythemes/$name"
 
-    if [[ $id -gt $(ls $HOME/.config/mythemes/ | wc -l) ]]
-    then
-        id=$((1))
-    fi
-elif [[ $1 = "-" ]]
+if [[ ! -e "$path_theme" ]]
 then
-    id=$(( $NUMBERTHEME - 1 ))
-
-    if [[ $id -lt 1 ]]
-    then
-        id=$(ls $HOME/.config/mythemes/ | wc -l)
-    fi
-else
-    id=$(($NUMBERTHEME))
+    path_theme=$(sed -n "1p" "$HOME/.zshenv" | cut -d ' ' -f 2)
+    name=$(basename "$path_theme")
 fi
 
-theme_prev=$THEMEFOND
-
-name=$(ls $HOME/.config/mythemes/ | sed -n $id'p')
-echo "export NUMBERTHEME=$id" > $HOME/.zshenv
-echo "source $HOME/.config/mythemes/$name" >> $HOME/.zshenv
+echo "source $path_theme" > $HOME/.zshenv
 
 if [[ ${name:0:1} = "D" ]]
 then
@@ -32,6 +17,8 @@ then
 else
     echo "export GTK_THEME=Adwaita" >> $HOME/.zshenv
 fi
+
+theme_prev=$THEMEFOND
 
 source $HOME/.zshrc
 
@@ -48,7 +35,7 @@ fi
 
 # alacritty
 sed -i "1 s|.*|import = [\"/home/adrien/.config/alacritty/$THEMETERM.toml\"]|" "$HOME/.config/alacritty/alacritty.toml"
-sed -i "5 s/.*/  opacity: $OPACITETERM/" "$HOME/.config/alacritty/alacritty.toml"
+sed -i "5 s/.*/opacity = $OPACITETERM/" "$HOME/.config/alacritty/alacritty.toml"
 
 # sway
 sed -i "6 s/.*/output * bg \/home\/adrien\/.config\/sway\/Images\/$WALLPAPER fill/" "$HOME/.config/sway/config.d/10-theme.conf"
