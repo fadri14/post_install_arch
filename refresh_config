@@ -21,6 +21,7 @@ declare -a configs=(
     "mimeapps.list"
     "xournalpp"
     "melonDS"
+    "FreeTube"
 )
 
 path2="$HOME/Documents/post_install_arch/myconfig"
