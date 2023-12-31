@@ -11,9 +11,9 @@ declare -a folders=(
     ".ssh"
 )
 
-read -p "Voulez-vous faire un backup ou une installation $(pwd) [b|i] " res
+read -p "Voulez-vous faire un backup ou une installation $(pwd) [b|i] " res0
 
-if [[ "$res" = "b" ]]
+if [[ "$res0" = "b" ]]
 then
     read -p "Êtes-vous sûr de vouloir faire le backup dans $(pwd) [y|N] " res
 
@@ -40,7 +40,7 @@ then
 
         echo -e "\nLe backup est terminé!\n"
     fi
-elif [[ "$res" = "i" ]]
+elif [[ "$res0" = "i" ]]
 then
     read -p "Êtes-vous sûr de vouloir faire l'installation avec ce dossier
     comme départ $(pwd) [y|N] " res
@@ -68,13 +68,13 @@ then
     fi
 fi
 
-if [[ "$res" = "b" || "$res" = "i" ]]
+if [[ "$res0" = "b" || "$res0" = "i" ]]
 then
     echo -e "\nVérification des contenus…\n"
 
     for folder in "${folders[@]}"
     do
-        diff -qr "${HOME}/${folder}" "$folder"
+        diff -x "FreeTube" -qr "${HOME}/${folder}" "$folder"
 
         if [[ "$?" = "0" ]]
         then

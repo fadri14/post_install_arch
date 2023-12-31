@@ -56,13 +56,16 @@ echo -e "\nVérification des contenus…\n"
 
 for config in "${configs[@]}"
 do
-    diff -qr "$HOME/.config/$config" "$path2/$config"
-
-    if [[ "$?" = "0" || "$config" = "FreeTube" ]]
+    if [[ ! "$config" = "FreeTube" ]]
     then
-        echo -e "\033[32mOK\033[0m ${config}"
-    else
-        echo -e "\033[31mERREUR\033[0m $config n'a pas été copié!"
+        diff -qr "$HOME/.config/$config" "$path2/$config"
+
+        if [[ "$?" = "0" ]]
+        then
+            echo -e "\033[32mOK\033[0m ${config}"
+        else
+            echo -e "\033[31mERREUR\033[0m $config n'a pas été copié!"
+        fi
     fi
 done
 
