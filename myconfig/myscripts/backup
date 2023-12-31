@@ -17,6 +17,8 @@ if [[ "$res" = "b" ]]
 then
     read -p "Êtes-vous sûr de vouloir faire le backup dans $(pwd) [y|N] " res
 
+    echo -e "\nBackup des données…\n"
+
     if [[ "$res" = "y" ]]
     then
         for folder in "${folders[@]}"
@@ -43,6 +45,8 @@ then
     read -p "Êtes-vous sûr de vouloir faire l'installation avec ce dossier
     comme départ $(pwd) [y|N] " res
 
+    echo -e "\nInstallation des données…\n"
+
     if [[ "$res" = "y" ]]
     then
         for folder in "${folders[@]}"
@@ -64,19 +68,22 @@ then
     fi
 fi
 
-echo -e "\nVérification des contenus…\n"
+if [[ "$res" = "b" || "$res" = "i" ]]
+then
+    echo -e "\nVérification des contenus…\n"
 
-for folder in "${folders[@]}"
-do
-    diff -qr "${HOME}/${folder}" "$folder"
+    for folder in "${folders[@]}"
+    do
+        diff -qr "${HOME}/${folder}" "$folder"
 
-    if [[ "$?" = "0" ]]
-    then
-        echo -e "\033[32mOK\033[0m ${folder}"
-    else
-        echo -e "\033[31mERREUR\033[0m $folder n'a pas été copié!"
-    fi
-done
+        if [[ "$?" = "0" ]]
+        then
+            echo -e "\033[32mOK\033[0m ${folder}"
+        else
+            echo -e "\033[31mERREUR\033[0m $folder n'a pas été copié!"
+        fi
+    done
 
-notify-send "Le script est terminé"
+    notify-send "Le script est terminé"
+fi
 
