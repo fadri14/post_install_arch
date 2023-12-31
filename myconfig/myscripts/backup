@@ -36,7 +36,7 @@ then
 
         wait
 
-        notify-send "Le backup est terminé!"
+        echo -e "\nLe backup est terminé!\n"
     fi
 elif [[ "$res" = "i" ]]
 then
@@ -60,7 +60,23 @@ then
 
         wait
 
-        notify-send "L'installation est terminée!"
+        echo -e "\nL'installation est terminée!\n"
     fi
 fi
+
+echo -e "\nVérification des contenus…\n"
+
+for folder in "${folders[@]}"
+do
+    diff -qr "${HOME}/${folder}" "$folder"
+
+    if [[ "$?" = "0" ]]
+    then
+        echo -e "\033[32mOK\033[0m ${folder}"
+    else
+        echo -e "\033[31mERREUR\033[0m $folder n'a pas été copié!"
+    fi
+done
+
+notify-send "Le script est terminé"
 
