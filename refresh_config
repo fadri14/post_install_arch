@@ -32,23 +32,39 @@ then
     exit 2
 fi
 
+echo -e "\nMise à jour des données…\n"
+
 for config in "${configs[@]}"
 do
     path1="$HOME/.config/${config}"
 
     if [[ ! -e "$path1" ]]
     then
-        echo "Le chemin "$path1" n'existe pas!!!"
+        echo -e "\033[31mERREUR\033[0m Le chemin "$path1" n'existe pas!!!"
         exit 1
     fi
 
     {
         rsync -a --delete --exclude='.cache' "${path1}" "${path2}" &> /dev/null
-        echo "${path1} -> ${path2}/${config}"
+        echo -e "\033[32mOK\033[0m $config"
     } &
 done
 
 wait
+
+echo -e "\nVérification des contenus…\n"
+
+for config in "${configs[@]}"
+do
+    diff -qr "$HOME/.config/$config" "$path2/$config"
+
+    if [[ "$?" = "0" || "$config" = "FreeTube" ]]
+    then
+        echo -e "\033[32mOK\033[0m ${config}"
+    else
+        echo -e "\033[31mERREUR\033[0m $config n'a pas été copié!"
+    fi
+done
 
 notify-send "Le refresh est terminé!"
 
