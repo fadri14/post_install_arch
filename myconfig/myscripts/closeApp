@@ -3,8 +3,6 @@
 idfocus=$(swaymsg -t get_tree | jq '.. | select(.type?) | select(.focused==true).pid')
 eval 'swaymsg [pid="$idfocus"] move scratchpad'
 
-echo $(swaymsg -t get_tree | grep -c pid) > out.txt
-
 if [[ "$(swaymsg -t get_tree | grep -c pid)" = "0" ]]
 then
     shutdown now

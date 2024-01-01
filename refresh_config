@@ -21,7 +21,6 @@ declare -a configs=(
     "mimeapps.list"
     "xournalpp"
     "melonDS"
-    "FreeTube"
 )
 
 path2="$HOME/Documents/post_install_arch/myconfig"
@@ -56,16 +55,13 @@ echo -e "\nVérification des contenus…\n"
 
 for config in "${configs[@]}"
 do
-    if [[ ! "$config" = "FreeTube" ]]
-    then
-        diff -qr "$HOME/.config/$config" "$path2/$config"
+    diff -qr "$HOME/.config/$config" "$path2/$config"
 
-        if [[ "$?" = "0" ]]
-        then
-            echo -e "\033[32mOK\033[0m ${config}"
-        else
-            echo -e "\033[31mERREUR\033[0m $config n'a pas été copié!"
-        fi
+    if [[ "$?" = "0" ]]
+    then
+        echo -e "\033[32mOK\033[0m ${config}"
+    else
+        echo -e "\033[31mERREUR\033[0m $config n'a pas été copié!"
     fi
 done
 

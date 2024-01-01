@@ -10,10 +10,12 @@ then
     if [[ "$level" -le 20 ]] && [[ "$BATTERIE_NOTIF_STATE" = "" ]]
     then
         notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur"
+        #swaynag -t warning -m "Niveau de batterie faible"
         BATTERIE_NOTIF_STATE=1
     elif [[ "$level" -le 10 ]] && [[ "$BATTERIE_NOTIF_STATE" = "1" ]]
     then
         notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur !!!!!"
+        #swaynag -t warning -m "Niveau de batterie très faible !!!"
         BATTERIE_NOTIF_STATE=2
     fi
 else
