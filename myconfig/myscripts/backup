@@ -74,7 +74,7 @@ then
 
     for folder in "${folders[@]}"
     do
-        diff -x "FreeTube" -qr "${HOME}/${folder}" "$folder"
+        diff -qr "${HOME}/${folder}" "$folder"
 
         if [[ "$?" = "0" ]]
         then
