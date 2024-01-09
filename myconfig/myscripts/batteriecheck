@@ -1,24 +1,26 @@
 #!/bin/bash
 
-#crontab -e
-#*/2 * * * * /home/adrien/.config/myscripts/batteriecheck
+batterie_state="$HOME/.config/myscripts/.batterie_state.txt"
+
+if [[ ! -e  $batterie_state ]]
+then
+    echo "0" > $batterie_state
+fi
 
 if [[ "$(acpi -a | cut -f 3 -d ' ')" = "off-line" ]]
 then
     level=$(acpi -b | cut -d ',' -f 2 | cut -d ' ' -f 2 | tr -d '%')
 
-    if [[ "$level" -le 20 ]] && [[ "$BATTERIE_NOTIF_STATE" = "" ]]
+    if [[ "$level" -le 20 ]] && [[ "$(cat $batterie_state)" = "0" ]]
     then
         notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur"
-        #swaynag -t warning -m "Niveau de batterie faible"
-        BATTERIE_NOTIF_STATE=1
-    elif [[ "$level" -le 10 ]] && [[ "$BATTERIE_NOTIF_STATE" = "1" ]]
+        echo "1" > $batterie_state
+    elif [[ "$level" -le 10 ]] && [[ "$(cat $batterie_state)" = "1" ]]
     then
         notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur !!!!!"
-        #swaynag -t warning -m "Niveau de batterie très faible !!!"
-        BATTERIE_NOTIF_STATE=2
+        echo "2" > $batterie_state
     fi
 else
-    BATTERIE_NOTIF_STATE=""
+    echo "0" > $batterie_state
 fi
 
