@@ -28,7 +28,7 @@ rofi
 waybar
 wl-mirror
 dunst
-gparted
+gnome-disk-utility
 mpd
 mpc
 fastfetch
