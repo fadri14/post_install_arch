@@ -140,6 +140,7 @@ sudo ./install_package_arch
     - freetube
     - grimshot
     - pdfsam
+    - ventoy
 
 ```
 yay -S wlsunset
@@ -191,6 +192,9 @@ yay -S grimshot
 ```
 ```
 yay -S pdfsam
+```
+```
+yay -S ventoy
 ```
 
 ## Installer les fonts
