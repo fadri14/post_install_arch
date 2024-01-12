@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#!!! peut-être juste faire
+#sudo chmod -R -x .
+#sudo chown -R adrien:adrien .
+
 declare -a folders=("Bureau" "Documents" "Téléchargements" "Musique" "Images" "Vidéos")
 
 for folder in "${folders[@]}"
@@ -9,9 +13,7 @@ do
 	for file in $1/*
 	do
 		echo $file
-		then
-			sudo chmod 755 $file
-		elif [[ -f $file ]]
+		if [[ -f $file ]]
 		then
 			sudo chmod 644 $file
 		elif [[ -d $file ]]
