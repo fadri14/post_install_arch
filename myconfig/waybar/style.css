@@ -22,8 +22,8 @@ window#waybar.hidden {
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 26px;
-    color: #f1efef;
-    background-image: linear-gradient(144deg, #493636, #cda3cd);
+    color: #090c0c;
+    background-image: linear-gradient(144deg, #2acaea, #00ff7f);
     box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
 }
 
@@ -33,24 +33,24 @@ window#waybar.hidden {
     margin-right: 5px;
     margin-bottom: 5px;
     border-radius: 26px;
-    color: #f1efef;
-    background-image: linear-gradient(144deg, #493636, #cda3cd);
+    color: #090c0c;
+    background-image: linear-gradient(144deg, #2acaea, #00ff7f);
 }
 
 #workspaces button {
     background: transparent;
     font-size: 16px;
-    color: #f1efef;
+    color: #090c0c;
 }
 
 #workspaces button.focused {
-    color: orange;
+    color: red;
 }
 
 #workspaces button:hover {
     box-shadow: inherit;
     text-shadow: inherit;
-    color: red;
+    color: white;
 }
 
 #mpd.disconnected,
@@ -71,8 +71,8 @@ window#waybar.hidden {
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 26px;
-    color: #f1efef;
-    background-image: linear-gradient(144deg, #493636, #cda3cd);
+    color: #090c0c;
+    background-image: linear-gradient(144deg, #2acaea, #00ff7f);
     box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
 }
 

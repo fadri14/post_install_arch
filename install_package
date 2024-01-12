@@ -6,9 +6,6 @@ then
     exit 1
 fi
 
-# Paquets potentiellement utiles pour les polices et dictionnaires 
-#sudo pacman -S enchant mythes-en ttf-liberation hunspell-en_US ttf-bitstream-vera pkgstats adobe-source-sans-pro-fonts gst-plugins-good ttf-droid ttf-dejavu aspell-en icedtea-web gst-libav ttf-ubuntu-font-family ttf-anonymous-pro jre8-openjdk languagetool libmythes 
-
 packages="
 neovim
 alacritty
@@ -39,7 +36,6 @@ python-cffi
 python-matplotlib
 python-pynvim
 grim
-swappy
 python-pip
 rsync
 grub-btrfs
