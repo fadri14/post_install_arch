@@ -466,6 +466,15 @@ git config --global user.email "lebotdufutur@proton.me"
 git config --global user.name "fadri14"
 ```
 
+## Suppression des paquets inutiles
+- Se déplacer dans le répôt
+- Exécuter le script
+
+```
+cd ~/Téléchargements/post_install_arch-main
+sudo ./remove_package
+```
+
 ## Supprimer ce répôt
 - Se déplacer dans Téléchargements
 - Éffacer le répôt
