@@ -56,7 +56,7 @@ then
                 echo -e "\033[31mERREUR\033[0m Le chemin "$folder" n'existe pas!!!"
             else
                 {
-                    sudo rsync -a --delete --exclude='.cache' "${folder}" $HOME
+                    sudo mv "${folder}" $HOME
                     echo -e "\033[32mOK\033[0m ${folder}"
                 } &
             fi
