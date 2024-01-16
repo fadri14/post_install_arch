@@ -244,33 +244,6 @@ User=$USER
 Session=$XDG_SESSION_DESKTOP" > /etc/sddm.conf.d/autologin.conf'
 ```
 
-## Ajouter un service systemd pour batteriecheck
-- Créer le fichier service pour le timer
-- Créer le fichier service pour appeler le script
-- Recharger les services
-- Activer le timer
-
-```
-echo "[Unit]
-Description=Timer pour exécuter batteriecheck toutes les minutes
-
-[Timer]
-OnCalendar=*:0/1
-Persistent=true
-
-[Install]
-WantedBy=timers.target" > /etc/systemd/user/batterie_check.timer
-
-echo "[Unit]
-Description= Vérifier si la batterie n'est pas trop base
-
-[Service]
-ExecStart=/home/adrien/.config/myscripts/batteriecheck" > /etc/systemd/user/batterie_check.service
-
-systemctl daemon-reload
-systemctl --user enable --now batteriecheck.timer
-```
-
 ## Installation de mon application time_use
 - Se déplacer dans les scripts
 - Lancer l'installation de time_use
