@@ -121,7 +121,7 @@ for package in $packages
 do
     pacman -S --needed --noconfirm $package &> /dev/null
 
-    if [[ "$1" == "0" ]]
+    if [[ "$?" == "0" ]]
     then
         echo -e "\033[32mOK\033[0m $package"
     else
