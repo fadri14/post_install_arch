@@ -237,11 +237,11 @@ mv -f ~/post_install_arch-main/myconfig/* ~/.config
 Notez qu'il choisira l'utilisateur actuel ainsi que la session actuelle
 
 ```
-mkdir /etc/sddm.conf.d
-sudo echo "
+sudo mkdir /etc/sddm.conf.d
+sudo -E bash -c 'echo "
 [Autologin]
 User=$USER
-Session=$XDG_SESSION_DESKTOP" > /etc/sddm.conf.d/autologin.conf
+Session=$XDG_SESSION_DESKTOP" > /etc/sddm.conf.d/autologin.conf'
 ```
 
 ## Ajouter un service systemd pour batteriecheck
@@ -337,6 +337,13 @@ git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/z
 
 ```
 chsh -s /bin/zsh $USER
+```
+
+## Installer les plugins de neovim
+- Ouvrir le ficher packer
+
+```
+nvim ~/.config/nvim/lua/adrien-config/packer.lua
 ```
 
 ## Paramètre de discord
