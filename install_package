@@ -20,7 +20,6 @@ feh
 glances
 waylock
 ripgrep
-light
 rofi
 waybar
 wl-mirror
@@ -29,7 +28,6 @@ gnome-disk-utility
 mpd
 mpc
 fastfetch
-arch-signoff
 pass
 libffi
 python-cffi
@@ -54,7 +52,6 @@ wtype
 starship
 ufw
 wget
-lutris
 libreoffice-still
 libnotify
 vim

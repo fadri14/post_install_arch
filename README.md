@@ -50,13 +50,14 @@ xdg-user-dirs-update
 (Il faut télécharger l'archive)
 - Installer zip et unzip ainsi que git
 - Se déplacer dans les téléchargements
-- Décompresser l'archive
+- Décompresser l'archive dans le home
 - La supprimer
+- Se déplacer dans le home
 
 ```
 sudo pacman --noconfirm -S zip unzip git
 cd ~/Téléchargements
-unzip post_install_arch-main.zip
+unzip post_install_arch-main.zip -d ~
 rm -fr post_install_arch-main.zip
 ```
 
@@ -71,7 +72,7 @@ rm -fr post_install_arch-main.zip
 ```
 sudo pacman --noconfirm -S base-devel
 git clone https://aur.archlinux.org/yay.git
-cd ~/Téléchargements/yay
+cd yay
 makepkg -si
 cd ..
 rm -fr yay
@@ -101,12 +102,14 @@ newgrp audio
 ```
 
 ## Installer fusuma
+- Installer ruby pour utiliser gem
 - Installer fusuma
 - Déplacer l'exécutable
 
 ```
-sudo gem install fusuma
-mv .local/share/gem/ruby/3.0.0/bin/fusuma /usr/local/bin
+sudo pacman -Syu ruby
+gem install fusuma
+mv ~/.local/share/gem/ruby/3.0.0/bin/fusuma /usr/local/bin
 ```
 
 ## Installer tous les programmes souhaités
@@ -117,13 +120,14 @@ mv .local/share/gem/ruby/3.0.0/bin/fusuma /usr/local/bin
 - Lancer le script pour installer les paquets
 
 ```
-cd ~/Téléchargements/post_install_arch-main
+cd ~/post_install_arch-main
 sudo ./install_package_arch
 ```
 
 ### Avec yay
 - Installation des paquets suivants
     - wlsunset
+    - light
     - signal-desktop
     - librewolf-bin
     - texstudio
@@ -133,17 +137,20 @@ sudo ./install_package_arch
     - pacman-contrib
     - downgrade
     - workstyle-git
-    - timeshift
-    - timeshift-autosnap
     - todoist-appimage
     - netflix
     - freetube
     - grimshot
     - pdfsam
     - ventoy
+    - timeshift
+    - timeshift-autosnap
 
 ```
 yay -S wlsunset
+```
+```
+yay -S light
 ```
 ```
 yay -S signal-desktop
@@ -173,12 +180,6 @@ yay -S downgrade
 yay -S workstyle-git
 ```
 ```
-yay -S timeshift
-```
-```
-yay -S timeshift-autosnap
-```
-```
 yay -S todoist-appimage
 ```
 ```
@@ -195,6 +196,12 @@ yay -S pdfsam
 ```
 ```
 yay -S ventoy
+```
+```
+yay -S timeshift
+```
+```
+yay -S timeshift-autosnap
 ```
 
 ## Installer les fonts
@@ -215,16 +222,12 @@ rm ~/.local/share/fonts/README.md
 ```
 
 ## Déplacer les fichiers de configuration
-(Vérifier que ce soit le bon thème et la bonne font.
-Peut-être utiliser lxappearance)
 - Supprimer le dossier de config de sway
 - Déplacer les fichiers de configuration dans ~/.config
-- Relancer le config de sway
 
 ```
 rm -fr ~/.config/sway
-mv -f ~/Téléchargements/post_install_arch-main/myconfig/* ~/.config
-swaymsg reload
+mv -f ~/post_install_arch-main/myconfig/* ~/.config
 ```
 
 ## Activer l'autologin de sddm
@@ -270,12 +273,10 @@ systemctl --user enable --now batteriecheck.timer
 
 ## Installation de mon application time_use
 - Se déplacer dans les scripts
-- Autoriser le programme se s'exécuter
 - Lancer l'installation de time_use
 
 ```
 cd ~/.config/myscripts
-chmod +x install_time_use
 sudo ./install_time_use
 ```
 
@@ -340,7 +341,7 @@ chsh -s /bin/zsh $USER
 
 ## Paramètre de discord
 (Pour que l'application s'ouvre même si elle n'est pas jour)
-- Change les paramètres
+- Changer les paramètres
 
 ```
 if [[ -e "~/.config/discord" ]]
@@ -364,6 +365,7 @@ fi
 - Activer la couleur
 - Activer le mode verbeux
 - Activer le téléchargement en parallèle
+- Définir le nombre de processeur à utiliser
 
 ```
 sudo sed -i "34 s/.*/Color/" /etc/pacman.conf
@@ -471,7 +473,7 @@ git config --global user.name "fadri14"
 - Exécuter le script
 
 ```
-cd ~/Téléchargements/post_install_arch-main
+cd ~/post_install_arch-main
 sudo ./remove_package
 ```
 
@@ -480,7 +482,7 @@ sudo ./remove_package
 - Éffacer le répôt
 
 ```
-cd ~/Téléchargements
+cd ~
 rm -fr post_install_arch-main
 ```
 
