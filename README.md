@@ -321,6 +321,7 @@ nvim ~/.config/nvim/lua/adrien-config/packer.lua
 
 ## Paramètre de discord
 (Pour que l'application s'ouvre même si elle n'est pas jour)
+(Il faut d'abord lancer l'application une première fois)
 - Changer les paramètres
 
 ```
