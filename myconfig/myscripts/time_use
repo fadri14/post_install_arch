@@ -1,6 +1,6 @@
 #!/bin/bash
 
-file_save='/home/adrien/.time_use.txt'
+file_save='/root/.time_use.txt'
 
 initialize()
 {

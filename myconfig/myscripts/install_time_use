@@ -21,14 +21,6 @@ fi
 
 sed -i "3 s|.*|file_save='$HOME/.time_use.txt'|" time_use
 
-if [[ "$(pip --version)" = "0" ]]
-then
-    pip install matplotlib
-else
-    #sudo dnf install python3-pip
-    echo "Il faut installer matplotlib avec pip mais la commande pip n'est pas installée"
-fi
-
 chmod +x time_use
 cp -f time_use /usr/local/bin
 cp -f graphe_time_use.py /usr/local/bin
@@ -54,9 +46,6 @@ WantedBy=default.target" > /etc/systemd/system/time_use_setup.service
 
 chown root:root /etc/systemd/system/time_use.service
 chown root:root /etc/systemd/system/time_use_setup.service
-
-chcon -v --type=systemd_unit_file_t /etc/systemd/system/time_use.service
-chcon -v --type=systemd_unit_file_t /etc/systemd/system/time_use_setup.service
 
 systemctl daemon-reload
 systemctl enable time_use.service

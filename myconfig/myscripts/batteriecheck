@@ -7,20 +7,25 @@ then
     echo "0" > $batterie_state
 fi
 
-if [[ "$(acpi -a | cut -f 3 -d ' ')" = "off-line" ]]
-then
-    level=$(acpi -b | cut -d ',' -f 2 | cut -d ' ' -f 2 | tr -d '%')
+while true
+do
+    if [[ "$(acpi -a | cut -f 3 -d ' ')" = "off-line" ]]
+    then
+        level=$(acpi -b | cut -d ',' -f 2 | cut -d ' ' -f 2 | tr -d '%')
 
-    if [[ "$level" -le 20 ]] && [[ "$(cat $batterie_state)" = "0" ]]
-    then
-        notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur"
-        echo "1" > $batterie_state
-    elif [[ "$level" -le 10 ]] && [[ "$(cat $batterie_state)" = "1" ]]
-    then
-        notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur !!!!!"
-        echo "2" > $batterie_state
+        if [[ "$level" -le 20 ]] && [[ "$(cat $batterie_state)" = "0" ]]
+        then
+            notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur"
+            echo "1" > $batterie_state
+        elif [[ "$level" -le 10 ]] && [[ "$(cat $batterie_state)" = "1" ]]
+        then
+            notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur !!!!!"
+            echo "2" > $batterie_state
+        fi
+    else
+        echo "0" > $batterie_state
     fi
-else
-    echo "0" > $batterie_state
-fi
+
+    sleep 1m
+done
 
