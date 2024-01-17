@@ -24,5 +24,5 @@ RemainAfterExit=yes
 WantedBy=multi-user.target" > /etc/systemd/system/zram-swap.service
 
 systemctl daemon-reload
-systemctl enable --now zram_state.service
+systemctl enable --now zram-swap.service
 

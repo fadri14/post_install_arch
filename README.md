@@ -257,6 +257,15 @@ cd ~/.config/myscripts
 sudo ./install_time_use
 ```
 
+## Initialisation de la zram
+- Se déplacer dans les scripts
+- Lancer l'installation du service pour zram
+
+```
+cd ~/.config/myscripts
+sudo ./install_zram_state
+```
+
 ## Configurer timeshift
 - Créer un premier instantané
 - Modifier les paramètres de grub

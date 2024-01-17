@@ -1,0 +1,44 @@
+#!/bin/bash
+
+path1="$HOME/.config/"
+path2="$HOME/Documents/app_config"
+
+list="
+FreeTube
+discord
+melonDS
+Signal
+Netflix
+Todoist
+"
+
+sync_config_app(){
+    for name in $list
+    do
+        folder1="$1/$name"
+        folder2="$2/$name"
+        
+        if [[ -e "$folder1" ]]
+        then
+            rsync -a --delete --exclude='.cache' "$folder1" "$folder2"
+            echo -e "\033[32mOK\033[0m $name"
+        else
+            echo "Le dossier $folder1 n'existe pas"
+        fi
+    done
+}
+
+if [[ -e "$path1" && -e "$path2" ]]
+then
+    if [[ "$1" = "b" ]]
+    then
+        sync_config_app $path1 $path2
+
+    elif [[ "$1" = "i" ]]
+    then
+        sync_config_app $path2 $path1
+    else
+        echo "Il faut entrer l'argument b ou i"
+    fi
+fi
+
