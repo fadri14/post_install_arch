@@ -134,6 +134,7 @@ sudo ./install_package_arch
     - melonds
     - flashfocus
     - swayfx
+    - arch-update
     - pacman-contrib
     - downgrade
     - workstyle-git
@@ -169,6 +170,9 @@ yay -S flashfocus
 ```
 ```
 yay -S swayfx
+```
+```
+yay -S arch-update
 ```
 ```
 yay -S pacman-contrib
