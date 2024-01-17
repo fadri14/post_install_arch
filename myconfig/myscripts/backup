@@ -11,7 +11,20 @@ declare -a folders=(
     ".ssh"
 )
 
-read -p "Voulez-vous faire un backup ou une installation $(pwd) [b|i] " res0
+if [[ "$1" = "" ]]
+then
+    read -p "Voulez-vous faire un backup ou une installation $(pwd) [b|i] " res0
+else
+    if [[ "$1" = "backup" ]]
+    then
+        res0="b"
+    elif [[ "$1" = "install" ]]
+    then
+        res0="i"
+    else
+        echo "Il faut entrer l'argument backup ou install"
+    fi
+fi
 
 if [[ "$res0" = "b" ]]
 then
