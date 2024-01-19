@@ -248,15 +248,6 @@ User=$USER
 Session=$XDG_SESSION_DESKTOP" > /etc/sddm.conf.d/autologin.conf'
 ```
 
-## Installation de mon application time_use
-- Se déplacer dans les scripts
-- Lancer l'installation de time_use
-
-```
-cd ~/.config/myscripts
-sudo ./install_time_use
-```
-
 ## Initialisation de la zram
 - Se déplacer dans les scripts
 - Lancer l'installation du service pour zram
