@@ -15,24 +15,16 @@ if [[ "$1" = "" ]]
 then
     read -p "Voulez-vous faire un backup ou une installation $(pwd) [b|i] " res0
 else
-    if [[ "$1" = "backup" ]]
-    then
-        res0="b"
-    elif [[ "$1" = "install" ]]
-    then
-        res0="i"
-    else
-        echo "Il faut entrer l'argument backup ou install"
-    fi
+    res0="$1"
 fi
 
 if [[ "$res0" = "b" ]]
 then
-    read -p "Êtes-vous sûr de vouloir faire le backup dans $(pwd) [y|N] " res
+    read -p "Êtes-vous sûr de vouloir faire le backup dans $(pwd) [y|N] " res1
 
     echo -e "\nBackup des données…\n"
 
-    if [[ "$res" = "y" ]]
+    if [[ "$res1" = "y" ]]
     then
         for folder in "${folders[@]}"
         do
@@ -56,11 +48,11 @@ then
 elif [[ "$res0" = "i" ]]
 then
     read -p "Êtes-vous sûr de vouloir faire l'installation avec ce dossier
-    comme départ $(pwd) [y|N] " res
+    comme départ $(pwd) [y|N] " res1
 
     echo -e "\nInstallation des données…\n"
 
-    if [[ "$res" = "y" ]]
+    if [[ "$res1" = "y" ]]
     then
         for folder in "${folders[@]}"
         do
@@ -81,13 +73,13 @@ then
     fi
 fi
 
-if [[ "$res0" = "b" || "$res0" = "i" ]]
+if [[ "$res0" = "b" || "$res0" = "i" ]] && [[ "$res1" = "y" ]]
 then
     echo -e "\nVérification des contenus…\n"
 
     for folder in "${folders[@]}"
     do
-        diff -qr "${HOME}/${folder}" "$folder"
+        diff -x "FreeTube" -qr "${HOME}/${folder}" "$folder"
 
         if [[ "$?" = "0" ]]
         then
