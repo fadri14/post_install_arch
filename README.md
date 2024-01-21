@@ -264,7 +264,7 @@ sudo ./install_zram_state
 - Activer le service de grub-btrfs
 
 ```
-timeshift --create
+sudo timeshift --create
 sudo sed -i 's|ExecStart=/usr/bin/grub-btrfsd --syslog /.snapshots|ExecStart=/usr/bin/grub-btrfsd --syslog --timeshift-auto|' /usr/lib/systemd/system/grub-btrfsd.service
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 sudo systemctl enable --now grub-btrfsd
