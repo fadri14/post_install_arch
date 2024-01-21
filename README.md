@@ -323,29 +323,6 @@ chsh -s /bin/zsh $USER
 nvim ~/.config/nvim/lua/adrien-config/packer.lua
 ```
 
-## Paramètre de discord
-(Pour que l'application s'ouvre même si elle n'est pas jour)
-(Il faut d'abord lancer l'application une première fois)
-- Changer les paramètres
-
-```
-if [[ -e "~/.config/discord" ]]
-then
-    echo "
-{ 
-  "IS_MAXIMIZED": true,
-  "IS_MINIMIZED": false,
-  "WINDOW_BOUNDS": {
-    "x": 2240,
-    "y": 219,
-    "width": 1280,
-    "height": 720
-  },
-  "SKIP_HOST_UPDATE": true
-}" > ~/.config/discord/settings.json
-fi
-```
-
 ## Configuration de pacman
 - Activer la couleur
 - Activer le mode verbeux
