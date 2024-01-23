@@ -94,11 +94,8 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 ```
 sudo gpasswd -a $USER input
-newgrp input
 sudo gpasswd -a $USER video
-newgrp video
 sudo gpasswd -a $USER audio
-newgrp audio
 ```
 
 ## Installer fusuma
