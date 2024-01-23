@@ -426,7 +426,7 @@ sudo systemctl enable ufw.service
 - Définir le pseudo
 
 ```
-git config --global user.email "lebotdufutur@proton.me"
+git config --global user.email "fadri1@proton.me"
 git config --global user.name "fadri14"
 ```
 
