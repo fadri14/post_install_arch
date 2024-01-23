@@ -78,15 +78,6 @@ cd ..
 rm -fr yay
 ```
 
-## Installer le répôt flathub
-- Installer flatpak
-- Ajouter le répôt flathub à la liste des répôts de flatpak
-
-```
-sudo pacman --noconfirm -S flatpak
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-```
-
 ## Rejoindre les groupes
 - Rejoindre le groupe input
 - Rejoindre le groupe video
