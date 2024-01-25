@@ -48,5 +48,5 @@ require("catppuccin").setup({
     },
 })
 
---require('catppuccin').load()
+-- --require('catppuccin').load()
 

@@ -9,6 +9,7 @@ declare -a folders=(
     "Vidéos"
     ".password-store"
     ".ssh"
+    ".gnupg"
 )
 
 if [[ "$1" = "" ]]

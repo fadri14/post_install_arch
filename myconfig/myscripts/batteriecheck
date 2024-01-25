@@ -33,6 +33,11 @@ do
             eval "sleep ${time_pause}s"
         fi
     else
+        if [[ "$level" = "100" ]]
+        then
+            notify-send "Le pc est complétement chargé"
+        fi
+
         echo "0" > $batterie_state
         sleep 30m
     fi

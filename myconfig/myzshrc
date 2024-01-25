@@ -52,8 +52,6 @@ export ZVM_INSERT_MODE_CURSOR=$ZVM_CURSOR_UNDERLINE
 export ZVM_VISUAL_MODE_CURSOR=$ZVM_CURSOR_BLOCK
 export ZVM_VISUAL_LINE_MODE_CURSOR=$ZVM_CURSOR_BLOCK
 
-export ARCHWEB_USERNAME='lebotdufutur'
-
 alias c='clear'
 alias q='exit'
 alias py='python3'
