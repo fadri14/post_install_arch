@@ -6,6 +6,8 @@ then
     exit 1
 fi
 
+#grub-btrfs
+
 packages="
 neovim
 alacritty
@@ -36,7 +38,6 @@ python-pynvim
 grim
 python-pip
 rsync
-grub-btrfs
 zsh
 zenity
 util-linux
@@ -45,7 +46,6 @@ cronie
 network-manager-applet
 blueman
 libinput
-ruby
 discord
 sddm
 wtype
@@ -114,7 +114,6 @@ libxv
 wavpack
 x264
 xvidcore
-gstreamer0.10-plugins
 "
 
 for package in $packages

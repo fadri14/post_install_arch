@@ -37,6 +37,19 @@ passwd
 sudo passwd root
 ```
 
+## Configuration de pacman
+- Activer la couleur
+- Activer le mode verbeux
+- Activer le téléchargement en parallèle
+- Définir le nombre de processeur à utiliser
+
+```
+sudo sed -i "34 s/.*/Color/" /etc/pacman.conf
+sudo sed -i "37 s/.*/VerbosePkgLists/" /etc/pacman.conf
+sudo sed -i "38 s/.*/ParallelDownloads = 5\n/" /etc/pacman.conf
+sudo sed -i '49 s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j\$(nproc)\"/' /etc/makepkg.conf
+```
+
 ## Création des répertoires par défauts
 - Installer le paquet nécessaire
 - Mettre à jour les répertoires utilisateurs
@@ -97,7 +110,7 @@ sudo gpasswd -a $USER audio
 ```
 sudo pacman -Syu ruby
 gem install fusuma
-mv ~/.local/share/gem/ruby/3.0.0/bin/fusuma /usr/local/bin
+sudo mv ~/.local/share/gem/ruby/3.0.0/bin/fusuma /usr/local/bin
 ```
 
 ## Installer tous les programmes souhaités
@@ -109,7 +122,7 @@ mv ~/.local/share/gem/ruby/3.0.0/bin/fusuma /usr/local/bin
 
 ```
 cd ~/post_install_arch-main
-sudo ./install_package_arch
+sudo ./install_package
 ```
 
 ### Avec yay
@@ -130,8 +143,6 @@ sudo ./install_package_arch
     - netflix
     - freetube
     - grimshot
-    - pdfsam
-    - ventoy
     - timeshift
     - timeshift-autosnap
 
@@ -184,12 +195,6 @@ yay -S freetube
 yay -S grimshot
 ```
 ```
-yay -S pdfsam
-```
-```
-yay -S ventoy
-```
-```
 yay -S timeshift
 ```
 ```
@@ -232,8 +237,8 @@ Notez qu'il choisira l'utilisateur actuel ainsi que la session actuelle
 sudo mkdir /etc/sddm.conf.d
 sudo -E bash -c 'echo "
 [Autologin]
-User=$USER
-Session=$XDG_SESSION_DESKTOP" > /etc/sddm.conf.d/autologin.conf'
+User=adrien
+Session=sway" > /etc/sddm.conf.d/autologin.conf'
 ```
 
 ## Initialisation de la zram
@@ -246,13 +251,12 @@ sudo ./install_zram_state
 ```
 
 ## Configurer timeshift
-- Créer un premier instantané
+(Uniquement pour un système btrfs)
 - Modifier les paramètres de grub
 - Mettre à jour la config de grub
 - Activer le service de grub-btrfs
 
 ```
-sudo timeshift --create
 sudo sed -i 's|ExecStart=/usr/bin/grub-btrfsd --syslog /.snapshots|ExecStart=/usr/bin/grub-btrfsd --syslog --timeshift-auto|' /usr/lib/systemd/system/grub-btrfsd.service
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 sudo systemctl enable --now grub-btrfsd
@@ -261,7 +265,6 @@ sudo systemctl enable --now grub-btrfsd
 ## Zsh
 
 ### Installation de oh-my-zsh
-(Il faut refuser de changer de shell)
 - Se déplacer dans le dossier personnel
 - Télécharger oh-my-zsh
 - Le déplacer dans le fichier de config
@@ -269,6 +272,8 @@ sudo systemctl enable --now grub-btrfsd
 ```
 cd ~
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+```
 mv .oh-my-zsh .config/oh-my-zsh
 ```
 
@@ -309,19 +314,6 @@ chsh -s /bin/zsh $USER
 
 ```
 nvim ~/.config/nvim/lua/adrien-config/packer.lua
-```
-
-## Configuration de pacman
-- Activer la couleur
-- Activer le mode verbeux
-- Activer le téléchargement en parallèle
-- Définir le nombre de processeur à utiliser
-
-```
-sudo sed -i "34 s/.*/Color/" /etc/pacman.conf
-sudo sed -i "37 s/.*/VerbosePkgLists/" /etc/pacman.conf
-sudo sed -i "38 s/.*/ParallelDownloads = 5\n/" /etc/pacman.conf
-sudo sed -i '49 s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j\$(nproc)\"/' /etc/makepkg.conf
 ```
 
 ## Gérer la cache de pacman
