@@ -410,6 +410,17 @@ git config --global user.email "fadri1@proton.me"
 git config --global user.name "fadri14"
 ```
 
+## Ajouter les clés gpg au trousseau
+- Se déplacer dans les documents
+- Importer la clé publique
+- Importer la clé privé
+
+```
+cd ~/Documents
+gpg --import .public.key
+gpg --import .private.key
+```
+
 ## Suppression des paquets inutiles
 - Se déplacer dans le répôt
 - Exécuter le script
