@@ -1,15 +1,14 @@
 #!/bin/bash
 
-path1="$HOME/.config/"
-path2="$HOME/Documents/app_config"
+path1="$HOME/.config/FreeTube"
+path2="$HOME/Documents/config_freetube"
 
 list="
-FreeTube
-discord
-melonDS
-Signal
-Netflix
-Todoist
+history.db
+playlists.db
+Preferences
+profiles.db
+settings.db
 "
 
 sync_config_app(){

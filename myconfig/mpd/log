@@ -1760,3 +1760,5 @@ Jan 25 18:54 : player: played "Davodka  Accus de Rflexion Clip Officiel.mp3"
 Jan 25 18:58 : player: played "Davodka  Accus de Rflexion Clip Officiel.mp3"
 Jan 25 19:15 : player: played "Davodka  Tour de Contrle Feat Hayce Lemsi  Clip Officiel.mp3"
 Jan 25 22:38 : player: played "Davodka  Vision Nocturne  CLIP OFFICIEL .mp3"
+Jan 26 16:42 : exception: Failed to decode /home/adrien/Musique/Davodka  Vision Nocturne  CLIP OFFICIEL .mp3; Failed to open '/home/adrien/Musique/Davodka  Vision Nocturne  CLIP OFFICIEL .mp3': No such file or directory
+Jan 26 16:42 : player: played "Davodka  Vision Nocturne  CLIP OFFICIEL .mp3"
