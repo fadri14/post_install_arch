@@ -46,7 +46,7 @@ sudo passwd root
 ```
 sudo sed -i "34 s/.*/Color/" /etc/pacman.conf
 sudo sed -i "37 s/.*/VerbosePkgLists/" /etc/pacman.conf
-sudo sed -i "38 s/.*/ParallelDownloads = 5\n/" /etc/pacman.conf
+sudo sed -i "38 s/.*/ParallelDownloads = 4\n/" /etc/pacman.conf
 sudo sed -i '49 s/#MAKEFLAGS=\"-j2\"/MAKEFLAGS=\"-j\$(nproc)\"/' /etc/makepkg.conf
 ```
 
@@ -343,7 +343,7 @@ sudo systemctl enable --now  bluetooth.service
 - Activer les démons avahi et cups
 
 ```
-sudo systemctl enable --now avahi-daemon cups
+sudo systemctl enable --now avahi-daemon cups.socket
 ```
 
 ## Supprimer le délai dans grub
