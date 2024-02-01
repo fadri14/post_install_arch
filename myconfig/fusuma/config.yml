@@ -5,9 +5,9 @@ swipe:
     right:
       command: "swaymsg 'workspace prev'"
     up:
-      command: "librewolf"
+      command: "alacritty"
     down:
-      command: "alacritty -e ranger"
+      command: "wtype  -M win -k a -m win -k y"
   4:
     down:
       command: "/home/adrien/.config/myscripts/closeApp"
