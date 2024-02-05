@@ -9,6 +9,7 @@ fi
 #grub-btrfs
 
 packages="
+vim
 neovim
 alacritty
 evince
