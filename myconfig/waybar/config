@@ -32,7 +32,8 @@
                 "paused": "",
                 "playing": ""
             },
-            "tooltip-format": "MPD (connected)",
+            "tooltip-format": "Sound: {artist} - {album} - {title}",
+            //"tooltip-format": "MPD (connected)",
             "tooltip-format-disconnected": "MPD (disconnected)"
         },
         "clock": {

@@ -6,15 +6,15 @@
   <property name="pressureMultiplier" value="1"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="Portrait"/>
-  <property name="lastSavePath" value="/home/adrien/Documents/bac3/crypto"/>
-  <property name="lastOpenPath" value="/home/adrien/Documents/bac3/crypto"/>
+  <property name="lastSavePath" value="/home/adrien/Documents/bac3/Q2/Simulation"/>
+  <property name="lastOpenPath" value="/home/adrien/Documents/bac3/Q2/Simulation"/>
   <property name="lastImagePath" value="/home/adrien/.Trash"/>
   <property name="edgePanSpeed" value="20"/>
   <property name="edgePanMaxMult" value="5"/>
   <property name="zoomStep" value="10"/>
   <property name="zoomStepScroll" value="2"/>
   <property name="displayDpi" value="72"/>
-  <property name="mainWndWidth" value="948"/>
+  <property name="mainWndWidth" value="1902"/>
   <property name="mainWndHeight" value="1020"/>
   <property name="maximized" value="true"/>
   <property name="showToolbar" value="true"/>
@@ -204,7 +204,7 @@
     </data>
     <data name="eraser">
       <attribute name="drawingType" type="string" value="default"/>
-      <attribute name="size" type="string" value="BIG"/>
+      <attribute name="size" type="string" value="THIN"/>
       <attribute name="type" type="string" value="default"/>
     </data>
     <data name="hand">
@@ -221,11 +221,11 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="pen">
-      <attribute name="color" type="hex" value="000000"/>
+      <attribute name="color" type="hex" value="007aff"/>
       <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
-      <attribute name="size" type="string" value="BIG"/>
+      <attribute name="size" type="string" value="THIN"/>
       <attribute name="style" type="string" value="plain"/>
     </data>
     <data name="playObject">

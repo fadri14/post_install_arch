@@ -368,7 +368,7 @@ Target = grub
 [Action]
 Description = Executing Grub-install...
 When = PostTransaction
-Exec = /usr/bin/grub-install --target=x86_64-efi --efi-directory=/boot --disable-shim-lock' > /usr/share/libalpm/hooks/99-grub_install.hook"
+Exec = /usr/bin/grub-install --target=x86_64-efi  --efi-directory=/boot/EFI --bootloader-id=grub_uefi --recheck' > /usr/share/libalpm/hooks/99-grub_install.hook"
 
 sudo bash -c "echo '[Trigger]
 Operation = Install
