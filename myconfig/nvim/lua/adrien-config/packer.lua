@@ -87,30 +87,6 @@ packer.startup({
 
         -- Wakatime
         use ('wakatime/vim-wakatime')
-
-        -- Neorg
-        use {
-            "nvim-neorg/neorg",
-            tag = "*",
-            after = "nvim-treesitter", -- You may want to specify Telescope here as well
-            config = function()
-                require('neorg').setup {
-                    load = {
-                        ["core.defaults"] = {}, -- Loads default behaviour
-                        ["core.concealer"] = {}, -- Adds pretty icons to your documents
-                        ["core.dirman"] = { -- Manages Neorg workspaces
-                            config = {
-                                workspaces = {
-                                    notes = "~/notes",
-                                    ml = "~/Documents/bac3/Q2/ML",
-                                },
-                            },
-                        },
-                    },
-                }
-            end
-        }
-
     end,
     config = {
         display = {

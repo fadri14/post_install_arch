@@ -13,6 +13,7 @@ x-scheme-handler/http=librewolf.desktop
 application/xhtml+xml=librewolf.desktop
 text/html=librewolf.desktop
 x-scheme-handler/https=librewolf.desktop
+x-scheme-handler/obsidian=obsidian.desktop
 
 [Added Associations]
 application/pdf=org.gnome.Evince.desktop;com.github.xournalpp.xournalpp.desktop;

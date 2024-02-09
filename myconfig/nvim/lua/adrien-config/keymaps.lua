@@ -57,8 +57,6 @@ key('n', 'à', ':w<CR>', full_options)
 key('n', 'ê', ':q<CR>', full_options)
 key('n', 'é', 'w', full_options)
 key('v', 'é', 'w', full_options)
-key('n', '<leader><leader>', ':lua changeTheme()<CR>', full_options)
-key('n', '<leader>f', ':Neorg workspace ', full_options)
 
 -- Ranger
 key("n", "<leader>r", "", {
