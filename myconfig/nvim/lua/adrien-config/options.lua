@@ -8,7 +8,7 @@ local options = {
 	sidescrolloff = 12,
 	mouse = "a",
 	cursorline = true,
-	colorcolumn = "81", --set an vertical barre
+	colorcolumn = "82", --set an vertical barre
 	numberwidth = 2,
 	textwidth = 0,
 	shiftwidth = 4,
@@ -17,8 +17,12 @@ local options = {
 	softtabstop = 4,
 	fileencoding = "utf-8",
 	signcolumn = "no",
+    conceallevel = 2, -- Pour cacher les caractères dans neorg
+    foldlevel = 0,
+    foldlevelstart = -1,
 	cmdheight = 1,
 	showmode = false,
+    autochdir = true,
 	splitbelow = true,
 	splitright = true,
 	smartindent = true,
@@ -45,4 +49,3 @@ local options = {
 for key, value in pairs(options) do
 	vim.opt[key] = value
 end
-

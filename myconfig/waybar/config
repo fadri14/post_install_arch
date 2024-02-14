@@ -19,7 +19,7 @@
                 "on": " "
             },
             "random-icons": {
-                "off": "<span color=\"#f53c3c\"></span> ",
+                //"off": "<span color=\"#f53c3c\"></span> ",
                 "on": " "
             },
             "repeat-icons": {

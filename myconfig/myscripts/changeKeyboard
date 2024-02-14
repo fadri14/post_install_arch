@@ -16,7 +16,7 @@ then
     sed -i '8 s/# //' "$pathConfig/10-input.conf"
 
     # neovim
-    sed -i '8,46 s/^-- //' $pathNeo
+    sed -i '9,47 s/^-- //' $pathNeo
 
     echo "bepo" > $state
 elif [[ "$value" = "bepo" ]]
@@ -30,7 +30,7 @@ then
     sed -i '8 s/^/# /' "$pathConfig/10-input.conf"
 
     # neovim
-    sed -i '8,16 s/^/-- /' $pathNeo
+    sed -i '9,47 s/^/-- /' $pathNeo
 
     echo "azerty" > $state
 fi

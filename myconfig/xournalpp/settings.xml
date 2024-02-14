@@ -6,8 +6,8 @@
   <property name="pressureMultiplier" value="1"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="Portrait"/>
-  <property name="lastSavePath" value="/home/adrien/Documents/bac3/Q2/ITR/Chapitre 0 — Introduction"/>
-  <property name="lastOpenPath" value="/home/adrien/Documents/bac3/Q2/ITR/Chapitre 0 — Introduction"/>
+  <property name="lastSavePath" value="/home/adrien/Documents/bac3/Q2/BDD2"/>
+  <property name="lastOpenPath" value="/home/adrien/Documents/bac3/Q2/BDD2"/>
   <property name="lastImagePath" value="/home/adrien/.Trash"/>
   <property name="edgePanSpeed" value="20"/>
   <property name="edgePanMaxMult" value="5"/>
@@ -204,14 +204,14 @@
     </data>
     <data name="eraser">
       <attribute name="drawingType" type="string" value="default"/>
-      <attribute name="size" type="string" value="THIN"/>
+      <attribute name="size" type="string" value="MEDIUM"/>
       <attribute name="type" type="string" value="default"/>
     </data>
     <data name="hand">
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="highlighter">
-      <attribute name="color" type="hex" value="ffffff00"/>
+      <attribute name="color" type="hex" value="ff8000"/>
       <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>

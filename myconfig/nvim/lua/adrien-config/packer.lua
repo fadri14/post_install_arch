@@ -87,6 +87,13 @@ packer.startup({
 
         -- Wakatime
         use ('wakatime/vim-wakatime')
+
+        use {
+            "nvim-neorg/neorg",
+            run = ":Neorg sync-parsers",
+            requires = "nvim-lua/plenary.nvim",
+        }
+
     end,
     config = {
         display = {

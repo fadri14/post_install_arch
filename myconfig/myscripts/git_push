@@ -3,10 +3,9 @@
 if [[ "$(pgrep ssh-agent)" = "" ]]
 then
     echo "Attention ssh-agent n'est pas activé"
-    echo "Utilise la commande gitco"
     exit 1
-else
-    cd "$1"
-    git add "$2" && git commit -m "$3" && git push
 fi
+
+cd "$1"
+git add $2 && git commit -m "$3" && git push
 

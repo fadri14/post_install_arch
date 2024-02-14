@@ -410,6 +410,13 @@ git config --global user.email "fadri1@proton.me"
 git config --global user.name "fadri14"
 ```
 
+## Configurer l'agent de gpg
+- Ajouter la config
+
+```
+echo "default-cache-ttl 3600" > ~/.gnupg/gpg-agent.conf
+```
+
 ## Ajouter les clés gpg au trousseau
 - Se déplacer dans les documents
 - Importer la clé publique

@@ -3,6 +3,7 @@ local full_options = { noremap = true, silent = true }
 local noremap = { noremap = true }
 
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- change key for bepo
 key('n', 'c', 'h', full_options)
@@ -82,4 +83,10 @@ key('n', '<leader>b', builtin.buffers, {})
 
 -- Alpha
 key('n', '<leader>a', ':Alpha<CR>', full_options)
+
+-- Neorg
+key('n', '<leader>àn', ':Neorg workspace notes<CR>', full_options)
+key('n', '<leader>àm', ':Neorg workspace ml<CR>', full_options)
+key('n', '<leader>j', ':Neorg journal today<CR>', full_options)
+key('n', "<leader>c", ":Neorg keybind all core.looking-glass.magnify-code-block<CR>")
 

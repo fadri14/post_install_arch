@@ -33,7 +33,9 @@ mpd
 mpc
 fastfetch
 pass
+keychain
 texlive
+texlive-langfrench
 libffi
 python-cffi
 python-matplotlib

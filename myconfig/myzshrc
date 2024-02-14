@@ -27,7 +27,7 @@ COMPLETION_WAITING_DOTS="true"
 
 HIST_STAMPS="mm/dd/yyyy"
 
-plugins=(zsh-autosuggestions git sudo web-search enhancd zsh-vi-mode)
+plugins=(zsh-autosuggestions git sudo enhancd zsh-vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zshenv
@@ -55,25 +55,29 @@ export ZVM_VISUAL_LINE_MODE_CURSOR=$ZVM_CURSOR_BLOCK
 alias c='clear'
 alias q='exit'
 alias py='python3'
-alias gg="git pull"
-alias gb='gradle build'
-alias gr='gradle run'
 alias n='nvim'
 alias vue='nvim -R'
 alias nsh='nvim ${HOME}/.config/myzshrc'
 alias sd='xdg-open .'
+alias ra='ranger'
+alias o='xdg-open 2> /dev/null'
+alias nas='source nas_connection'
+alias mirror='wl-mirror -F --fullscreen eDP-1'
+alias findexe='find $(pwd) -type f -executable'
+alias checkt='find / -not \( -path "*/var/*" -o -path "*/.cache/*" -o -path "*/.local/*" -o -path "*/systemd/*" -o -path "*/sys/*" -o -path "*/proc/*" \) -type f -cmin -3 2>/dev/null'
+
+#alias gitco='eval "$(ssh-agent -s)" && ssh-add ~/.ssh/github && ssh-agent -t 3600'
+alias gitco='eval $(keychain --eval --quiet github) && echo "yes" > /home/adrien/.ssh/state_connect'
+alias gg='git pull'
+alias gp='git_push "$(pwd)"'
 alias gc='git reset --hard && git clean -fd'
 alias gm='git stash && git pull && git stash apply'
-alias findexe='find $(pwd) -type f -executable'
-alias o='xdg-open 2> /dev/null'
-alias checkt='find / -not \( -path "*/var/*" -o -path "*/.cache/*" -o -path "*/.local/*" -o -path "*/systemd/*" -o -path "*/sys/*" -o -path "*/proc/*" \) -type f -cmin -3 2>/dev/null'
-alias ra='ranger'
-alias gt='github'
-alias ds='ddg'
-alias gp='git_push "$(pwd)"'
-alias nas='source nas_connection'
-alias gitco='eval "$(ssh-agent -s)" && ssh-add ~/.ssh/github'
-alias mirror='wl-mirror -F --fullscreen eDP-1'
+alias gb='gradle build'
+alias gr='gradle run'
 
 function sh() { history | grep "$1"; }
 
+if [[ "$(cat /home/adrien/.ssh/state_connect)" = "yes" ]]
+then
+    eval $(keychain --eval --quiet github)
+fi
