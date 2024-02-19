@@ -87,6 +87,7 @@ key('n', '<leader>a', ':Alpha<CR>', full_options)
 -- Neorg
 key('n', '<leader>àn', ':Neorg workspace notes<CR>', full_options)
 key('n', '<leader>àm', ':Neorg workspace ml<CR>', full_options)
+key('n', '<leader>às', ':Neorg workspace seminaire<CR>', full_options)
 key('n', '<leader>j', ':Neorg journal today<CR>', full_options)
 key('n', "<leader>c", ":Neorg keybind all core.looking-glass.magnify-code-block<CR>")
 

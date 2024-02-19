@@ -9,7 +9,7 @@
             "format": "{icon}"
         },
         "mpd": {
-            "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{elapsedTime:%M:%S}/{totalTime:%M:%S} ⸨{songPosition}|{queueLength}⸩ {volume}% ",
+            "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon} {elapsedTime:%M:%S}/{totalTime:%M:%S} ⸨{songPosition}|{queueLength}⸩ {volume}% ",
             // "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
             "format-disconnected": "Disconnected ",
             "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon} Stopped ",

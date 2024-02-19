@@ -69,6 +69,7 @@ alias checkt='find / -not \( -path "*/var/*" -o -path "*/.cache/*" -o -path "*/.
 #alias gitco='eval "$(ssh-agent -s)" && ssh-add ~/.ssh/github && ssh-agent -t 3600'
 alias gitco='eval $(keychain --eval --quiet github) && echo "yes" > /home/adrien/.ssh/state_connect'
 alias gg='git pull'
+alias gs='git status'
 alias gp='git_push "$(pwd)"'
 alias gc='git reset --hard && git clean -fd'
 alias gm='git stash && git pull && git stash apply'

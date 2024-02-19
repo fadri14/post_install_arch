@@ -13,15 +13,29 @@ do
     then
         level=$(acpi -b | cut -d ',' -f 2 | cut -d ' ' -f 2 | tr -d '%')
 
-        if [[ "$level" -le 20 ]] && [[ "$(cat $batterie_state)" = "0" ]]
+        if [[ "$level" -le 5 ]]# && [[ "$(cat $batterie_state)" != "3" ]] # Retirer ce commentaire pour ne pas spammer si c'est en dessous de 5%
         then
-            notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur"
-            echo "1" > $batterie_state
-        elif [[ "$level" -le 5 ]] || [[ "$level" -le 10 ]] && [[ "$(cat $batterie_state)" = "1" ]]
+            notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur !!!!!"
+            echo "3" > $batterie_state
+        elif [[ "$level" -le 10 ]] && [[ "$(cat $batterie_state)" != "2" ]]
         then
             notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur !!!!!"
             echo "2" > $batterie_state
+        elif [[ "$level" -le 20 ]] && [[ "$(cat $batterie_state)" = "1" ]]
+        then
+            notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur"
+            echo "1" > $batterie_state
         fi
+
+        #if [[ "$level" -le 20 ]] && [[ "$(cat $batterie_state)" = "0" ]]
+        #then
+        #    notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur"
+        #    echo "1" > $batterie_state
+        #elif [[ "$level" -le 5 ]] || [[ "$level" -le 10 ]] && [[ "$(cat $batterie_state)" = "1" ]]
+        #then
+        #    notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur !!!!!"
+        #    echo "2" > $batterie_state
+        #fi
 
         time_pause=$(( $level - 20 ))
 

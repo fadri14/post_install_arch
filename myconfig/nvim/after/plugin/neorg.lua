@@ -81,6 +81,7 @@ neorg.setup{
                 workspaces = {
                     notes = "~/Notes",
                     ml = "~/Documents/bac3/Q2/ML",
+                    seminaire = "~/Documents/bac3/Q2/Seminaire",
                 },
             },
         },

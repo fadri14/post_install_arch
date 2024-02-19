@@ -1946,3 +1946,70 @@ Feb 11 11:38 : player: played "Alan Walker 2019.mp3"
 Feb 11 22:17 : player: played "Alan Walker 2019.mp3"
 Feb 12 08:17 : player: played "Alan Walker 2019.mp3"
 Feb 12 09:36 : player: played "HUGO TSR  Jveux pas grandir 2005  Chambre Froide.mp3"
+Feb 14 17:36 : player: played "kshmr-marnik-mandala-magnace-remix.mp3"
+Feb 14 17:40 : player: played "PETIT BISCUIT - Sunset Lover.mp3"
+Feb 14 17:45 : player: played "The Chainsmokers - Closer (Lyrics)(ft. Halsey).mp3"
+Feb 14 17:48 : player: played "adam-jensen-the-mystic.mp3"
+Feb 14 17:52 : player: played "La Fouine  Ma Meilleure Clip Officiel ft Zaho.mp3"
+Feb 14 17:57 : player: played "KIDS UNITED  Les lacs du Connemara (clip officiel) [SARDOU et nous].mp3"
+Feb 14 18:00 : player: played "Zedd, Grey - The Middle (Lyrics) ft. Maren Morris.mp3"
+Feb 14 18:03 : player: played "Selena Gomez, Marshmello - Wolves.mp3"
+Feb 14 18:07 : player: played "Avicii - Levels.mp3"
+Feb 14 18:10 : player: played "Owl City & Carly Rae Jepsen - Good Time.mp3"
+Feb 14 18:14 : player: played "neffex-cold.mp3"
+Feb 14 20:38 : player: played "neffex-cold.mp3"
+Feb 16 08:35 : player: played "Colonel Reyel - 'Celui' (clip officiel).mp3"
+Feb 16 08:38 : player: played "timbaland-apologize-ft-onerepublic-sylitom-remix.mp3"
+Feb 16 08:38 : player: played "Melfiano _  Qui tu es.mp3"
+Feb 16 08:42 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/layer1.c:check_balloc():30] error: Illegal bit allocation value.
+[src/libmpg123/layer1.c:INT123_do_layer1():228] error: Aborting layer I decoding after step one.
+Note: Illegal Audio-MPEG-Header 0x0d8068c6 at offset 38081.
+Note: Trying to resync...
+Note: Skipped 703 bytes in input.
+Note: Illegal Audio-MPEG-Header 0x967fbd54 at offset 41417.
+Note: Trying to resync...
+Note: Skipped 1024 bytes in input.
+[src/libmpg123/parse.c:wetwork():1349] error: Giving up resync after 1024 bytes - your stream is not nice... (maybe increasing resync limit could help).
+Feb 16 08:42 : mpg123: mpg123_read() failed: A generic mpg123 error.
+Feb 16 08:42 : player: played "portishead-glory-box.mp3"
+Feb 16 08:42 : player: played "Grieg - In the Hall of the Mountain King.mp3"
+Feb 16 08:46 : player: played "Fifth Harmony - Work from Home ft. Ty Dolla $ign.mp3"
+Feb 16 08:48 : player: played "Robin Schulz - Sun Goes Down feat. Jasmine Thompson (Official Video).mp3"
+Feb 16 08:51 : player: played "Soprano - fresh prince  Parole _ Lyrics.mp3"
+Feb 16 08:53 : player: played "Fairy Tail - Main Theme.mp3"
+Feb 16 08:56 : player: played "yanns-clic-clic-pan-pan-official-lyrics-video.mp3"
+Feb 16 09:01 : player: played "Wim Mertens - Struggle For Pleasure (1988).mp3"
+Feb 16 09:32 : player: played "Musique qui bouge partie 3.mp3"
+Feb 16 10:53 : player: played "Musique qui bouge partie 3.mp3"
+Feb 18 14:13 : player: played "Max Schneider - Rags Nothing Gets Better Than This (Lyrics).mp3"
+Feb 18 14:16 : player: played "Pokmon Gold Silver Crystal Champion Red Battle.mp3"
+Feb 18 14:19 : player: played "Kendji Girac, Soprano - No Me Mires Mas lyrics - paroles.mp3"
+Feb 18 14:23 : player: played "Alan Walker - Inception.mp3"
+Feb 18 14:26 : player: played "wide-awake-how-it-go.mp3"
+Feb 18 14:29 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Feb 18 14:29 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Feb 18 14:29 : player: played "Queen -  We Are The Champions (Official Video).mp3"
+Feb 18 14:33 : player: played "Angèle - Flou.mp3"
+Feb 18 14:36 : player: played "Marshmello ft. Khalid - Silence (Official Lyric Video).mp3"
+Feb 18 14:40 : player: played "Alan Walker - Spectre.mp3"
+Feb 18 14:45 : player: played "Mount Olympus - Approaching Nirvana.mp3"
+Feb 18 14:48 : player: played "shaed-x-zayn-trampoline.mp3"
+Feb 18 14:51 : player: played "neffex-badass.mp3"
+Feb 18 14:54 : player: played "lyd-feat-annie-sama-cyborg.mp3"
+Feb 18 14:57 : player: played "Lost Frequencies & Zonderling - Crazy (Official Music Video).mp3"
+Feb 18 16:13 : player: played "Blanke  Only You Feat Meggie York.mp3"
+Feb 18 16:16 : player: played "DADJU - REINE ( Clip Officiel ).mp3"
+Feb 18 16:20 : player: played "king-only-u.mp3"
+Feb 18 16:24 : player: played "yanns-ft-noodels-amoureuse-paroleslyrics.mp3"
+Feb 18 16:27 : player: played "Sunbeam - Outside World (Official Video HQ).mp3"
+Feb 18 16:30 : player: played "Yuston XIII  Fantome.mp3"
+Feb 18 16:31 : player: played "one-piece-soundtrack-the-very-very-very-strongest.mp3"
+Feb 18 16:37 : player: played "TheFatRat  Unity.mp3"
+Feb 18 16:44 : player: played "Nightcore  Stronger TheFatRat Slaydit  Anjulie.mp3"
+Feb 18 16:49 : player: played "KIDS UNITED  Les lacs du Connemara (clip officiel) [SARDOU et nous].mp3"
+Feb 18 16:53 : player: played "blknz-satica-cold-sweats.mp3"
+Feb 18 16:57 : player: played "DVBBS  Borgeous - TSUNAMI (Original Mix).mp3"
+Feb 18 18:21 : player: played "Cheat Codes  No Promises (Lyrics) Ft. Demi Lovato.mp3"
+Feb 18 19:47 : player: played "Cheat Codes  No Promises (Lyrics) Ft. Demi Lovato.mp3"
