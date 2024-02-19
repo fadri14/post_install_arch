@@ -73,7 +73,7 @@ bindsym $mod+tab exec rofi -show window -display-window-icons -display-drun -the
 
 bindsym $mod+z exec alacritty --class alacritty-fullscreen -e /home/adrien/script/openfile
 
-bindsym $mod+space exec alacritty -e /home/adrien/script/changeKeyboard
+bindsym $mod+space exec /home/adrien/.config/myscripts/changeKeyboard
 
 bindsym $mod+p exec alacritty -e /home/adrien/script/closeApp # systemctl poweroff
 

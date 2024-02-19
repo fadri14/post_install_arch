@@ -2,7 +2,7 @@
 
 pathConfig="$HOME/.config/sway/config.d"
 pathNeo="$HOME/.config/nvim/lua/adrien-config/keymaps.lua"
-state="$HOME/.config/script/.keyboardState.txt"
+state="$HOME/.config/myscripts/.keyboardState.txt"
 value=$(cat $state)
 
 if [[ "$value" = "azerty" ]]
