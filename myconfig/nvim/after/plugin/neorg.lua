@@ -1,6 +1,6 @@
 local state, neorg = pcall(require, "neorg")
 if not state then
-	return
+    return
 end
 
 neorg.setup{
@@ -45,7 +45,9 @@ neorg.setup{
                     keybinds.map("norg", "n", "<leader>mt", "<cmd>Neorg mode traverse-heading<CR>")
                     keybinds.map("norg", "n", "<leader>ml", "<cmd>Neorg mode traverse-link<CR>")
 
-                    keybinds.map("norg", "n", "<leader>q", "<cmd>Neorg journal today<CR>")
+                    keybinds.map("norg", "n", "<leader>q", "<cmd>Neorg return<CR>")
+                    keybinds.map("norg", "n", "<leader>I", "<cmd>Neorg index<CR>")
+                    keybinds.map("norg", "n", "<leader>T", "<cmd>Neorg toc<CR>")
 
                     keybinds.map("norg", "n", "<leader>c", "<cmd>Neorg keybind all core.looking-glass.magnify-code-block")
 
@@ -67,7 +69,11 @@ neorg.setup{
         ["core.looking-glass"] = {},
         ["core.pivot"] = {},
         ["core.promo"] = {},
-        ["core.qol.toc"] = {},
+        ["core.qol.toc"] = {
+            config = {
+                close_after_use = true,
+            },
+        },
         ["core.qol.todo_items"] = {},
         ["core.tangle"] = {},
         ["core.upgrade"] = {},
@@ -80,10 +86,10 @@ neorg.setup{
             config = {
                 workspaces = {
                     notes = "~/Notes",
-                    ml = "~/Documents/bac3/Q2/ML",
-                    seminaire = "~/Documents/bac3/Q2/Seminaire",
                 },
+                default_workspace = "notes",
             },
         },
+        ["core.summary"] = {},
     },
 }

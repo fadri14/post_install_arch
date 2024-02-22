@@ -88,11 +88,15 @@ packer.startup({
         -- Wakatime
         use ('wakatime/vim-wakatime')
 
+        -- Neorg
         use {
             "nvim-neorg/neorg",
             run = ":Neorg sync-parsers",
             requires = "nvim-lua/plenary.nvim",
         }
+
+        -- Nabla (pour écrire des formules)
+        -- use ('jbyuki/nabla.nvim')
 
     end,
     config = {

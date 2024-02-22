@@ -1,5 +1,11 @@
 #!/bin/zsh
 
+if [[ "$1" = "" ]]
+then
+    source $HOME/.zshrc
+    exit
+fi
+
 name="$1"
 path_theme="$HOME/.config/mythemes/$name"
 
