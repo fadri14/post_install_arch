@@ -44,6 +44,8 @@ then
 
         wait
 
+        echo $(date) > "$(pwd)/.date.txt"
+
         echo -e "\nLe backup est terminé!\n"
     fi
 elif [[ "$res0" = "i" ]]
@@ -74,22 +76,24 @@ then
     fi
 fi
 
-if [[ "$res0" = "b" || "$res0" = "i" ]] && [[ "$res1" = "y" ]]
+if [[ "$2" = "c" ]]
 then
-    echo -e "\nVérification des contenus…\n"
+    if [[ "$res0" = "b" || "$res0" = "i" ]] && [[ "$res1" = "y" ]]
+    then
+        echo -e "\nVérification des contenus…\n"
 
-    for folder in "${folders[@]}"
-    do
-        diff -x "FreeTube" -qr "${HOME}/${folder}" "$folder"
+        for folder in "${folders[@]}"
+        do
+            diff -x "FreeTube" -qr "${HOME}/${folder}" "$folder"
 
-        if [[ "$?" = "0" ]]
-        then
-            echo -e "\033[32mOK\033[0m ${folder}"
-        else
-            echo -e "\033[31mERREUR\033[0m $folder n'a pas été copié!"
-        fi
-    done
+            if [[ "$?" = "0" ]]
+            then
+                echo -e "\033[32mOK\033[0m ${folder}"
+            else
+                echo -e "\033[31mERREUR\033[0m $folder n'a pas été copié!"
+            fi
+        done
 
-    notify-send "Le script est terminé"
+        notify-send "Le script est terminé"
+    fi
 fi
-

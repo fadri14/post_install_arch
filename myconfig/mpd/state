@@ -1,7 +1,7 @@
 sw_volume: 60
 audio_device_state:1:My Pulse Output
 state: stop
-current: 593
+current: 595
 random: 1
 repeat: 0
 single: 0
