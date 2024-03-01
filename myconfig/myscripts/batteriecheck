@@ -31,7 +31,7 @@ do
 
         if [[ $time_pause -le 0 ]]
         then
-            sleep 10s
+            sleep 20s
         else
             time_pause=$(( $time_pause * 70 ))
             eval "sleep ${time_pause}s"
