@@ -136,7 +136,7 @@
   <property name="font" font="Sans" size="11"/>
   <data name="buttonConfig">
     <data name="default">
-      <attribute name="color" type="hex" value="ff000000"/>
+      <attribute name="color" type="hex" value="ff007aff"/>
       <attribute name="drawingType" type="string" value="default"/>
       <attribute name="size" type="string" value="thin"/>
       <attribute name="tool" type="string" value="pen"/>
@@ -169,6 +169,10 @@
       <attribute name="deviceClass" type="int" value="2"/>
       <attribute name="deviceSource" type="int" value="1"/>
     </data>
+    <data name="Hanvon Ugee Deco M (Eraser)">
+      <attribute name="deviceClass" type="int" value="3"/>
+      <attribute name="deviceSource" type="int" value="2"/>
+    </data>
     <data name="Wayland Finger Scrolling">
       <attribute name="deviceClass" type="int" value="1"/>
       <attribute name="deviceSource" type="int" value="6"/>
@@ -177,9 +181,21 @@
       <attribute name="deviceClass" type="int" value="1"/>
       <attribute name="deviceSource" type="int" value="0"/>
     </data>
+    <data name="XP-Pen Eraser">
+      <attribute name="deviceClass" type="int" value="2"/>
+      <attribute name="deviceSource" type="int" value="1"/>
+    </data>
+    <data name="XP-Pen Eraser (Eraser)">
+      <attribute name="deviceClass" type="int" value="3"/>
+      <attribute name="deviceSource" type="int" value="2"/>
+    </data>
     <data name="XP-Pen Pen">
       <attribute name="deviceClass" type="int" value="2"/>
       <attribute name="deviceSource" type="int" value="1"/>
+    </data>
+    <data name="XP-Pen Pen (Eraser)">
+      <attribute name="deviceClass" type="int" value="3"/>
+      <attribute name="deviceSource" type="int" value="2"/>
     </data>
   </data>
   <data name="tools">
@@ -204,7 +220,7 @@
     </data>
     <data name="eraser">
       <attribute name="drawingType" type="string" value="default"/>
-      <attribute name="size" type="string" value="BIG"/>
+      <attribute name="size" type="string" value="THIN"/>
       <attribute name="type" type="string" value="default"/>
     </data>
     <data name="hand">
@@ -265,5 +281,11 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
   </data>
-  <data name="touch"/>
+  <data name="touch">
+    <attribute name="cmdDisable" type="string" value=""/>
+    <attribute name="cmdEnable" type="string" value=""/>
+    <attribute name="disableTouch" type="boolean" value="false"/>
+    <attribute name="method" type="string" value="auto"/>
+    <attribute name="timeout" type="int" value="1000"/>
+  </data>
 </settings>
