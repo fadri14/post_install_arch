@@ -428,6 +428,13 @@ gpg --import .public.key
 gpg --import .private.key
 ```
 
+## Suppression du bouton power
+- Changer la configuration de systemd-logind pour ignorer le bouton power
+
+```
+sudo sed -i "s/#HandlePowerKey=poweroff/HandlePowerKey=ignore/" /etc/systemd/logind.conf
+```
+
 ## Suppression des paquets inutiles
 - Se déplacer dans le répôt
 - Exécuter le script
