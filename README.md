@@ -433,6 +433,7 @@ gpg --import .private.key
 
 ```
 sudo sed -i "s/#HandlePowerKey=poweroff/HandlePowerKey=ignore/" /etc/systemd/logind.conf
+sudo sed -i "s/#HandlePowerKeyLongPress=ignore/HandlePowerKeyLongPress=poweroff/" /etc/systemd/logind.conf
 ```
 
 ## Suppression des paquets inutiles
