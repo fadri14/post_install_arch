@@ -27,7 +27,7 @@ COMPLETION_WAITING_DOTS="true"
 
 HIST_STAMPS="mm/dd/yyyy"
 
-plugins=(zsh-autosuggestions git sudo enhancd zsh-vi-mode)
+plugins=(zsh-autosuggestions sudo enhancd zsh-vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zshenv

@@ -76,7 +76,6 @@ neorg.setup{
         },
         ["core.qol.todo_items"] = {},
         ["core.tangle"] = {},
-        ["core.upgrade"] = {},
         ["core.concealer"] = {
             config = {
                 folds = false,

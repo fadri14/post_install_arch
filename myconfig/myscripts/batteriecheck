@@ -17,22 +17,30 @@ do
         then
             notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur !!!!!"
             echo "3" > $batterie_state
-        elif [[ "$level" -le 10 ]] && [[ "$(cat $batterie_state)" != "2" ]]
+            sleep 30s
+        elif [[ "$level" -le 10 ]]
         then
-            notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur !!!!!"
-            echo "2" > $batterie_state
-        elif [[ "$level" -le 20 ]] && [[ "$(cat $batterie_state)" != "1" ]]
+            if [[ "$(cat $batterie_state)" != "2" ]]
+            then
+                notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur !!!"
+                echo "2" > $batterie_state
+            fi
+
+            sleep 60s
+        elif [[ "$level" -le 20 ]]
         then
-            notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur"
-            echo "1" > $batterie_state
+            if [[ "$(cat $batterie_state)" != "1" ]]
+            then
+                notify-send -u critical "Batterie faible" "Veuillez brancher le chargeur"
+                echo "1" > $batterie_state
+            fi
+            sleep 60s
         fi
 
         time_pause=$(( $level - 20 ))
 
-        if [[ $time_pause -le 0 ]]
+        if [[ ! $time_pause -le 0 ]]
         then
-            sleep 20s
-        else
             time_pause=$(( $time_pause * 70 ))
             eval "sleep ${time_pause}s"
         fi
