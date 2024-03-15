@@ -66,6 +66,7 @@ alias mybackup='save_freetube b ; echo '' && backup b'
 alias mirror='wl-mirror -F --fullscreen eDP-1'
 alias findexe='find $(pwd) -type f -executable'
 alias sh='history | grep'
+alias pacdiff="DIFFPROG=meld pacdiff"
 alias checkt='find / -not \( -path "*/var/*" -o -path "*/.cache/*" -o -path "*/.local/*" -o -path "*/systemd/*" -o -path "*/sys/*" -o -path "*/proc/*" \) -type f -cmin -3 2>/dev/null'
 
 #alias gitco='eval "$(ssh-agent -s)" && ssh-add ~/.ssh/github && ssh-agent -t 3600'

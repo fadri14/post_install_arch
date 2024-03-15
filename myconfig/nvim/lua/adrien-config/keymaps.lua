@@ -58,6 +58,7 @@ key('n', 'à', ':w<CR>', full_options)
 key('n', 'ê', ':q<CR>', full_options)
 key('n', 'é', 'w', full_options)
 key('v', 'é', 'w', full_options)
+key('n', '<leader>p', ':!pdflatex -shell-escape main.tex<CR>', full_options) -- l'option sert à permettre d'utiliser un module python pour minted
 
 -- Ranger
 key("n", "<leader>r", "", {

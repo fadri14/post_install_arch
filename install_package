@@ -35,6 +35,7 @@ pass
 keychain
 texlive
 texlive-langfrench
+python-pygments
 libffi
 python-cffi
 python-matplotlib
