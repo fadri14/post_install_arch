@@ -405,6 +405,10 @@ sudo systemctl enable ufw.service
 - Définir l'adresse mail
 - Définir le pseudo
 - Définir l'éditeur par défaut
+- Définir l'éditeur pour montrer les différences
+- Définir le style des différences
+- Définir le prompt du merge tool à faux
+- Définir la création automatique d'une branche distante
 
 ```
 git config --global user.email "fadri1@proton.me"
@@ -412,7 +416,8 @@ git config --global user.name "fadri14"
 git config --global core.editor nvim
 git config --global merge.tool nvim -d
 git config --global merge.conflictstyle diff3
-git config mergetool.prompt false
+git config --global mergetool.prompt false
+git config --global push.autoSetupRemote true
 ```
 
 ## Configurer l'agent de gpg
