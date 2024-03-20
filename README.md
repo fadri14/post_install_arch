@@ -410,6 +410,9 @@ sudo systemctl enable ufw.service
 git config --global user.email "fadri1@proton.me"
 git config --global user.name "fadri14"
 git config --global core.editor nvim
+git config --global merge.tool nvim -d
+git config --global merge.conflictstyle diff3
+git config mergetool.prompt false
 ```
 
 ## Configurer l'agent de gpg
