@@ -404,10 +404,12 @@ sudo systemctl enable ufw.service
 ### Configuration de git
 - Définir l'adresse mail
 - Définir le pseudo
+- Définir l'éditeur par défaut
 
 ```
 git config --global user.email "fadri1@proton.me"
 git config --global user.name "fadri14"
+git config --global core.editor nvim
 ```
 
 ## Configurer l'agent de gpg
