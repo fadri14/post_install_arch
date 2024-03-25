@@ -402,22 +402,23 @@ sudo systemctl enable ufw.service
 ## Configuration pour github
 
 ### Configuration de git
-- Définir l'adresse mail
-- Définir le pseudo
-- Définir l'éditeur par défaut
-- Définir l'éditeur pour montrer les différences
-- Définir le style des différences
-- Définir le prompt du merge tool à faux
-- Définir la création automatique d'une branche distante
+- Création du fichier de configuration de github
 
 ```
-git config --global user.email "fadri1@proton.me"
-git config --global user.name "fadri14"
-git config --global core.editor nvim
-git config --global merge.tool nvim -d
-git config --global merge.conflictstyle diff3
-git config --global mergetool.prompt false
-git config --global push.autoSetupRemote true
+echo "\
+[user]
+	email = fadri1@proton.me
+	name = fadri14
+[core]
+	editor = nvim
+[merge]
+	tool = nvim
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
+[push]
+	autoSetupRemote = true
+" > ~/.gitconfig
 ```
 
 ## Configurer l'agent de gpg
