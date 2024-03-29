@@ -21,7 +21,6 @@ declare -a configs=(
     "mimeapps.list"
     "xournalpp"
     "melonDS"
-    "snapper-rollback.conf"
 )
 
 path2="$HOME/Documents/dotfiles/myconfig"
