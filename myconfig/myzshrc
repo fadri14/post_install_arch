@@ -71,7 +71,6 @@ alias findexe='find $(pwd) -type f -executable'
 alias sh='history | grep'
 alias pacdiff="DIFFPROG=meld pacdiff"
 alias checkt='find / -not \( -path "*/var/*" -o -path "*/.cache/*" -o -path "*/.local/*" -o -path "*/systemd/*" -o -path "*/sys/*" -o -path "*/proc/*" \) -type f -cmin -3 2>/dev/null'
-alias rollback='snapper-rollback -c /home/adrien/.config/snapper-rollback.conf'
 
 #alias gitco='eval "$(ssh-agent -s)" && ssh-add ~/.ssh/github && ssh-agent -t 3600'
 alias gitco='eval $(keychain --eval --quiet github) && echo "yes" > /home/adrien/.ssh/state_connect'

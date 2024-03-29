@@ -23,10 +23,11 @@ if [[ "$res0" = "b" ]]
 then
     read -p "Êtes-vous sûr de vouloir faire le backup dans $(pwd) [y|N] " res1
 
-    echo -e "\nBackup des données…\n"
-
     if [[ "$res1" = "y" ]]
     then
+
+        echo -e "\nBackup des données…\n"
+
         for folder in "${folders[@]}"
         do
             path="${HOME}/${folder}"
@@ -53,10 +54,11 @@ then
     read -p "Êtes-vous sûr de vouloir faire l'installation avec ce dossier
     comme départ $(pwd) [y|N] " res1
 
-    echo -e "\nInstallation des données…\n"
-
     if [[ "$res1" = "y" ]]
     then
+
+        echo -e "\nInstallation des données…\n"
+
         for folder in "${folders[@]}"
         do
             if [[ ! -e "$folder" ]]
