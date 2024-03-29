@@ -13,7 +13,7 @@ BUTTONHOVER=white
 COLORMODE=white
 
 #alacritty
-OPACITETERM=0.9
+OPACITETERM=0.85
 THEMETERM=github_light
 
 #sway

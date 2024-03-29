@@ -90,13 +90,10 @@ packer.startup({
 
         -- Neorg
         use {
-            "nvim-neorg/neorg",
-            run = ":Neorg sync-parsers",
-            requires = "nvim-lua/plenary.nvim",
+          "nvim-neorg/neorg",
+          --rocks = { "lua-utils.nvim", "nvim-nio", "nui.nvim", "plenary.nvim" },
+          tag = "v7.0.0", -- Pin Neorg to the latest stable release
         }
-
-        -- Nabla (pour écrire des formules)
-        -- use ('jbyuki/nabla.nvim')
 
     end,
     config = {
