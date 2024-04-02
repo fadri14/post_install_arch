@@ -6,8 +6,8 @@
   <property name="pressureMultiplier" value="1"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="Portrait"/>
-  <property name="lastSavePath" value="/home/adrien/Documents/bac3/Q2/BDD2"/>
-  <property name="lastOpenPath" value="/home/adrien/Documents/bac3/Q2/BDD2"/>
+  <property name="lastSavePath" value="/home/adrien/Documents/bac3/Q2/Compilation"/>
+  <property name="lastOpenPath" value="/home/adrien/Documents/bac3/Q2/Compilation"/>
   <property name="lastImagePath" value="/home/adrien/Images"/>
   <property name="edgePanSpeed" value="20"/>
   <property name="edgePanMaxMult" value="5"/>
