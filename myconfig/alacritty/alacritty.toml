@@ -33,3 +33,6 @@ style = "Italic"
 [font.normal]
 family = "Hack Nerd Font"
 style = "Regular"
+
+[shell]
+program = "/usr/bin/zsh"
