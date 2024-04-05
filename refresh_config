@@ -15,6 +15,7 @@ declare -a configs=(
     "mpd"
     "workstyle"
     "starship.toml"
+    "fish"
     "myzshrc"
     "mythemes"
     "myscripts"
