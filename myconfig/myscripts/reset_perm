@@ -1,10 +1,6 @@
 #!/bin/bash
 
-#!!! peut-être juste faire
-#sudo chmod -R -x .
-#sudo chown -R adrien:adrien .
-
-declare -a folders=("Bureau" "Documents" "Téléchargements" "Musique" "Images" "Vidéos")
+declare -a folders=("Bureau" "Documents" "Téléchargements" "Musique" "Images" "Vidéos" ".password-store" ".ssh" "Notes")
 
 for folder in "${folders[@]}"
 do
@@ -23,4 +19,3 @@ do
 		fi
 	done
 done
-

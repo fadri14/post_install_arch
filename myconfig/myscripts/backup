@@ -51,8 +51,7 @@ then
     fi
 elif [[ "$res0" = "i" ]]
 then
-    read -p "Êtes-vous sûr de vouloir faire l'installation avec ce dossier
-    comme départ $(pwd) [y|N] " res1
+    read -p "Êtes-vous sûr de vouloir faire l'installation avec ce dossier comme départ $(pwd) [y|N] " res1
 
     if [[ "$res1" = "y" ]]
     then
