@@ -4,10 +4,9 @@ if status is-interactive
 
     export EDITOR=/usr/bin/nvim
     export PATH="$HOME/.config/myscripts/:$PATH"
-    export PATH="$PATH:$HOME/Applications/"
     export PATH="$PATH:$HOME/.cargo/bin/"
-    export PATH="$PATH:/opt/go/bin/"
 
+    alias nsh "nvim ~/.config/fish/config.fish"
     alias c "clear"
     alias q "exit"
     alias py "python3"
@@ -29,12 +28,9 @@ if status is-interactive
     alias gm "git stash && git pull && git stash apply"
     alias gb "gradle build"
     alias gr "gradle run"
-    alias create_snap "sudo snapper create --type single --cleanup-algorithm number --description 'backup'"
-    #alias gitco "eval $(keychain --eval --quiet github) && echo 'yes' > /home/adrien/.ssh/state_connect"
+    alias create_snap "sudo snapper -c root create --type single --cleanup-algorithm number --description 'backup_root' ; sudo snapper -c home create --type single --cleanup-algorithm number --description 'backup_home'"
 
-    #if true
-    #    eval $(keychain --eval --quiet github)
-    #end
+    alias gitco "eval (ssh-agent -c) > /dev/null && ssh-add  ~/.ssh/github && killall ssh-agent"
 
-    #starship init fish | source
+    starship init fish | source
 end

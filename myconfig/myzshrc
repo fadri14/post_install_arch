@@ -43,9 +43,7 @@ HISTIGNORE="ls*:cd:c:q"
 
 export EDITOR=/usr/bin/nvim
 export PATH="$HOME/.config/myscripts/:$PATH"
-export PATH="$PATH:$HOME/Applications/"
 export PATH="$PATH:$HOME/.cargo/bin/"
-export PATH="$PATH:/opt/go/bin/"
 
 # Variable pour zsh
 export ZVM_VI_EDITOR=/usr/bin/nvim

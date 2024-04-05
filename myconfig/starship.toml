@@ -1,22 +1,22 @@
 format = """
-[░▒▓](fg:#e3944e)\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
-[    ](fg:#090c0c bg:#e3944e)\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
-[](fg:#e3944e bg:#CC726D)\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+[░▒▓](fg:#13074b)\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+[    ](fg:#f1efef bg:#13074b)\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+[](fg:#13074b bg:#270767)\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 $directory\
-[](fg:#CC726D bg:#b5518d)\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+[](fg:#270767 bg:#3c0783)\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 $git_branch\
 $git_status\
 $git_metrics\
-[](fg:#b5518d bg:#b5518d)\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-[ ](fg:#b5518d)\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+[](fg:#3c0783 bg:#3c0783)\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+[ ](fg:#3c0783)\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 """
 
 right_format = """
-[](fg:#CC726D)\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+[](fg:#270767)\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 $time\
 $cmd_duration\
 $character\
-[▓▒░](fg:#CC726D)\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+[▓▒░](fg:#270767)\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 """
 
 add_newline = false
@@ -26,31 +26,31 @@ home_symbol = " "
 truncation_symbol = "…/"
 truncate_to_repo = false
 read_only = "󰒃"
-style = "fg:#090c0c bg:#CC726D"
+style = "fg:#f1efef bg:#270767"
 format = "[ $path $read_only ]($style)"
 
 [git_branch]
 symbol = ""
-style = "fg:#090c0c bg:#b5518d"
+style = "fg:#f1efef bg:#3c0783"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
 untracked = "±"
-style = "fg:#090c0c bg:#b5518d"
+style = "fg:#f1efef bg:#3c0783"
 format = '[($all_status$ahead_behind )]($style)'
 
 [time]
 disabled = false
 time_format = "%R"
-style = "fg:#090c0c bg:#CC726D"
+style = "fg:#f1efef bg:#270767"
 format = '[$time ]($style)'
 
 [character]
 format = "$symbol"
-success_symbol = '[ ](fg:#090c0c bg:#CC726D)' 
-error_symbol = '[ ](fg:#090c0c bg:#CC726D)'
+success_symbol = '[ ](fg:#f1efef bg:#270767)' 
+error_symbol = '[ ](fg:#f1efef bg:#270767)'
 
 [cmd_duration]
-style = "fg:#090c0c bg:#CC726D"
+style = "fg:#f1efef bg:#270767"
 format = "[$duration]($style)"
 
