@@ -1,5 +1,4 @@
 if status is-interactive
-    # fisher install b4b4r07/enhancd
     set -g fish_greeting ''
 
     export EDITOR=/usr/bin/nvim
