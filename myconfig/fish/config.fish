@@ -31,5 +31,7 @@ if status is-interactive
 
     alias gitco "eval (ssh-agent -c) > /dev/null && ssh-add  ~/.ssh/github && killall ssh-agent"
 
+    bind \eh 'wtype !!\n'
+
     starship init fish | source
 end
