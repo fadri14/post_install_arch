@@ -1,7 +1,7 @@
 #général
 THEMEFOND=black
 THEMEWRITE=#f1efef
-THEMEGTK=Adwaita-dark
+THEMEGTK=Adwaita:dark
 
 COLOR1=#421446
 COLOR3=#143046
