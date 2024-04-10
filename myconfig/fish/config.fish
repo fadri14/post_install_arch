@@ -17,6 +17,7 @@ if status is-interactive
     export PATH="$PATH:$HOME/.cargo/bin/"
 
     bind \eh 'wtype !!\n'
+    bind \e\r 'wtype -M ctrl -k f -m ctrl ; wtype \n'
 
     if test $(cat ~/.ssh/state_connect) = "yes"
         ssh_agent_init
