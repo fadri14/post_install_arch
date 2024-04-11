@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [[ "$(pgrep gammastep)" = "" ]]
+then
+    gammastep
+else
+    pkill gammastep
+fi

@@ -64,8 +64,7 @@
             // "device": "acpi_video1",
             "format": "{percent}% {icon}",
             "format-icons": ["", "", "", "", "", "", "", ""],
-            "on-click": "pgrep wlsunset || wlsunset -t 4000",
-            "on-click-right": "pkill wlsunset"
+            "on-click": "/home/adrien/.config/myscripts/switch_gamma",
         },
         "network": {
             "format-wifi": "{essid} ({signalStrength}%) ",
