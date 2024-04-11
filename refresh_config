@@ -16,7 +16,6 @@ declare -a configs=(
     "workstyle"
     "starship.toml"
     "fish"
-    "myzshrc"
     "mythemes"
     "myscripts"
     "mimeapps.list"
