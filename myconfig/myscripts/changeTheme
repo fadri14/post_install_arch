@@ -21,10 +21,14 @@ if [[ $theme_prev = "white" && $THEMEFOND = "black" ]]
 then
     sed -i '51 s/^/-- /' "$HOME/.config/nvim/after/plugin/catppuccin.lua"
     sed -i '46 s/^-- //' "$HOME/.config/nvim/after/plugin/onedark.lua"
+
+    echo 'source ~/.config/fish/themes/mytheme_dark.fish' > $HOME/.config/fish/conf.d/theme.fish
 elif [[ $theme_prev = "black" && $THEMEFOND = "white" ]]
 then
     sed -i '51 s/^-- //' "$HOME/.config/nvim/after/plugin/catppuccin.lua"
     sed -i '46 s/^/-- /' "$HOME/.config/nvim/after/plugin/onedark.lua"
+
+    echo 'source ~/.config/fish/themes/mytheme_white.fish' > $HOME/.config/fish/conf.d/theme.fish
 fi
 
 # alacritty
