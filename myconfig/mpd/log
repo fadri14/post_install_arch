@@ -3099,3 +3099,4 @@ Apr 11 11:52 : mad: input does not appear to be a mp3 bit stream
 Apr 11 11:52 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
 Apr 11 11:52 : ffmpeg/aac: Could not update timestamps for skipped samples.
 Apr 11 11:52 : player: played "DADJU Amour Toxic Audio Officiel.mp3"
+Apr 11 11:55 : player: played "U Got That.mp3"
