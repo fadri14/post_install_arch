@@ -1,7 +1,6 @@
 if status is-interactive
     alias nsh "nvim ~/.config/fish/config.fish"
     alias c "clear"
-    alias q "exit"
     alias py "python3"
     alias n "nvim"
     alias vue "nvim -R"
@@ -16,7 +15,7 @@ if status is-interactive
     alias pacdiff "DIFFPROG=meld pacdiff"
     alias gg "git pull"
     alias gs "git status"
-    alias gp "source ~/.zshrc ; git_push $(pwd)"
+    alias gp 'source ~/.config/fish/config.fish ; bash -e PATH="$HOME/.config/myscripts/:$PATH" > /dev/null ; git_push $(pwd)'
     alias gc "git reset --hard && git clean -fd"
     alias gm "git stash && git pull && git stash apply"
     alias gb "gradle build"

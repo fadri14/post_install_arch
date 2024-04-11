@@ -3080,3 +3080,22 @@ Apr 10 18:19 : player: played "2TH  Jai des clip officiel.mp3"
 Apr 10 18:23 : player: played "neffex-rumors.mp3"
 Apr 10 18:29 : player: played "JOYCA CLASH ASSASSINS Feat Mastu.mp3"
 Apr 10 18:32 : player: played "Robin Schulz - Sun Goes Down feat. Jasmine Thompson (Official Video).mp3"
+Apr 10 18:43 : player: played "Hard To Say Goodbye  Gryffin x ILLENIUM x Nurko  Friends Melodic Mix By TZUNAAMI.mp3"
+Apr 10 22:13 : player: played "Hard To Say Goodbye  Gryffin x ILLENIUM x Nurko  Friends Melodic Mix By TZUNAAMI.mp3"
+Apr 11 09:30 : player: played "Hard To Say Goodbye  Gryffin x ILLENIUM x Nurko  Friends Melodic Mix By TZUNAAMI.mp3"
+Apr 11 11:09 : player: played "Hard To Say Goodbye  Gryffin x ILLENIUM x Nurko  Friends Melodic Mix By TZUNAAMI.mp3"
+Apr 11 11:14 : player: played "pirates-des-carabes.mp3"
+Apr 11 11:18 : player: played "Coldplay - Paradise.mp3"
+Apr 11 11:22 : player: played "Rag'n'Bone Man - Skin (Audio).mp3"
+Apr 11 11:28 : player: played "budapest-george-ezra.mp3"
+Apr 11 11:31 : player: played "Jebroer - Kind van de Duivel (Prod. by Paul Elstak  Dr.Phunk).mp3"
+Apr 11 11:34 : player: played "surf-mesa-ily-i-love-you-baby-ft-emilee.mp3"
+Apr 11 11:38 : player: played "R3hab - Samurai (Go Hard) [Official Video].mp3"
+Apr 11 11:41 : player: played "max schneider- hands up.mp3"
+Apr 11 11:45 : player: played "Reel 2 Real - I Like To Move It HQ [1994].mp3"
+Apr 11 11:48 : player: played "imagine-dragons-natural-bass-boosted.mp3"
+Apr 11 11:52 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 11 11:52 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 11 11:52 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Apr 11 11:52 : player: played "DADJU Amour Toxic Audio Officiel.mp3"
