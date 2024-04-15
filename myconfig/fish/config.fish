@@ -10,6 +10,7 @@ if status is-interactive
     bind \er 'wtype -M alt -k Left -m alt'
     bind \en 'wtype -M alt -k Right -m alt'
     bind \ew backward-kill-path-component
+    bind \eg 'wtype " | grep "'
 
     if test $(cat ~/.ssh/state_connect) = "yes"
         ssh_agent_init
