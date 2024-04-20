@@ -7,7 +7,7 @@ swipe:
     up:
       command: "wtype  -M win -k a -m win -k y"
     down:
-      command: "wtype  -M win -k a -m win -k f"
+      command: "wtype  -M win -k q -m win"
   4:
     down:
       command: "/home/adrien/.config/myscripts/closeApp"
