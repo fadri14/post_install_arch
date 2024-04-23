@@ -1,0 +1,109 @@
+#!/bin/bash
+
+declare -a folders=(
+    "Bureau"
+    "Documents"
+    "Téléchargements"
+    "Musique"
+    "Images"
+    "Vidéos"
+    ".password-store"
+    ".ssh"
+    "Notes"
+)
+
+path_mount="$HOME/mymount"
+
+mkdir $path_mount
+mount $path_mount || exit 1
+
+if [[ "$1" = "" ]]
+then
+    read -p "Voulez-vous faire un backup ou une installation [b|i] " res0
+else
+    res0="$1"
+fi
+
+if [[ "$res0" = "b" ]]
+then
+    read -p "Êtes-vous sûr de vouloir faire le backup dans [y|N] " res1
+
+    if [[ "$res1" = "y" ]]
+    then
+
+        echo -e "\nBackup des données…\n"
+
+        for folder in "${folders[@]}"
+        do
+            path="${HOME}/${folder}"
+
+            if [[ ! -e "$path" ]]
+            then
+                echo -e "\033[31mERREUR\033[0m Le chemin "$path" n'existe pas!!!"
+            else
+                {
+                    sudo rsync -a --delete --exclude='.cache' "${path}" "${path_mount}"
+                    echo -e "\033[32mOK\033[0m ${path}"
+                } &
+            fi
+        done
+
+        wait
+
+        echo $(date) > "$(path_mount)/.date.txt"
+
+        echo -e "\nLe backup est terminé!\n"
+    fi
+elif [[ "$res0" = "i" ]]
+then
+    read -p "Êtes-vous sûr de vouloir faire l'installation avec ce dossier comme départ [y|N] " res1
+
+    if [[ "$res1" = "y" ]]
+    then
+
+        echo -e "\nInstallation des données…\n"
+
+        for folder in "${folders[@]}"
+        do
+            if [[ ! -e "$folder" ]]
+            then
+                echo -e "\033[31mERREUR\033[0m Le chemin "$folder" n'existe pas!!!"
+            else
+                {
+                    sudo cp -r "$path_mount/${folder}" $HOME
+                    echo -e "\033[32mOK\033[0m ${folder}"
+                } &
+            fi
+        done
+
+        wait
+
+        echo -e "\nL'installation est terminée!\n"
+    fi
+fi
+
+if [[ "$2" = "c" ]]
+then
+    if [[ "$res0" = "b" || "$res0" = "i" ]] && [[ "$res1" = "y" ]]
+    then
+        echo -e "\nVérification des contenus…\n"
+
+        for folder in "${folders[@]}"
+        do
+            diff -x "FreeTube" -qr "${HOME}/${folder}" "${path_mount}/${folder}"
+
+            if [[ "$?" = "0" ]]
+            then
+                echo -e "\033[32mOK\033[0m ${folder}"
+            else
+                echo -e "\033[31mERREUR\033[0m $folder n'a pas été copié!"
+            fi
+        done
+
+        notify-send "Le script est terminé"
+    fi
+fi
+
+umount $path_mount
+rm $path_mount
+
