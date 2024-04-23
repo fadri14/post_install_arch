@@ -21,6 +21,7 @@ declare -a configs=(
     "mimeapps.list"
     "xournalpp"
     "melonDS"
+    "gammastep"
 )
 
 path2="$HOME/Documents/dotfiles/myconfig"
