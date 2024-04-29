@@ -1,8 +1,8 @@
-import = ["/home/adrien/.config/alacritty/default_color.toml"]
+import = ["/home/adrien/.config/alacritty/github_light.toml"]
 
 [window]
 decorations = "none"
-opacity = 0.7
+opacity = 0.85
 
 [window.padding]
 x = 10

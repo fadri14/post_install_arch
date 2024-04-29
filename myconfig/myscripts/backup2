@@ -99,11 +99,10 @@ then
                 echo -e "\033[31mERREUR\033[0m $folder n'a pas été copié!"
             fi
         done
-
-        notify-send "Le script est terminé"
     fi
 fi
 
 umount $path_mount
 rm $path_mount
 
+notify-send "Le script est terminé"

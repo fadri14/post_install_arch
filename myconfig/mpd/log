@@ -3330,3 +3330,159 @@ Apr 23 17:41 : player: played "Aero Chord - Surface.mp3"
 Apr 23 17:45 : player: played "Play Hard (feat. Ne-Yo  Akon).mp3"
 Apr 23 17:48 : player: played "Colonel Reyel - 'Celui' (clip officiel).mp3"
 Apr 23 19:05 : player: played "David Guetta ft. Zara Larsson - This One's For You.mp3"
+Apr 23 22:11 : player: played "David Guetta ft. Zara Larsson - This One's For You.mp3"
+Apr 24 12:26 : player: played "David Guetta ft. Zara Larsson - This One's For You.mp3"
+Apr 24 15:35 : player: played "David Guetta ft. Zara Larsson - This One's For You.mp3"
+Apr 24 16:24 : player: played "David Guetta ft. Zara Larsson - This One's For You.mp3"
+Apr 24 18:34 : player: played "David Guetta ft. Zara Larsson - This One's For You.mp3"
+Apr 24 22:21 : player: played "David Guetta ft. Zara Larsson - This One's For You.mp3"
+Apr 25 08:56 : player: played "David Guetta ft. Zara Larsson - This One's For You.mp3"
+Apr 25 10:28 : player: played "TSR Crew  A quoi a rime  .mp3"
+Apr 25 12:08 : player: played "TSR Crew  A quoi a rime  .mp3"
+Apr 25 13:16 : player: played "TSR Crew  A quoi a rime  .mp3"
+Apr 25 15:25 : player: played "TSR Crew  A quoi a rime  .mp3"
+Apr 25 17:28 : player: played "TSR Crew  A quoi a rime  .mp3"
+Apr 25 20:37 : player: played "TSR Crew  A quoi a rime  .mp3"
+Apr 25 20:40 : player: played "Davodka Le Couteau Dans La Paix Clip Officiel.mp3"
+Apr 25 20:45 : player: played "Pokmon Omega Ruby Alpha Sapphire Primal Kyogre Groudon Battle.mp3"
+Apr 25 20:46 : player: played "one-piece-osts-fierce-attack.mp3"
+Apr 25 20:49 : player: played "Nightcore AMV Je vais bien Ridsa lyrics HD.mp3"
+Apr 25 20:52 : player: played "hopex-fuego-copyright-free.mp3"
+Apr 25 20:56 : player: played "3lau-on-my-own.mp3"
+Apr 25 20:59 : player: played "space-jelly-voices-bass-boosted.mp3"
+Apr 25 22:21 : player: played "Bekar ByeBye.mp3"
+Apr 26 12:33 : player: played "Bekar ByeBye.mp3"
+Apr 26 12:51 : player: played "Bekar ByeBye.mp3"
+Apr 26 15:28 : player: played "Bekar ByeBye.mp3"
+Apr 26 16:37 : player: played "Bekar ByeBye.mp3"
+Apr 26 20:29 : player: played "Bekar ByeBye.mp3"
+Apr 28 13:59 : player: played "Bekar ByeBye.mp3"
+Apr 28 14:03 : player: played "Shawn Mendes - Treat You Better.mp3"
+Apr 28 14:07 : player: played "bassjackers-makj-derp.mp3"
+Apr 28 14:10 : player: played "portishead-glory-box.mp3"
+Apr 28 14:14 : player: played "Kungs vs Cookin on 3 Burners - This Girl.mp3"
+Apr 28 14:18 : player: played "Itro  Tobu - Cloud 9 [NCS Release].mp3"
+Apr 28 14:23 : mad: input does not appear to be a mp3 bit stream
+Note: Illegal Audio-MPEG-Header 0xb4672baa at offset 42780.
+Note: Trying to resync...
+Note: Skipped 770 bytes in input.
+
+Warning: Big change from first (MPEG version, layer, rate). Frankenstein stream?
+Apr 28 14:23 : mpg123: mpg123_read() failed: Message: Prepare for a changed audio format (query the new one)!
+Apr 28 14:24 : player: played "hayce-lemsi-feat-kanoe-mafia-story-paroleslyrics.mp3"
+Apr 28 14:24 : player: played "Melfiano _   Touche d'Espoir.mp3"
+Apr 28 14:26 : player: played "Hugo TSR  Exercice.mp3"
+Apr 28 14:28 : player: played "orelsan-tout-va-bien.mp3"
+Apr 28 14:33 : player: played "2016la-meilleur-musique-electro.mp3"
+Apr 28 14:36 : player: played "Maux de tte.mp3"
+Apr 28 14:38 : player: played "FAIRY TAIL Main Theme - SLOW.mp3"
+Apr 28 14:41 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 28 14:41 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 28 14:41 : player: played "GAULLIN - MOONLIGHT.mp3"
+Apr 28 14:44 : player: played "Naps - La kiffance.mp3"
+Apr 28 14:48 : player: played "Blanke  Only You Feat Meggie York.mp3"
+Apr 28 14:50 : player: played "Jain - Come.mp3"
+Apr 28 14:54 : player: played "Kendji Girac - Color Gitano.mp3"
+Apr 28 14:57 : player: played "DADJU - REINE ( Clip Officiel ).mp3"
+Apr 28 15:00 : player: played "Owl City & Carly Rae Jepsen - Good Time.mp3"
+Apr 28 15:03 : player: played "bauwz-downfall.mp3"
+Apr 28 15:08 : player: played "Davodka Fuse De Dtresse Clip Officiel.mp3"
+Apr 28 15:10 : player: played "my-hero-academia.mp3"
+Apr 28 15:13 : player: played "Mezsiah  Novacane Lyrics.mp3"
+Apr 28 15:16 : player: played "Bangers Only  rarin  Sides Lyrics feat sydcxx.mp3"
+Apr 28 15:21 : player: played "Maroon 5 - Girls Like You ft. Cardi B.mp3"
+Apr 28 15:24 : player: played "imagine-dragons-natural-bass-boosted.mp3"
+Apr 28 15:27 : player: played "k391-rry-aurora-official.mp3"
+Apr 28 15:31 : player: played "naps-elle-ta-pique-feat-13emeart-clip-officiel.mp3"
+Apr 28 15:34 : player: played "David Guetta ft Justin Bieber - 2U (The Victorias Secret Angels Lip Sync).mp3"
+Apr 28 15:38 : player: played "Keen'V - Les mots.mp3"
+Apr 28 15:41 : player: played "Rag'n'Bone Man - Human (Official Video).mp3"
+Apr 28 15:44 : player: played "Mike Candys  Anubis Music Video HD.mp3"
+Apr 28 15:46 : player: played "Davodka Un Poing Cest Tout Audio Officiel.mp3"
+Apr 28 17:00 : player: played "Sound Of Legend - Tell Me Why (Official Video).mp3"
+Apr 28 17:02 : player: played "neffex-free-me-lyrics.mp3"
+Apr 28 17:06 : player: played "sofiane-case-depart-parole.mp3"
+Apr 28 17:09 : player: played "Calvin Harris - Summer (Audio).mp3"
+Apr 28 17:14 : player: played "the-lifted-mr-sandman-feat-ashliann.mp3"
+Apr 28 17:17 : player: played "Avicii - The Nights (Lyrics HD).mp3"
+Apr 28 17:49 : player: played "neoni-never-say-die.mp3"
+Apr 28 18:21 : player: played "lucky-luke-make-mine-feat-austuzhe.mp3"
+Apr 28 20:18 : player: played "lucky-luke-make-mine-feat-austuzhe.mp3"
+Apr 28 20:33 : player: played "vanrip-watson-nothing-left.mp3"
+Apr 28 20:38 : player: played "The Prince Karma - Later Bitches (Official Lyrics Video).mp3"
+Apr 28 20:42 : player: played "PZK - Chui bo.mp3"
+Apr 28 20:44 : player: played "Feder - Breathe (MAKE UP FOR EVER video by Rankin).mp3"
+Apr 28 20:48 : player: played "Kygo, Miguel - Remind Me to Forget.mp3"
+Apr 28 20:51 : player: played "triplo-max-shadow.mp3"
+Apr 28 20:54 : player: played "Lost Sky  Lost NCS.mp3"
+Apr 28 20:57 : player: played "salut-cest-cool-techno-toujours-pareil.mp3"
+Apr 28 20:59 : player: played "Hugo TSR  Coma Artificiel.mp3"
+Apr 28 21:02 : player: played "Henri PFR - Until The End ft. Raphaella.mp3"
+Apr 28 22:18 : player: played "WW  Hardwell  Lil Jon - Live The Night (Extended Mix).mp3"
+Apr 29 09:34 : player: played "WW  Hardwell  Lil Jon - Live The Night (Extended Mix).mp3"
+Apr 29 09:38 : player: played "james-arthur-impossible.mp3"
+Apr 29 09:42 : player: played "Alan Walker Ft. Ahrix - Nova NCS Release.mp3"
+Apr 29 09:46 : player: played "sia-move-your-body-alan-walker-remix.mp3"
+Apr 29 09:50 : player: played "prismo-stronger.mp3"
+Apr 29 09:54 : player: played "LP - Lost On You [Official Video].mp3"
+Apr 29 11:55 : player: played "Sam Sparro Happiness (The Magician Remix).mp3"
+Apr 29 17:49 : player: played "Sam Sparro Happiness (The Magician Remix).mp3"
+Apr 29 19:49 : player: played "Sam Sparro Happiness (The Magician Remix).mp3"
+Apr 29 19:50 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Apr 29 19:50 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Apr 29 19:50 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Apr 29 19:50 : update: added /Melfiano - J'atteris (prod El Gaouli).mp3
+Apr 29 19:50 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Apr 29 19:50 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Apr 29 19:50 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Apr 29 19:53 : player: played "Melfiano - J'atteris (prod El Gaouli).mp3"
+Apr 29 19:53 : update: removing Melfiano - J'atteris (prod El Gaouli).mp3
+Apr 29 19:53 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Apr 29 19:53 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Apr 29 19:53 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Apr 29 19:53 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Apr 29 19:53 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Apr 29 19:53 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Apr 29 19:56 : player: played "Davodka Le Couteau Dans La Paix Clip Officiel.mp3"
+Apr 29 20:00 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Apr 29 20:00 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Apr 29 20:00 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Apr 29 20:00 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Apr 29 20:00 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Apr 29 20:00 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Apr 29 20:00 : update: added /test.mp3
+Apr 29 20:00 : player: played "Eminem - River (Audio) ft. Ed Sheeran.mp3"
+Apr 29 20:04 : player: played "test.mp3"
+Apr 29 20:08 : player: played "poorchoice-advent-denial-feat-bolshiee.mp3"
+Apr 29 20:08 : update: removing test.mp3
+Apr 29 20:08 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Apr 29 20:08 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Apr 29 20:08 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Apr 29 20:08 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Apr 29 20:08 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Apr 29 20:08 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Apr 29 20:08 : player: played "NF - Let You Down.mp3"
+Apr 29 20:12 : player: played "Rags - Someday Max Schneider (Full Song).mp3"
+Apr 29 20:12 : player: played "Nassi - La vie est belle [Official video].mp3"
+Apr 29 20:12 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Apr 29 20:12 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Apr 29 20:12 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Apr 29 20:12 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Apr 29 20:12 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Apr 29 20:12 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 29 20:12 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 29 20:12 : update: added /Melfiano ： Dans ma voiture (Prod El Gaouli).mp3
+Apr 29 20:13 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 29 20:13 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 29 20:13 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 29 20:16 : update: removing Melfiano ： Dans ma voiture (Prod El Gaouli).mp3
+Apr 29 20:16 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Apr 29 20:16 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Apr 29 20:16 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Apr 29 20:16 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Apr 29 20:16 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Apr 29 20:16 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Apr 29 20:16 : player: played "Melfiano ： Dans ma voiture (Prod El Gaouli).mp3"
