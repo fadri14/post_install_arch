@@ -3486,3 +3486,217 @@ Apr 29 20:16 : mpg123: mpg123_getformat() failed: Message: I am done with this t
 Apr 29 20:16 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
 Apr 29 20:16 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
 Apr 29 20:16 : player: played "Melfiano ： Dans ma voiture (Prod El Gaouli).mp3"
+Apr 29 20:46 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 29 20:46 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 29 20:49 : player: played "Naps - La kiffance.mp3"
+Apr 29 20:53 : player: played "Sucker for pain (lyrics).mp3"
+Apr 29 20:57 : player: played "hayce-lemsi-feat-kanoe-mafia-story-paroleslyrics.mp3"
+Apr 29 22:49 : player: played "r3hab-icarus-r3hab-skytech-remix.mp3"
+Apr 30 08:27 : player: played "r3hab-x-timmy-trumpet-911.mp3"
+Apr 30 08:27 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Apr 30 08:27 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Apr 30 08:27 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Apr 30 08:27 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Apr 30 08:27 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Apr 30 08:27 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 08:29 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 08:29 : update: added /Melfiano ： Alizé.mp3
+Apr 30 08:29 : update: added /Melfiano Feat Dany Dan ： Sur de rien(Scratchs Dj Eskondo⧸ Prod El Gaouli).mp3
+Apr 30 08:29 : update: added /Melfiano ： Elle (prod El Gaouli).mp3
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 08:29 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 08:29 : update: added /Melfiano ： Cyclone.mp3
+Apr 30 08:29 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Apr 30 08:29 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Apr 30 08:29 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Apr 30 08:29 : update: added /Melfiano ： Petit Ourson (Prod El Gaouli).mp3
+Apr 30 08:29 : update: added /Melfiano ： J'atteris (prod El Gaouli).mp3
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 08:29 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 08:29 : update: added /Melfiano ： Reflet (Prod El Gaouli).mp3
+Apr 30 08:29 : update: added /Melfiano ： Pour toi (El Gaouli).mp3
+Apr 30 08:29 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Apr 30 08:29 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Apr 30 08:29 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Apr 30 08:29 : update: added /Melfiano ： Cherche pas ⧸ scratchs ： Dj Eskondo.mp3
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 08:29 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 08:29 : update: added /Melfiano  ： Qui vivre verra Feat Hill G (Xmen) ⧸ scratchs Dj Eskondo.mp3
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 08:29 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 08:29 : update: added /Melfiano ： Dans ma voiture (Prod El Gaouli).mp3
+Apr 30 08:29 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 08:29 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 08:29 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 08:33 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 08:33 : player: played "Melfiano ： Cyclone.mp3"
+Apr 30 08:33 : player: played "Melfiano ： Elle (prod El Gaouli).mp3"
+Apr 30 08:33 : player: played "Melfiano ： Pour toi (El Gaouli).mp3"
+Apr 30 08:33 : player: played "Melfiano ： J'atteris (prod El Gaouli).mp3"
+Apr 30 08:33 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 08:33 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 08:33 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 08:37 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 08:37 : player: played "Melfiano  ： Qui vivre verra Feat Hill G (Xmen) ⧸ scratchs Dj Eskondo.mp3"
+Apr 30 08:37 : player: played "Melfiano ： Petit Ourson (Prod El Gaouli).mp3"
+Apr 30 08:37 : mad: input does not appear to be a mp3 bit stream
+Apr 30 08:37 : player: played "Melfiano ： Cherche pas ⧸ scratchs ： Dj Eskondo.mp3"
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 08:37 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 08:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 08:40 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 08:40 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 08:40 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 08:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 08:41 : player: played "Melfiano ： Dans ma voiture (Prod El Gaouli).mp3"
+Apr 30 08:43 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 08:43 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 08:43 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 08:43 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 08:43 : player: played "Melfiano ： Reflet (Prod El Gaouli).mp3"
+Apr 30 08:47 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 08:47 : player: played "Melfiano ： Alizé.mp3"
+Apr 30 08:47 : player: played "Melfiano Feat Dany Dan ： Sur de rien(Scratchs Dj Eskondo⧸ Prod El Gaouli).mp3"
+Apr 30 08:48 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 08:48 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 08:48 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 08:48 : player: played "Melfiano  ： Qui vivre verra Feat Hill G (Xmen) ⧸ scratchs Dj Eskondo.mp3"
+Apr 30 08:48 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 08:48 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 08:48 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 08:52 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 08:52 : player: played "Melfiano ： Cyclone.mp3"
+Apr 30 08:52 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 08:52 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 08:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 08:52 : player: played "Melfiano ： Petit Ourson (Prod El Gaouli).mp3"
+Apr 30 08:55 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 08:55 : player: played "Melfiano ： Alizé.mp3"
+Apr 30 08:55 : mad: input does not appear to be a mp3 bit stream
+Apr 30 08:55 : player: played "Melfiano ： Pour toi (El Gaouli).mp3"
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 08:55 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 08:55 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 08:59 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 08:59 : player: played "Melfiano ： Dans ma voiture (Prod El Gaouli).mp3"
+Apr 30 08:59 : player: played "Melfiano ： J'atteris (prod El Gaouli).mp3"
+Apr 30 08:59 : mad: input does not appear to be a mp3 bit stream
+Apr 30 08:59 : player: played "Melfiano ： Cherche pas ⧸ scratchs ： Dj Eskondo.mp3"
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 08:59 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 08:59 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 09:02 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 09:02 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 09:02 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 09:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 09:02 : player: played "Melfiano ： Reflet (Prod El Gaouli).mp3"
+Apr 30 09:05 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 09:05 : player: played "Melfiano  ： Qui vivre verra Feat Hill G (Xmen) ⧸ scratchs Dj Eskondo.mp3"
+Apr 30 09:05 : player: played "Melfiano ： Elle (prod El Gaouli).mp3"
+Apr 30 09:05 : player: played "Melfiano Feat Dany Dan ： Sur de rien(Scratchs Dj Eskondo⧸ Prod El Gaouli).mp3"
+Apr 30 09:06 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 09:06 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 09:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 09:09 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 09:09 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 09:09 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 09:09 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 09:09 : player: played "Melfiano  ： Qui vivre verra Feat Hill G (Xmen) ⧸ scratchs Dj Eskondo.mp3"
+Apr 30 09:13 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 09:13 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 09:13 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 09:13 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 09:14 : player: played "Melfiano ： Cyclone.mp3"
+Apr 30 09:16 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 09:16 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 09:16 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 09:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 09:16 : player: played "Melfiano ： Reflet (Prod El Gaouli).mp3"
+Apr 30 09:20 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 09:20 : player: played "Melfiano ： Alizé.mp3"
+Apr 30 09:20 : player: played "Melfiano ： Elle (prod El Gaouli).mp3"
+Apr 30 09:20 : player: played "Melfiano ： Dans ma voiture (Prod El Gaouli).mp3"
+Apr 30 09:20 : player: played "Melfiano ： Petit Ourson (Prod El Gaouli).mp3"
+Apr 30 09:20 : player: played "Melfiano ： Pour toi (El Gaouli).mp3"
+Apr 30 09:20 : player: played "Melfiano Feat Dany Dan ： Sur de rien(Scratchs Dj Eskondo⧸ Prod El Gaouli).mp3"
+Apr 30 09:20 : player: played "Melfiano ： Cherche pas ⧸ scratchs ： Dj Eskondo.mp3"
+Apr 30 09:20 : player: played "Melfiano ： J'atteris (prod El Gaouli).mp3"
+Apr 30 09:21 : player: played "Melfiano Feat Dany Dan ： Sur de rien(Scratchs Dj Eskondo⧸ Prod El Gaouli).mp3"
+Apr 30 09:22 : update: updating /Melfiano Feat Dany Dan ： Sur de rien(Scratchs Dj Eskondo⧸ Prod El Gaouli).mp3
+Apr 30 09:22 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Apr 30 09:22 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Apr 30 09:22 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Apr 30 09:22 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Apr 30 09:22 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Apr 30 09:22 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Apr 30 09:22 : player: played "Melfiano Feat Dany Dan ： Sur de rien(Scratchs Dj Eskondo⧸ Prod El Gaouli).mp3"
+Apr 30 09:23 : player: played "Melfiano Feat Dany Dan ： Sur de rien(Scratchs Dj Eskondo⧸ Prod El Gaouli).mp3"
+Apr 30 09:23 : update: removing Melfiano Feat Dany Dan ： Sur de rien(Scratchs Dj Eskondo⧸ Prod El Gaouli).mp3
+Apr 30 09:23 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Apr 30 09:23 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Apr 30 09:23 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Apr 30 09:23 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Apr 30 09:23 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Apr 30 09:23 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Apr 30 09:23 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 09:23 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 09:23 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 09:27 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 09:27 : player: played "Melfiano ： Alizé.mp3"
+Apr 30 09:27 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 09:27 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 09:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 09:27 : player: played "Melfiano ： Elle (prod El Gaouli).mp3"
+Apr 30 09:31 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 09:31 : player: played "Melfiano ： Cyclone.mp3"
+Apr 30 09:31 : player: played "Melfiano ： J'atteris (prod El Gaouli).mp3"
+Apr 30 09:31 : player: played "Melfiano ： Pour toi (El Gaouli).mp3"
+Apr 30 09:31 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 09:31 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 09:31 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 09:34 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 09:34 : player: played "Melfiano ： Reflet (Prod El Gaouli).mp3"
+Apr 30 09:34 : mad: input does not appear to be a mp3 bit stream
+Apr 30 09:34 : player: played "Melfiano ： Cherche pas ⧸ scratchs ： Dj Eskondo.mp3"
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 09:34 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 09:34 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 09:38 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 09:38 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 09:38 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 09:38 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 09:38 : player: played "Melfiano ： Dans ma voiture (Prod El Gaouli).mp3"
+Apr 30 09:38 : player: played "Melfiano  ： Qui vivre verra Feat Hill G (Xmen) ⧸ scratchs Dj Eskondo.mp3"
+Apr 30 10:29 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 10:29 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 10:29 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 12:21 : player: played "Melfiano  ： Qui vivre verra Feat Hill G (Xmen) ⧸ scratchs Dj Eskondo.mp3"
+Apr 30 13:18 : player: played "Melfiano  ： Qui vivre verra Feat Hill G (Xmen) ⧸ scratchs Dj Eskondo.mp3"
+Apr 30 13:29 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 13:29 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 13:29 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 15:20 : player: played "Melfiano  ： Qui vivre verra Feat Hill G (Xmen) ⧸ scratchs Dj Eskondo.mp3"
+Apr 30 16:32 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 16:32 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 16:32 : ffmpeg/opus: Could not update timestamps for skipped samples.

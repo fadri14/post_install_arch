@@ -1,6 +1,8 @@
 sw_volume: 80
 audio_device_state:1:My Pulse Output
-state: stop
+state: pause
+current: 8
+time: 15.380000
 random: 1
 repeat: 0
 single: 0
@@ -9,4 +11,14 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
+0:Melfiano ： Alizé.mp3
+1:Melfiano ： Cherche pas ⧸ scratchs ： Dj Eskondo.mp3
+2:Melfiano ： Cyclone.mp3
+3:Melfiano ： Dans ma voiture (Prod El Gaouli).mp3
+4:Melfiano ： Elle (prod El Gaouli).mp3
+5:Melfiano ： J'atteris (prod El Gaouli).mp3
+6:Melfiano ： Petit Ourson (Prod El Gaouli).mp3
+7:Melfiano ： Pour toi (El Gaouli).mp3
+8:Melfiano  ： Qui vivre verra Feat Hill G (Xmen) ⧸ scratchs Dj Eskondo.mp3
+9:Melfiano ： Reflet (Prod El Gaouli).mp3
 playlist_end

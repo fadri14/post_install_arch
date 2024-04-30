@@ -1,1 +1,1 @@
-source ~/.config/fish/themes/mytheme_white.fish
+source ~/.config/fish/themes/mytheme_dark.fish

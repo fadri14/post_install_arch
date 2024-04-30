@@ -17,8 +17,8 @@ SETUVAR --export ENHANCD_FILTER:fzy\x3afzf\x3apeco\x3ask\x3azf
 SETUVAR --export ENHANCD_HYPHEN_NUM:10
 SETUVAR --export ENHANCD_ROOT:/home/adrien/\x2econfig/fish/functions/enhancd
 SETUVAR --export ENHANCD_USE_ABBREV:false
-SETUVAR --export SSH_AGENT_PID:8827
-SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dXXXXXXLNindp/agent\x2e8826
+SETUVAR --export SSH_AGENT_PID:7895
+SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dXXXXXXTWksqy/agent\x2e7894
 SETUVAR SSH_KEYS_TO_AUTOLOAD:/home/adrien/\x2essh/github
 SETUVAR --export _ENHANCD_VERSION:\x1d
 SETUVAR __fish_initialized:3400
@@ -27,13 +27,13 @@ SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fish
 SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_bang_2D_bang_files:\x7e/\x2econfig/fish/functions/__history_previous_command\x2efish\x1e\x7e/\x2econfig/fish/functions/__history_previous_command_arguments\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/plugin\x2dbang\x2dbang\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/fisher\x1eb4b4r07/enhancd\x1eoh\x2dmy\x2dfish/plugin\x2dbang\x2dbang
 SETUVAR _fisher_upgraded_to_4_4:\x1d
-SETUVAR fish_color_autosuggestion:5f5f5f
+SETUVAR fish_color_autosuggestion:d0d0d0
 SETUVAR fish_color_cancel:\x2d\x2dreverse
-SETUVAR fish_color_command:0000d7
-SETUVAR fish_color_comment:red
+SETUVAR fish_color_command:00afff
+SETUVAR fish_color_comment:ffd7d7
 SETUVAR fish_color_cwd:green
 SETUVAR fish_color_cwd_root:red
-SETUVAR fish_color_end:00875f
+SETUVAR fish_color_end:00ffaf
 SETUVAR fish_color_error:brred
 SETUVAR fish_color_escape:brcyan
 SETUVAR fish_color_history_current:\x2d\x2dbold
@@ -44,9 +44,9 @@ SETUVAR fish_color_match:\x2d\x2dbackground\x3dbrblue
 SETUVAR fish_color_normal:normal
 SETUVAR fish_color_operator:brcyan
 SETUVAR fish_color_option:\x1d
-SETUVAR fish_color_param:005fff
-SETUVAR fish_color_quote:ff0000
-SETUVAR fish_color_redirection:00875f\x1e\x2d\x2dbold
+SETUVAR fish_color_param:00d7ff
+SETUVAR fish_color_quote:d70000
+SETUVAR fish_color_redirection:00ffaf\x1e\x2d\x2dbold
 SETUVAR fish_color_search_match:bryellow\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_status:red
