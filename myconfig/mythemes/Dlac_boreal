@@ -3,8 +3,8 @@ THEMEFOND=black
 THEMEWRITE=#f1efef
 THEMEGTK=Adwaita:dark
 
-COLOR1=#1a0d43
-COLOR3=#6e0e31
+COLOR1=#0d2fce
+COLOR3=#11470a
 COLOR2=$(python $HOME/.config/myscripts/hexa_middle.py $(echo $COLOR1 | sed 's/^.//') $(echo $COLOR3 | sed 's/^.//'))
 
 #waybar
@@ -13,11 +13,11 @@ BUTTONHOVER=red
 COLORMODE=white
 
 #alacritty
-OPACITETERM=0.6
+OPACITETERM=0.7
 THEMETERM=default_color
 
 #sway
-WALLPAPER=desert_etoile.jpeg
+WALLPAPER=lac_boreal.jpg
 
 #rofi
 BACKGROUND0=#212121F2

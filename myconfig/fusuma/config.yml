@@ -5,11 +5,19 @@ swipe:
     right:
       command: "swaymsg 'workspace prev'"
     up:
-      command: "wtype  -M win -k a -m win -k y"
+      command: "wtype -M win -k a -m win -k y"
     down:
-      command: "wtype  -M win -k q -m win"
+      command: "wtype -M win -k q -m win"
   4:
     down:
       command: "/home/adrien/.config/myscripts/closeApp"
     up:
       command: "waylock -init-color 0x000000 -input-color 0x505050 -fail-color 0xa0a0a0"
+
+pinch:
+  2:
+    in:
+      command: "mpc toggle"
+  3:
+    in:
+      command: "wtype -M win -k f -m win"

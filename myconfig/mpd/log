@@ -3700,3 +3700,672 @@ Apr 30 16:32 : mad: input does not appear to be a mp3 bit stream
 [src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
 Apr 30 16:32 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
 Apr 30 16:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 17:56 : player: played "Melfiano  ： Qui vivre verra Feat Hill G (Xmen) ⧸ scratchs Dj Eskondo.mp3"
+Apr 30 18:49 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 18:49 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 18:49 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 18:53 : player: played "Melfiano  ： Qui vivre verra Feat Hill G (Xmen) ⧸ scratchs Dj Eskondo.mp3"
+Apr 30 18:57 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 18:57 : player: played "Melfiano ： Alizé.mp3"
+Apr 30 18:57 : mad: input does not appear to be a mp3 bit stream
+Apr 30 18:57 : player: played "Melfiano ： Cherche pas ⧸ scratchs ： Dj Eskondo.mp3"
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 18:57 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 18:57 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 19:00 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 19:00 : player: played "Melfiano ： Elle (prod El Gaouli).mp3"
+Apr 30 19:00 : player: played "Melfiano ： Petit Ourson (Prod El Gaouli).mp3"
+Apr 30 19:00 : player: played "Melfiano ： Dans ma voiture (Prod El Gaouli).mp3"
+Apr 30 19:00 : player: played "Melfiano ： J'atteris (prod El Gaouli).mp3"
+Apr 30 19:00 : mad: input does not appear to be a mp3 bit stream
+Apr 30 19:00 : player: played "Melfiano ： Pour toi (El Gaouli).mp3"
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 19:00 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 19:00 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 19:03 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 19:03 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Apr 30 19:03 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Apr 30 19:03 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 19:03 : player: played "Melfiano ： Reflet (Prod El Gaouli).mp3"
+Apr 30 19:07 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 30 19:07 : player: played "Melfiano ： Cyclone.mp3"
+Apr 30 19:12 : player: played "Davodka Chute Libre Lyrics Video.mp3"
+Apr 30 19:15 : player: played "lyrics-illenium-ft-liam-odonnell-its-all-on-u-tmass-lzrd-remix.mp3"
+Apr 30 19:18 : player: played "kap-slap-if-we-were-alone-lyrics-lyric-video-magnus-remix.mp3"
+Apr 30 19:22 : player: played "Wiz Khalifa - See You Again ft. Charlie Puth [Official Video] Furious 7 Soundtrack.mp3"
+Apr 30 19:25 : player: played "Swedish House Mafia - Dont You Worry Child LYRICS.mp3"
+Apr 30 19:28 : player: played "Django  Fichu Freestyle Video.mp3"
+Apr 30 22:30 : player: played "Pokmon HeartGold SoulSilver Champion Red Battle.mp3"
+May 01 17:07 : player: played "Pokmon HeartGold SoulSilver Suicune Battle.mp3"
+May 01 18:32 : player: played "Pokmon HeartGold SoulSilver Suicune Battle.mp3"
+May 01 19:57 : player: played "Pokmon HeartGold SoulSilver Suicune Battle.mp3"
+May 01 20:01 : player: played "future-honest-ben-maxwell-remix.mp3"
+May 01 20:02 : player: played "one-piece-osts-fierce-attack.mp3"
+May 01 20:06 : player: played "Bebe Rexha - I Got You Lyrics.mp3"
+May 01 20:09 : player: played "R3HAB  VINAI - How We Party (Official Music Video).mp3"
+May 01 20:12 : player: played "Eminem - River (Audio) ft. Ed Sheeran.mp3"
+May 01 20:16 : player: played "Jo Cohen  Sex Whales - We Are [NCS Release].mp3"
+May 01 20:21 : player: played "Coolio - Gangsta's Paradise (feat. L.V.) [Official Music Video].mp3"
+May 01 20:23 : player: played "dumb.mp3"
+May 01 20:26 : player: played "Davodka Les Maux De La Fin Audio Officiel.mp3"
+May 01 20:29 : player: played "David Guetta - Hey Mama (Official Video) ft Nicki Minaj, Afrojack  Bebe Rexha.mp3"
+May 01 20:33 : player: played "Robin Schulz feat. Erika Sirola - Speechless (Lyrics).mp3"
+May 01 20:36 : player: played "Feder feat. Alex Aiono - Lordly (Official Video).mp3"
+May 01 20:40 : player: played "twenty one pilots_ Ride (Video).mp3"
+May 01 20:42 : player: played "Justin Bieber Baby   Paroles en francais.mp3"
+May 01 20:47 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 01 20:47 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 01 20:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 01 20:47 : player: played "black-eyed-peas-i-gotta-feeling.mp3"
+May 01 20:51 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 01 20:51 : player: played "Melfiano ： Cyclone.mp3"
+May 01 20:54 : player: played "Bekar  Avalanche clip officiel.mp3"
+May 01 22:45 : player: played "Maroon 5 - One More Night.mp3"
+May 02 12:12 : player: played "Maroon 5 - One More Night.mp3"
+May 02 15:30 : player: played "Maroon 5 - One More Night.mp3"
+May 02 17:46 : player: played "Maroon 5 - One More Night.mp3"
+May 02 17:48 : player: played "neffex-life.mp3"
+May 02 17:48 : player: played "Melfiano ： Cherche pas ⧸ scratchs ： Dj Eskondo.mp3"
+May 02 17:51 : player: played "Avicii - The Nights (Lyrics HD).mp3"
+May 02 17:56 : player: played "New World Sound  Thomas Newson - Flute (Original Mix).mp3"
+May 02 17:59 : player: played "Alan Walker - The Spectre.mp3"
+May 02 18:15 : player: played "max schneider- hands up.mp3"
+May 02 19:27 : player: played "max schneider- hands up.mp3"
+May 02 19:27 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 02 19:27 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 02 19:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 02 21:04 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 02 21:04 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 02 21:04 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 02 21:04 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 02 21:04 : player: played "Melfiano ： Alizé.mp3"
+May 02 21:07 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 02 21:07 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 02 21:07 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 02 21:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 02 21:08 : player: played "Melfiano ： Elle (prod El Gaouli).mp3"
+May 02 21:11 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 02 21:11 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 02 21:11 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 02 21:11 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 02 21:11 : player: played "Melfiano ： Cherche pas ⧸ scratchs ： Dj Eskondo.mp3"
+May 02 21:14 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 02 21:14 : player: played "Melfiano ： Reflet (Prod El Gaouli).mp3"
+May 02 21:14 : player: played "Melfiano ： Petit Ourson (Prod El Gaouli).mp3"
+May 02 21:14 : player: played "Melfiano ： J'atteris (prod El Gaouli).mp3"
+May 02 21:14 : mad: input does not appear to be a mp3 bit stream
+May 02 21:14 : player: played "Melfiano ： Pour toi (El Gaouli).mp3"
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 02 21:14 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 02 21:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 02 21:18 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 02 21:18 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 02 21:18 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 02 21:18 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 02 21:18 : player: played "Melfiano ： Cyclone.mp3"
+May 02 21:21 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 02 21:21 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 02 21:21 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 02 21:21 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 02 21:21 : player: played "Melfiano  ： Qui vivre verra Feat Hill G (Xmen) ⧸ scratchs Dj Eskondo.mp3"
+May 02 21:25 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 02 21:25 : player: played "Melfiano ： Dans ma voiture (Prod El Gaouli).mp3"
+May 02 21:26 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 02 21:26 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 02 21:26 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 02 21:41 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 02 21:41 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 02 21:41 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 02 21:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 02 21:41 : player: played "Melfiano ： Dans ma voiture (Prod El Gaouli).mp3"
+May 02 22:02 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 02 22:02 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 02 22:02 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 02 22:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 02 22:03 : player: played "Melfiano ： Elle (prod El Gaouli).mp3"
+May 02 22:45 : player: played "Melfiano ： Cherche pas ⧸ scratchs ： Dj Eskondo.mp3"
+May 03 08:25 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 03 08:25 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 03 08:25 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 03 08:28 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 03 08:28 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 03 08:28 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 03 08:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 03 08:28 : player: played "Melfiano ： Cherche pas ⧸ scratchs ： Dj Eskondo.mp3"
+May 03 08:32 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 03 08:33 : player: played "Melfiano ： Cyclone.mp3"
+May 03 08:33 : player: played "Melfiano ： Petit Ourson (Prod El Gaouli).mp3"
+May 03 08:33 : player: played "Melfiano ： Pour toi (El Gaouli).mp3"
+May 03 08:33 : player: played "Melfiano ： J'atteris (prod El Gaouli).mp3"
+May 03 08:33 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 03 08:33 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 03 08:33 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 03 09:16 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 03 09:16 : player: played "Melfiano ： Alizé.mp3"
+May 03 09:16 : mad: input does not appear to be a mp3 bit stream
+May 03 09:16 : player: played "Melfiano ： Dans ma voiture (Prod El Gaouli).mp3"
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 03 09:16 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 03 09:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 03 09:19 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 03 09:19 : player: played "Melfiano ： Reflet (Prod El Gaouli).mp3"
+May 03 09:19 : mad: input does not appear to be a mp3 bit stream
+May 03 09:19 : player: played "Melfiano  ： Qui vivre verra Feat Hill G (Xmen) ⧸ scratchs Dj Eskondo.mp3"
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 03 09:19 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 03 09:19 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 03 09:23 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 03 09:23 : player: played "Melfiano ： Elle (prod El Gaouli).mp3"
+May 03 09:23 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 03 09:23 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 03 09:23 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 03 09:27 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 03 09:27 : player: played "Melfiano ： Alizé.mp3"
+May 03 09:27 : player: played "Melfiano ： Cherche pas ⧸ scratchs ： Dj Eskondo.mp3"
+May 03 09:27 : mad: input does not appear to be a mp3 bit stream
+May 03 09:27 : player: played "Melfiano ： Petit Ourson (Prod El Gaouli).mp3"
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 03 09:27 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 03 09:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 03 09:30 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 03 09:30 : player: played "Melfiano ： Reflet (Prod El Gaouli).mp3"
+May 03 09:30 : player: played "Melfiano ： Elle (prod El Gaouli).mp3"
+May 03 09:30 : player: played "Melfiano ： J'atteris (prod El Gaouli).mp3"
+May 03 09:30 : player: played "Melfiano ： Pour toi (El Gaouli).mp3"
+May 03 09:30 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 03 09:30 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 03 09:30 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 03 09:33 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 03 09:33 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 03 09:33 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 03 09:33 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 03 09:33 : player: played "Melfiano ： Dans ma voiture (Prod El Gaouli).mp3"
+May 03 09:34 : player: played "Melfiano ： Cyclone.mp3"
+May 03 10:16 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 03 10:16 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 03 10:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 03 12:20 : player: played "Melfiano ： Cyclone.mp3"
+May 03 13:28 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 03 13:28 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 03 13:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 03 15:28 : player: played "Melfiano ： Cyclone.mp3"
+May 03 16:23 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 03 16:23 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 03 16:23 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 04 01:16 : player: played "Melfiano ： Cyclone.mp3"
+May 04 08:56 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 04 08:56 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 04 08:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 04 08:56 : player: played "Melfiano ： Cyclone.mp3"
+May 04 09:00 : player: played "Robin Schulz - Sugar (feat. Francesco Yates) (OFFICIAL MUSICVIDEO).mp3"
+May 04 09:03 : player: played "timo-stay-da-tweekaz.mp3"
+May 04 09:10 : player: played "Hugo TSR  Pauvre Roi.mp3"
+May 04 09:14 : player: played "7RU7H  Cant Trust A Soul Lyrics.mp3"
+May 04 09:18 : player: played "neovaii-bad-for-you.mp3"
+May 04 09:21 : player: played "OneRepublic, Seeb - Rich Love.mp3"
+May 04 09:26 : player: played "blue-remix-base.mp3"
+May 04 09:28 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 04 09:28 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 04 09:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 04 09:29 : player: played "NEFFEX - Nightmare.mp3"
+May 04 09:33 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 04 09:33 : player: played "Melfiano ： Cyclone.mp3"
+May 04 09:37 : player: played "neffex-rumors.mp3"
+May 04 09:40 : player: played "Alan Walker - Alone (Restrung).mp3"
+May 04 09:43 : player: played "zayn-pillowtalk-bearson-whethan-remix.mp3"
+May 04 09:52 : player: played "Wiz Khalifa - See You Again ft. Charlie Puth [Official Video] Furious 7 Soundtrack.mp3"
+May 04 09:56 : player: played "Sia - Cheap Thrills (Audio).mp3"
+May 04 10:00 : player: played "Sean Paul - She Doesnt Mind [Official Music Video].mp3"
+May 04 10:04 : player: played "Jain - Makeba (audio).mp3"
+May 04 10:08 : player: played "Galantis - No Money (Official Video).mp3"
+May 04 10:11 : player: played "Marwa Loud - Fallait pas.mp3"
+May 04 10:14 : player: played "trias-x-calli-boom-downfall.mp3"
+May 04 10:18 : player: played "Coldplay - Clocks.mp3"
+May 04 10:22 : player: played "Tom Walker - Leave a Light On Lyrics.mp3"
+May 04 10:26 : player: played "Lykke Li - I Follow Rivers (clip officiel).mp3"
+May 04 10:30 : player: played "Mise  lamende  TSR Crew.mp3"
+May 04 10:34 : player: played "B3nte FtModo  Mjolner 2017.mp3"
+May 04 10:37 : player: played "aviva-psycho.mp3"
+May 04 10:40 : player: played "marshmello-keep-it-mello-ft-omar-linx-sikdope-remix.mp3"
+May 04 10:51 : player: played "Avicii - Levels.mp3"
+May 04 10:56 : player: played "Black M - Je ne dirai rien ft. The Shin Sekaï, Doomams.mp3"
+May 04 10:59 : player: played "Queen -  We Are The Champions (Official Video).mp3"
+May 04 11:02 : player: played "ship-wrek-pain-feat-mia-vaile.mp3"
+May 04 11:05 : player: played "imagine-dragons-radioactive.mp3"
+May 04 11:10 : player: played "PSY-TRANCE  ZHU - Faded (SKAZI Remix).mp3"
+May 04 11:13 : player: played "Dimitri Vegas  Like Mike, Steve Aoki vs Ummet Ozcan - The Melody.mp3"
+May 04 11:17 : player: played "Martin Garrix  Troye Sivan - There For You (Official Video).mp3"
+May 04 11:21 : player: played "Dj Antoine - Bella Vita.mp3"
+May 04 11:26 : player: played "prismo-solo.mp3"
+May 04 11:30 : player: played "Alan Walker 2019.mp3"
+May 04 11:35 : player: played "Sound Of Legend  - Sweet (La La La) (Official Video).mp3"
+May 04 11:35 : player: played "Melfiano - L'emmerdeur.mp3"
+May 04 11:38 : player: played "neptunica-alive-feat-matt-defreitas.mp3"
+May 04 11:42 : player: played "riton-x-oliver-heldens-turn-me-on.mp3"
+May 04 11:45 : player: played "Davodka Mine Antipersonnelle Audio.mp3"
+May 04 11:49 : player: played "neoni-never-say-die.mp3"
+May 04 11:53 : player: played "morriscode-x-levianth-once-upon-a-time-feat-shivi.mp3"
+May 04 11:56 : player: played "imagine-dragons-natural-bass-boosted.mp3"
+May 04 12:01 : player: played "dua-lipa-new-rules-alison-wonderland-remix.mp3"
+May 04 12:04 : player: played "the-weeknd-the-hills.mp3"
+May 04 12:08 : player: played "casseurs-flowters-inacheves.mp3"
+May 04 12:11 : player: played "Hugo TSR  REI.mp3"
+May 04 12:14 : player: played "James Arthur - Say You Won't Let Go.mp3"
+May 04 13:04 : player: played "linkin-park-numb.mp3"
+May 04 13:07 : player: played "Youv Dee Berry ProdSkuna.mp3"
+May 04 13:13 : player: played "jaykode-know-better-feat-mister-blonde.mp3"
+May 04 13:13 : player: played "Techno Syndrome 2021 (Mortal Kombat) _ Mortal Kombat OST.mp3"
+May 04 13:17 : player: played "fatal-bazooka-fous-ta-cagoule.mp3"
+May 04 13:20 : player: played "carly-rae-jepsen-call-me-maybe.mp3"
+May 04 13:25 : player: played "Alesso - Heroes (we could be) ft. Tove Lo.mp3"
+May 04 13:29 : player: played "The Chainsmokers - Closer (Lyrics)(ft. Halsey).mp3"
+May 04 13:32 : player: played "Kung fu fighting the song.mp3"
+May 04 13:35 : player: played "sikdope-hola.mp3"
+May 04 13:38 : player: played "Hugo TSR  Les mains devant les yeux.mp3"
+May 04 13:42 : player: played "John Newman - Love Me Again.mp3"
+May 04 14:42 : player: played "marshmello-annemarie-friends.mp3"
+May 04 14:45 : player: played "Armin van Buuren - Turn It Up (Official Lyric Video).mp3"
+May 04 14:48 : player: played "Nekfeu - On Verra.mp3"
+May 04 14:51 : player: played "ellie-goulding-diplo-swae-lee-close-to-me.mp3"
+May 04 14:55 : player: played "Another One Bites the Dust - Queen.mp3"
+May 04 14:58 : player: played "ROY KNOX  Lost In Sound Magic.mp3"
+May 04 15:03 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 04 15:03 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 04 15:03 : player: played "Soprano Feat. Marina Kaye - Mon Everest (Clip officiel).mp3"
+May 04 15:06 : player: played "Melfiano _  Dans ma tête.mp3"
+May 04 15:10 : player: played "aero-chord-4u.mp3"
+May 04 15:13 : player: played "Alec Benjamin - Let Me Down Slowly [Official Video].mp3"
+May 04 15:16 : player: played "Bingo Players ft. Far East Movement - Get Up (Rattle) (Official Video).mp3"
+May 04 15:20 : player: played "Gwen, The Hallowed Seamstress Champion Theme - League of Legends.mp3"
+May 04 15:25 : player: played "Djadja  Dinaz  Possd Clip Officiel.mp3"
+May 04 15:28 : player: played "Pokemon DiamondPearlPlatinum Battle Champion Cynthia.mp3"
+May 04 15:31 : player: played "orelsan-paradis.mp3"
+May 04 15:35 : player: played "X Ambassadors - Renegades (Lyric Video).mp3"
+May 04 15:38 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 04 15:38 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 04 15:38 : player: played "the-chainsmokers-dont-let-me-down.mp3"
+May 04 15:41 : player: played "Alan Walker - Play (Lyrics) ft. K-391, Tungevaag, Mangoo.mp3"
+May 04 15:45 : player: played "Davodka Sama CLIP OFFICIEL.mp3"
+May 04 15:49 : player: played "Charlie Puth - Attention [Official Video].mp3"
+May 04 15:52 : player: played "Dimitri Vegas  Like Mike vs Quintino - Patser Bounce (Official Music Video).mp3"
+May 04 15:55 : player: played "Imagine Dragons - Thunder.mp3"
+May 04 16:07 : player: played "mia-vaile-vogue.mp3"
+May 04 16:09 : player: played "Fairy Tail Against Magic.mp3"
+May 04 16:13 : player: played "Martin Garrix  Dua Lipa - Scared To Be Lonely (Official Video).mp3"
+May 04 16:15 : player: played "Nightcore AMV Je vais bien Ridsa lyrics HD.mp3"
+May 04 16:19 : player: played "house-rich-edwards-where-ill-be-waiting-feat-cozi-zuehlsdorff-monstercat-release.mp3"
+May 04 16:22 : player: played "Dimitri Vegas, Martin Garrix, Like Mike - Tremor (Official Music Video).mp3"
+May 04 16:25 : player: played "Django  Film.mp3"
+May 04 16:29 : player: played "orelsan-la-famille-la-famille.mp3"
+May 04 16:31 : player: played "TiK ToK EQRIC  JOZUA  Robbe  Cover Magic.mp3"
+May 04 16:34 : player: played "Saint Heuse.mp3"
+May 04 16:37 : player: played "louis-the-child-fire-ft-evalyn.mp3"
+May 04 16:43 : player: played "Pokmon HeartGold SoulSilver Suicune Battle.mp3"
+May 04 16:46 : player: played "twenty one pilots_ Heathens (from Suicide Squad_ The Album) [OFFICIAL VIDEO].mp3"
+May 04 16:49 : player: played "Dynoro feat. Gigi DAgostino - In My Mind.mp3"
+May 04 16:52 : player: played "Starstylers - Keep On Moving (Raveboiz Happy Hardcore Bootleg)  HQ Videoclip.mp3"
+May 04 16:55 : player: played "Martin Solveig - All Stars (Official Video) ft. ALMA.mp3"
+May 04 16:59 : player: played "OrelSan  La Qute CLIP OFFICIEL.mp3"
+May 04 17:02 : player: played "MIke Perry - The Ocean (ft. Shy Martin).mp3"
+May 04 17:05 : player: played "The Weeknd - Cant Feel My Face.mp3"
+May 05 20:43 : player: played "casseurs-flowters-a-lheure-ou-je-me-couche.mp3"
+May 06 12:20 : player: played "casseurs-flowters-des-histoires-a-raconter.mp3"
+May 06 15:23 : player: played "casseurs-flowters-des-histoires-a-raconter.mp3"
+May 06 17:44 : player: played "casseurs-flowters-des-histoires-a-raconter.mp3"
+May 06 20:40 : player: played "casseurs-flowters-des-histoires-a-raconter.mp3"
+May 06 20:40 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 06 20:40 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 06 20:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 06 20:43 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 06 20:44 : player: played "Melfiano ： Cherche pas ⧸ scratchs ： Dj Eskondo.mp3"
+May 06 20:44 : player: played "Melfiano ： J'atteris (prod El Gaouli).mp3"
+May 06 20:44 : player: played "Melfiano ： Dans ma voiture (Prod El Gaouli).mp3"
+May 06 20:44 : player: played "Melfiano ： Petit Ourson (Prod El Gaouli).mp3"
+May 06 20:44 : mad: input does not appear to be a mp3 bit stream
+May 06 20:44 : player: played "Melfiano ： Pour toi (El Gaouli).mp3"
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 06 20:44 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 06 20:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 06 20:46 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 06 20:46 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 06 20:46 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 06 20:46 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 06 20:46 : player: played "Melfiano ： Reflet (Prod El Gaouli).mp3"
+May 06 20:50 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 06 20:50 : player: played "Melfiano ： Elle (prod El Gaouli).mp3"
+May 06 20:50 : mad: input does not appear to be a mp3 bit stream
+May 06 20:50 : player: played "Melfiano  ： Qui vivre verra Feat Hill G (Xmen) ⧸ scratchs Dj Eskondo.mp3"
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 06 20:50 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 06 20:50 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 06 20:54 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 06 20:54 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 06 20:54 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 06 20:54 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 06 20:54 : player: played "Melfiano ： Cyclone.mp3"
+May 06 20:57 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 06 20:58 : player: played "Melfiano ： Alizé.mp3"
+May 06 20:58 : mad: input does not appear to be a mp3 bit stream
+May 06 20:58 : player: played "Melfiano ： Cherche pas ⧸ scratchs ： Dj Eskondo.mp3"
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 06 20:58 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 06 20:58 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 06 21:02 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 06 21:02 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 06 21:02 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 06 21:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 06 21:02 : player: played "Melfiano  ： Qui vivre verra Feat Hill G (Xmen) ⧸ scratchs Dj Eskondo.mp3"
+May 06 21:05 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 06 21:05 : player: played "Melfiano ： Dans ma voiture (Prod El Gaouli).mp3"
+May 06 21:05 : player: played "Melfiano ： Petit Ourson (Prod El Gaouli).mp3"
+May 06 21:05 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 06 21:05 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 06 21:05 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 06 21:05 : player: played "Melfiano ： Elle (prod El Gaouli).mp3"
+May 06 21:09 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 06 21:10 : player: played "Melfiano ： Alizé.mp3"
+May 06 21:10 : player: played "Melfiano ： J'atteris (prod El Gaouli).mp3"
+May 06 21:10 : player: played "Melfiano ： Pour toi (El Gaouli).mp3"
+May 06 21:10 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 06 21:10 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 06 21:10 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 06 21:12 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 06 21:12 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 06 21:12 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 06 21:12 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 06 21:12 : player: played "Melfiano ： Reflet (Prod El Gaouli).mp3"
+May 06 21:16 : ffmpeg/opus: Could not update timestamps for discarded samples.
+May 06 21:16 : player: played "Melfiano ： Cyclone.mp3"
+May 06 21:20 : player: played "rita-ora-jonas-blue-tisto-ritual.mp3"
+May 06 21:20 : player: played "Lomepal - 1000°C feat Romeo Elvis.mp3"
+May 06 21:25 : player: played "Ellie Goulding - Love Me Like You Do.mp3"
+May 06 21:29 : player: played "black-eyed-peas-i-gotta-feeling.mp3"
+May 06 21:32 : player: played "k391-rry-aurora-official.mp3"
+May 06 21:36 : player: played "stalker-kalide-somebody-new.mp3"
+May 06 21:39 : player: played "Bekar En principe clip officiel.mp3"
+May 06 21:43 : player: played "wide-awake-how-it-go.mp3"
+May 06 21:45 : player: played "Sound Of Legend  - Sweet (La La La) (Official Video).mp3"
+May 06 21:48 : player: played "Julian Perretta - I Cry.mp3"
+May 06 21:52 : player: played "BB BRUNES - Coups et Blessures [Clip Officiel HD].mp3"
+May 06 21:54 : player: played "jason-derulo-x-puri-x-jhorrmountain-coo.mp3"
+May 06 21:58 : player: played "Bronski Beat - Why  (Official Music Video).mp3"
+May 06 22:02 : player: played "hayce-lemsi-feat-kanoe-mafia-story-paroleslyrics.mp3"
+May 06 22:04 : player: played "my-hero-academia.mp3"
+May 06 22:10 : player: played "Pokmon Omega Ruby Alpha Sapphire Primal Kyogre Groudon Battle.mp3"
+May 06 22:37 : player: played "Justin Bieber Baby   Paroles en francais.mp3"
+May 07 10:07 : player: played "K-391 - Ignite (feat. Alan Walker, Julie Bergan  Seungri).mp3"
+May 07 15:26 : player: played "K-391 - Ignite (feat. Alan Walker, Julie Bergan  Seungri).mp3"
+May 07 17:48 : player: played "K-391 - Ignite (feat. Alan Walker, Julie Bergan  Seungri).mp3"
+May 07 20:55 : player: played "K-391 - Ignite (feat. Alan Walker, Julie Bergan  Seungri).mp3"
+May 07 20:59 : player: played "Calvin Harris - Summer (Audio).mp3"
+May 07 21:02 : player: played "Colonel reyel - toi et moi - clip (Officiel).mp3"
+May 07 21:04 : player: played "Django  Diffrent.mp3"
+May 07 21:08 : player: played "Bronski Beat - Why  (Official Music Video).mp3"
+May 07 21:12 : player: played "NEFFEX - Chance [Lyrics].mp3"
+May 07 21:16 : player: played "aloe-blacc-i-need-a-dollar.mp3"
+May 07 21:20 : player: played "Pnk - Just Give Me A Reason ft. Nate Ruess.mp3"
+May 07 21:23 : player: played "Slimane - Paname.mp3"
+May 07 21:23 : player: played "Melfiano ： Petit Ourson (Prod El Gaouli).mp3"
+May 07 21:26 : player: played "Amir - On dirait (Clip officiel).mp3"
+May 07 21:29 : player: played "hayce-lemsi-havana.mp3"
+May 07 21:32 : player: played "M. Pokora - Belinda (clip officiel).mp3"
+May 07 21:36 : player: played "hayce-lemsi-volts-face-freestyle-lumiere-shot-by-score16.mp3"
+May 07 21:40 : player: played "neffex-rumors.mp3"
+May 07 21:42 : player: played "SEVEN NATION ARMY (Evokings Remix).mp3"
+May 07 21:45 : player: played "Ninho  lettre a une femme  sped up .mp3"
+May 07 21:48 : player: played "Mastu Balade deux.mp3"
+May 07 21:52 : player: played "Hugo TSR  Iceberg.mp3"
+May 07 21:56 : player: played "Take Me To Church - Hozier Cover.mp3"
+May 07 21:58 : player: played "Lost Sky  Lost NCS.mp3"
+May 07 22:02 : player: played "Davodka Dernire Sommation Audio Officiel.mp3"
+May 07 22:05 : player: played "Davodka Ligne De Conduite Audio Officiel.mp3"
+May 07 22:39 : player: played "Martin Solveig - All Stars (Official Video) ft. ALMA.mp3"
+May 08 11:29 : player: played "martin-garrix-poison-limitless-heaven-trap-edit.mp3"
+May 08 13:13 : player: played "martin-garrix-poison-limitless-heaven-trap-edit.mp3"
+May 08 15:29 : player: played "martin-garrix-poison-limitless-heaven-trap-edit.mp3"
+May 08 15:56 : player: played "martin-garrix-poison-limitless-heaven-trap-edit.mp3"
+May 08 17:36 : player: played "martin-garrix-poison-limitless-heaven-trap-edit.mp3"
+May 08 20:44 : player: played "martin-garrix-poison-limitless-heaven-trap-edit.mp3"
+May 08 23:05 : player: played "martin-garrix-poison-limitless-heaven-trap-edit.mp3"
+May 09 12:28 : player: played "martin-garrix-poison-limitless-heaven-trap-edit.mp3"
+May 09 16:58 : player: played "martin-garrix-poison-limitless-heaven-trap-edit.mp3"
+May 09 18:25 : player: played "martin-garrix-poison-limitless-heaven-trap-edit.mp3"
+May 09 18:26 : player: played "one-piece-original-soundtrack-difficult.mp3"
+May 09 22:27 : player: played "one-piece-original-soundtrack-difficult.mp3"
+May 10 12:29 : player: played "one-piece-original-soundtrack-difficult.mp3"
+May 10 15:28 : player: played "one-piece-original-soundtrack-difficult.mp3"
+May 10 22:02 : player: played "one-piece-original-soundtrack-difficult.mp3"
+May 11 08:34 : player: played "Kygo - Firestone ft. Conrad Sewell.mp3"
+May 11 08:46 : player: played "Project X Pursuit Of Happiness.mp3"
+May 11 08:50 : player: played "the-script-hall-of-fame.mp3"
+May 11 08:53 : player: played "Kaleo - Way Down We Go (Official Video).mp3"
+May 11 09:03 : player: played "Alan Walker - Sing Me To Sleep(1).mp3"
+May 11 09:06 : player: played "Robin Schulz - Sun Goes Down feat. Jasmine Thompson (Official Video).mp3"
+May 11 09:08 : player: played "Alan Walker - Love.mp3"
+May 11 09:11 : player: played "one-piece-luffy-moukou.mp3"
+May 11 09:42 : player: played "Mount Olympus - Approaching Nirvana.mp3"
+May 11 09:46 : player: played "Pnk - Just Give Me A Reason ft. Nate Ruess.mp3"
+May 11 09:51 : player: played "r3hab-icarus-r3hab-skytech-remix.mp3"
+May 11 09:55 : player: played "marshmello-annemarie-friends.mp3"
+May 11 09:58 : player: played "Meg  Dia - Monster (LUMX Bootleg).mp3"
+May 11 10:00 : player: played "Fairy Tail - Invoke Magic.mp3"
+May 11 10:03 : player: played "sonj-you.mp3"
+May 11 10:06 : player: played "boombox-cartel-nevve-whisper-maazel-remix.mp3"
+May 11 10:11 : player: played "tenvey-dreamz.mp3"
+May 11 10:15 : player: played "lyd-cult.mp3"
+May 11 10:18 : player: played "norman-luigi-clash-mario.mp3"
+May 11 10:21 : player: played "imagine-dragons-believer-romy-wave-cover-nsg.mp3"
+May 11 10:24 : player: played "Hayce Lemsi  Mercy.mp3"
+May 11 10:28 : player: played "A R I Z O N A - I Was Wrong.mp3"
+May 11 10:28 : player: played "Mélalcoolie et insomnie.mp3"
+May 11 10:32 : player: played "Taio Cruz - Hangover Lyrics.mp3"
+May 11 10:36 : player: played "chromak-show-you.mp3"
+May 11 10:39 : player: played "Louise Attaque - Jtemmène au vent  Lyric.mp3"
+May 11 11:36 : player: played "prismo-stronger.mp3"
+May 11 11:39 : player: played "poorchoice-advent-denial-feat-bolshiee.mp3"
+May 11 11:42 : player: played "Rags - Someday Max Schneider (Full Song).mp3"
+May 11 11:46 : player: played "Zedd, Grey - The Middle (Lyrics) ft. Maren Morris.mp3"
+May 11 11:48 : player: played "nea-some-say.mp3"
+May 11 12:20 : player: played "nea-some-say.mp3"
+May 11 12:23 : player: played "Davodka Fuse De Dtresse Clip Officiel.mp3"
+May 11 12:29 : player: played "Teriyaki Boyz - Tokyo Drift (KVSH Trap Remix).mp3"
+May 11 12:32 : player: played "Feder - Goodbye feat. Lyse (Official Video).mp3"
+May 11 12:36 : player: played "tweekaz-komon.mp3"
+May 11 12:40 : player: played "Hugo TSR Le Coeur Y Est.mp3"
+May 11 12:43 : player: played "gta-red-lips-aero-chord-remix.mp3"
+May 11 12:47 : player: played "neoni-never-say-die.mp3"
+May 11 12:49 : player: played "Davodka Un Poing Cest Tout Audio Officiel.mp3"
+May 11 12:52 : player: played "AronChupa  Im an Albatraoz.mp3"
+May 11 12:54 : player: played "AronChupa  Im an Albatraoz.mp3"
+May 11 12:57 : player: played "Mike Candys  Anubis Music Video HD.mp3"
+May 11 13:02 : player: played "David Guetta feat. Sia - Titanium.mp3"
+May 11 13:05 : player: played "rain-man-feat-oly-bring-back-the-summer-not-your-dope-remix.mp3"
+May 11 13:08 : player: played "Justin Bieber Baby   Paroles en francais.mp3"
+May 11 13:12 : player: played "naps-carres-vip-paroles.mp3"
+May 11 13:15 : player: played "eben-assassin.mp3"
+May 11 13:18 : player: played "Kendji Girac - Color Gitano.mp3"
+May 11 13:22 : player: played "dj-legend-beyond.mp3"
+May 11 13:29 : player: played "Davodka Mine Antipersonnelle Audio.mp3"
+May 11 13:32 : player: played "Davodka Ici Tes Personne Audio Officiel.mp3"
+May 11 13:37 : player: played "dika-pow-pow-pow-ft-13eme-art-paroleslyrics.mp3"
+May 11 13:40 : player: played "steve-void-beauz-hide-and-seek.mp3"
+May 11 13:45 : player: played "Davodka  Accus de Rflexion Clip Officiel.mp3"
+May 11 13:49 : player: played "MACKLEMORE  RYAN LEWIS - THRIFT SHOP FEAT. WANZ (OFFICIAL VIDEO).mp3"
+May 11 13:50 : player: played "Rebel feat Sidney Housen - Black Pearl (Hes A Pirate) [Official Video].mp3"
+May 11 14:52 : player: played "Rebel feat Sidney Housen - Black Pearl (Hes A Pirate) [Official Video].mp3"
+May 11 14:55 : player: played "TRFN - Crazy (feat. Siadou).mp3"
+May 11 14:57 : player: played "Jake Hill  nerve Lyrics.mp3"
+May 11 15:00 : player: played "Nightcore Phoenix LBLVNC RIELL Lyrics.mp3"
+May 11 15:05 : player: played "tenvey-oceans.mp3"
+May 11 15:08 : player: played "Avicii - The Nights (Lyrics HD).mp3"
+May 11 15:12 : player: played "MACKLEMORE FEAT SKYLAR GREY - GLORIOUS (OFFICIAL MUSIC VIDEO).mp3"
+May 11 15:16 : player: played "Bekar  Soleil sallume lyrics video.mp3"
+May 11 15:19 : player: played "casseurs-flowters-inacheves.mp3"
+May 11 15:24 : player: played "Sean Paul - She Doesnt Mind [Official Music Video].mp3"
+May 11 15:27 : player: played "Sound Of Legend - Bella Ciao.mp3"
+May 11 15:31 : player: played "fall-out-boy-centuries-trap-remix.mp3"
+May 11 15:31 : player: played "Doigby - SLT.mp3"
+May 11 15:34 : player: played "Melfiano _  Lettre au Paradis.mp3"
+May 11 15:47 : player: played "league-of-legends-legends-never-die.mp3"
+May 13 15:27 : player: played "league-of-legends-legends-never-die.mp3"
+May 13 17:17 : player: played "league-of-legends-legends-never-die.mp3"
+May 13 17:59 : player: played "league-of-legends-legends-never-die.mp3"
+May 13 19:31 : player: played "league-of-legends-legends-never-die.mp3"
+May 13 19:34 : player: played "kshmr-yves-v-no-regrets-ft-krewella-hopex-remix.mp3"
+May 13 19:38 : player: played "Bastille - Pompeii.mp3"
+May 13 19:41 : player: played "Marshmello ft. Khalid - Silence (Official Lyric Video).mp3"
+May 13 19:45 : player: played "blknz-satica-cold-sweats.mp3"
+May 13 19:49 : player: played "stalker-kalide-somebody-new.mp3"
+May 13 19:53 : player: played "Passenger - Let Her Go (Lyrics) [Mpgun.com].mp3"
+May 13 19:57 : player: played "twenty one pilots My Blood [Official Video].mp3"
+May 13 20:00 : player: played "faithless-insomnia-techno-remix.mp3"
+May 13 20:03 : player: played "Avicii - Without You Audio ft. Sandro Cavazza.mp3"
+May 13 20:07 : player: played "Panic At The Disco High Hopes [OFFICIAL VIDEO].mp3"
+May 13 20:10 : player: played "casseurs-flowters-fais-les-backs.mp3"
+May 13 20:13 : player: played "Feder feat. Alex Aiono - Lordly (Official Video).mp3"
+May 13 20:17 : player: played "Nekfeu - On Verra.mp3"
+May 13 20:20 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 13 20:20 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 13 20:20 : ffmpeg/aac: Could not update timestamps for skipped samples.
+May 13 20:20 : player: played "Resume Intro.mp3"
+May 13 20:23 : player: played "U Got That.mp3"
+May 13 20:26 : player: played "surf-mesa-ily-i-love-you-baby-ft-emilee.mp3"
+May 13 20:31 : player: played "Zara Larsson - Lush Life.mp3"
+May 13 20:34 : player: played "Davodka Le Couteau Dans La Paix Clip Officiel.mp3"
+May 13 20:38 : player: played "Sean Paul - She Doesnt Mind [Official Music Video].mp3"
+May 13 20:42 : player: played "echosmith-cool-kids.mp3"
+May 13 20:46 : player: played "Avicii - Waiting For Love.mp3"
+May 13 20:49 : player: played "Ahzee - Poison (Official Radio Edit).mp3"
+May 13 20:52 : player: played "carly-rae-jepsen-call-me-maybe.mp3"
+May 13 22:23 : player: played "will.i.am - #thatPOWER ft. Justin Bieber.mp3"
+May 14 11:58 : player: played "will.i.am - #thatPOWER ft. Justin Bieber.mp3"
+May 14 15:16 : player: played "will.i.am - #thatPOWER ft. Justin Bieber.mp3"
+May 14 17:19 : player: played "Julia Michaels - Issues (Lyrics).mp3"
+May 14 17:22 : player: played "Tujamo - Drop That Low (When I Dip) [Official Music Video].mp3"
+May 14 17:25 : player: played "Sound Of Legend - Tell Me Why (Official Video).mp3"
+May 14 17:27 : player: played "RIDSA - Je m'en fous.mp3"
+May 14 17:32 : player: played "Mike Candys  Anubis Music Video HD.mp3"
+May 14 17:38 : player: played "illenium-without-you.mp3"
+May 14 17:41 : player: played "7RU7H  Cant Trust A Soul Lyrics.mp3"
+May 14 17:46 : player: played "dika-pow-pow-pow-ft-13eme-art-paroleslyrics.mp3"
+May 14 17:51 : player: played "z-ft-fetty-wap-nobodys-better-muffin-remix.mp3"
+May 14 17:55 : player: played "Alan Walker - All Falls Down (feat. Noah Cyrus with Digital Farm Animals).mp3"
+May 14 17:57 : player: played "jawniiabhi-flip-phone.mp3"
+May 14 19:09 : player: played "jawniiabhi-flip-phone.mp3"
+May 14 19:13 : player: played "MACKLEMORE FEAT SKYLAR GREY - GLORIOUS (OFFICIAL MUSIC VIDEO).mp3"
+May 14 19:13 : player: played "Melfiano ： J'atteris (prod El Gaouli).mp3"
+May 14 21:11 : player: played "neffex-soldier.mp3"
+May 14 21:14 : player: played "Julian Perretta - I Cry.mp3"
+May 14 21:17 : player: played "mako-smoke-filled-room-severo-remix-cover-art.mp3"
+May 14 22:21 : player: played "jaykode-know-better-feat-mister-blonde.mp3"
+May 15 08:19 : player: played "jaykode-know-better-feat-mister-blonde.mp3"
+May 15 08:22 : player: played "NEFFEX - Chance [Lyrics].mp3"
+May 15 08:26 : player: played "hayce-lemsi-sniper.mp3"
+May 15 08:26 : player: played "Melfiano ： Petit Ourson (Prod El Gaouli).mp3"
+May 15 08:30 : player: played "Taio Cruz - Hangover Lyrics.mp3"
+May 15 08:33 : player: played "Jake Hill  nerve Lyrics.mp3"
+May 15 08:34 : player: played "teen-wolf-main-title.mp3"
+May 15 08:37 : player: played "R3HAB  VINAI - How We Party (Official Music Video).mp3"
+May 15 08:41 : player: played "the-spacies-slow-mo-felix-palmqvist-remix.mp3"
+May 15 08:48 : player: played "flux-pavilion-i-cant-stop-ekali-tribute.mp3"
+May 15 08:51 : player: played "adam-jensen-friend-of-the-devil.mp3"
+May 15 08:56 : player: played "fall-out-boy-centuries-trap-remix.mp3"
+May 15 08:58 : player: played "Starstylers - Keep On Moving (Raveboiz Happy Hardcore Bootleg)  HQ Videoclip.mp3"
+May 15 09:01 : player: played "vicetone-walk-thru-fire.mp3"
+May 15 09:05 : player: played "Swedish House Mafia - Dont You Worry Child LYRICS.mp3"
+May 15 09:12 : player: played "Davodka Flemme Olympique Clip Officiel.mp3"
+May 15 09:14 : player: played "zara-larsson-aint-my-fault-r3hab-remix.mp3"
+May 15 09:18 : player: played "Robin Schulz  OK (feat. James Blunt) (Official Music Video).mp3"
+May 15 09:22 : player: played "Bastille - Pompeii.mp3"
+May 15 09:25 : player: played "David Guetta feat Anne Marie - Dont Leave Me Alone (Official Video).mp3"
+May 15 09:29 : player: played "Orelsan_Rêve mieux.mp3"
+May 15 09:33 : player: played "The Chainsmokers  Coldplay - Something Just Like This (Lyric).mp3"
+May 15 09:35 : player: played "Hugo TSR  Point de dpart clip officiel.mp3"
+May 15 09:37 : player: played "lookas-genesis.mp3"
+May 15 12:13 : player: played "lookas-genesis.mp3"
+May 15 13:11 : player: played "lookas-genesis.mp3"
+May 15 15:17 : player: played "lookas-genesis.mp3"
+May 15 17:19 : player: played "lookas-genesis.mp3"
+May 15 20:57 : player: played "lookas-genesis.mp3"
+May 15 22:55 : player: played "lookas-genesis.mp3"
+May 16 11:01 : player: played "lookas-genesis.mp3"
+May 16 11:10 : player: played "Bekar  Avalanche clip officiel.mp3"
+May 16 11:14 : player: played "orelsan-la-terre-est-ronde.mp3"
+May 16 11:17 : player: played "Timmy Trumpet  Savage - Freaks (Radio Edit).mp3"
+May 16 11:20 : player: played "Saint Heuse.mp3"
+May 16 11:22 : player: played "Teriyaki Boyz - Tokyo Drift (KVSH Trap Remix).mp3"
+May 16 11:25 : player: played "Kit Hype - In My Head (Hardstyle)  HQ Videoclip.mp3"
+May 16 11:28 : player: played "orelsan-la-pluie-feat-stromae.mp3"
+May 16 11:32 : player: played "Dimitri Vegas  Like Mike vs Ummet Ozcan - The Hum (Short Edit).mp3"
+May 16 11:36 : player: played "John Newman - Love Me Again.mp3"
+May 16 11:39 : player: played "Tiësto  KSHMR feat. Vassy - Secrets (Official Music Video).mp3"
+May 16 11:42 : player: played "Sound Of Legend - Blue (Da Ba Dee) (Audio).mp3"
+May 16 11:44 : player: played "my-hero-academia.mp3"
+May 16 11:47 : player: played "Hayce Lemsi - Haycelloween.mp3"
+May 16 11:49 : player: played "Fairy Tail - Mahoukyou.mp3"
+May 16 11:54 : player: played "Avicii - Hey Brother (Lyric).mp3"
+May 16 11:57 : player: played "dropwizz-x-afterfab-underwater.mp3"
+May 16 12:00 : player: played "Hugo TSR - Senseï.mp3"
+May 16 12:03 : player: played "coopex-yohan-gerber-radioactive.mp3"
+May 16 12:06 : player: played "Vicetone - Nevada (ft. Cozi Zuehlsdorff).mp3"
+May 16 12:11 : player: played "Alan Walker - Fade [NCS Release].mp3"
+May 16 12:13 : player: played "Davodka La Mise Au Poing Audio Officiel.mp3"
+May 16 12:17 : player: played "Ampyx - Rise.mp3"
+May 16 12:21 : player: played "TheFatRat  Unity.mp3"
+May 16 12:21 : player: played "Flume - Never Be Like You feat. Kai [Official Music Video].mp3"
+May 16 16:12 : player: played "Flume - Never Be Like You feat. Kai [Official Music Video].mp3"
+May 16 16:16 : player: played "Ahzee - Poison (Official Radio Edit).mp3"
+May 16 16:20 : player: played "mo-final-song.mp3"
+May 16 16:25 : player: played "infinity-ink-infinity.mp3"
+May 16 16:29 : player: played "Calvin Harris - My Way (Official Video).mp3"
+May 16 16:33 : player: played "norman-luigi-clash-mario.mp3"
+May 16 16:33 : player: played "Sub Urban - Cradles (Lyrics).mp3"
+May 16 18:54 : player: played "Sub Urban - Cradles (Lyrics).mp3"
+May 16 18:57 : player: played "Where Dem Girls At - David Guetta Ft Flo Rida and Nicki Minaj (Lyrics ).mp3"
+May 16 19:01 : player: played "sofiane-case-depart-parole.mp3"
+May 16 19:05 : player: played "Clean Bandit - Rather Be feat. Jess Glynne.mp3"
+May 16 19:08 : player: played "David Guetta, Martin Garrix  Brooks - Like I Do (Lyric Video).mp3"
+May 16 19:12 : player: played "Bad Blood - Taylor Swift ft. Kendrick Lamar ( Lyrics ).mp3"
+May 16 19:15 : player: played "NEFFEX - Greatest.mp3"
+May 16 19:21 : player: played "Tokyo Drift - Teriyaki Boyz [ MUSIC VIDEO ] HD.mp3"
+May 16 20:41 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+May 16 20:41 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+May 16 20:42 : player: played "Tokyo Drift - Teriyaki Boyz [ MUSIC VIDEO ] HD.mp3"
+May 16 20:45 : player: played "Louane - Aimer à mort.mp3"
+May 16 22:14 : player: played "neffex-life.mp3"
+May 16 22:16 : player: played "Queen -  We Are The Champions (Official Video).mp3"
+May 17 09:58 : player: played "Queen -  We Are The Champions (Official Video).mp3"
