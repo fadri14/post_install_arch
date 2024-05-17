@@ -4369,3 +4369,11 @@ May 16 20:45 : player: played "Louane - Aimer à mort.mp3"
 May 16 22:14 : player: played "neffex-life.mp3"
 May 16 22:16 : player: played "Queen -  We Are The Champions (Official Video).mp3"
 May 17 09:58 : player: played "Queen -  We Are The Champions (Official Video).mp3"
+May 17 14:22 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+May 17 14:22 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+May 17 14:22 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+May 17 14:22 : update: added /Melfiano ： Pour toi (El Gaouli) [gh2zFNutwwE].opus
+May 17 14:22 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+May 17 14:22 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+May 17 14:22 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+May 17 14:22 : player: played "Queen -  We Are The Champions (Official Video).mp3"

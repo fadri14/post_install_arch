@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [[ "$1" == "" ]]
+then
+    echo "Il faut une url en argument"
+    exit 1
+fi
+
+yt-dlp -x "$1"
+url_code=$(echo "$1" | cut -d '/' -f4)
+full_name=$(ls | grep "$url_code")
+name=$(echo "$full_name" | cut -d "[" -f1)
+name=$(echo "$name" | tr -d ' ')
+mv "$full_name" "${name}.opus"
+
