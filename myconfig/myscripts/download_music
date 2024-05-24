@@ -12,4 +12,4 @@ full_name=$(ls | grep "$url_code")
 name=$(echo "$full_name" | cut -d "[" -f1)
 name=$(echo "$name" | tr -d ' ')
 mv "$full_name" "${name}.opus"
-
+id3v2 -t "$name" "$full_name"
