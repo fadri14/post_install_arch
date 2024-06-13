@@ -1,9 +1,0 @@
-#!/bin/bash
-
-for m in ~/Musique2/*
-do
-    name="$(basename -s .mp3 $m | tr '\n' ' ')"
-    echo "$name"
-    id3v2 -t "$name" "$m"
-done
-

@@ -23,7 +23,7 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 26px;
     color: #090c0c;
-    background-image: linear-gradient(144deg, #ed8660, #a780fa);
+    background-image: linear-gradient(144deg, #e3944e, #b5518d);
     box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
 }
 
@@ -34,7 +34,7 @@ window#waybar.hidden {
     margin-bottom: 5px;
     border-radius: 26px;
     color: #090c0c;
-    background-image: linear-gradient(144deg, #ed8660, #a780fa);
+    background-image: linear-gradient(144deg, #e3944e, #b5518d);
 }
 
 #workspaces button {
@@ -72,7 +72,7 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 26px;
     color: #090c0c;
-    background-image: linear-gradient(144deg, #ed8660, #a780fa);
+    background-image: linear-gradient(144deg, #e3944e, #b5518d);
     box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
 }
 

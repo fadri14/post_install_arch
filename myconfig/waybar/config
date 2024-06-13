@@ -32,9 +32,7 @@
                 "paused": "",
                 "playing": ""
             },
-            "tooltip-format": "Sound: {artist} - {album} - {title}",
-            //"tooltip-format": "{filename}",
-            //"tooltip-format": "MPD (connected)",
+            "tooltip-format": "Sound: {title}",
             "tooltip-format-disconnected": "MPD (disconnected)",
             "on-click": "mpc toggle",
             "on-double-click": "mpc next",
