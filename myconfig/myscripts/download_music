@@ -2,14 +2,29 @@
 
 if [[ "$1" == "" ]]
 then
-    echo "Il faut une url en argument"
+    echo "Il faut une url ou un fichier contentant des lien en argument"
     exit 1
 fi
 
-yt-dlp -x "$1"
-url_code=$(echo "$1" | cut -d '/' -f4)
-full_name=$(ls | grep "$url_code")
-name=$(echo "$full_name" | cut -d "[" -f1)
-name=$(echo "$name" | tr -d ' ')
-mv "$full_name" "${name}.opus"
-id3v2 -t "$name" "$full_name"
+download()
+{
+    yt-dlp -x "$1" > /dev/null
+    url_code=$(echo "$1" | cut -d '/' -f4)
+    full_name=$(ls | grep "$url_code")
+    name=$(echo "$full_name" | cut -d "[" -f1)
+    name=$(echo "$name" | tr -d ' ')
+    mv "$full_name" "${name}.opus"
+    id3v2 -t "$name" "${name}.opus"
+    echo "OK : $name"
+}
+
+if [[ -e "$1" ]]
+then
+    urls=$(cat "$1")
+    for url in $urls
+    do
+        download "$url"
+    done
+else
+    download "$1"
+fi

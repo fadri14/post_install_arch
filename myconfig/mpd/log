@@ -14725,3 +14725,52 @@ Jun 13 12:01 : update: updating /hayce-lemsi-sniper.mp3
 Jun 13 12:01 : update: updating /san-holo-lift-me-from-the-ground-feat-sofie-winterson.mp3
 Jun 13 12:01 : update: updating /Kygo, Miguel - Remind Me to Forget.mp3
 Jun 13 12:01 : update: updating /t-sugah-x-nct-ft-miyoki-stardust-dread-pitt-remix.mp3
+Jun 13 12:04 : player: played "Imagine Dragons - Whatever It Takes.mp3"
+Jun 13 13:14 : player: played "imagine-dragons-believer-romy-wave-cover-nsg.mp3"
+Jun 13 21:04 : player: played "imagine-dragons-believer-romy-wave-cover-nsg.mp3"
+Jun 13 21:04 : player: played "imagine-dragons-believer-romy-wave-cover-nsg.mp3"
+Jun 14 08:12 : player: played "adam-jensen-the-mystic.mp3"
+Jun 14 12:12 : player: played "adam-jensen-the-mystic.mp3"
+Jun 14 14:00 : player: played "adam-jensen-the-mystic.mp3"
+Jun 14 14:03 : player: played "Davodka Chute Libre Lyrics Video.mp3"
+Jun 14 14:06 : player: played "boombox-cartel-nevve-whisper-maazel-remix.mp3"
+Jun 14 14:10 : player: played "supermode-tell-me-why-tmass-remix.mp3"
+Jun 14 14:14 : player: played "Keke Palmer  Max Schneider - Me And You Against The World (Full Studio Version) - Lyrics (DL Link).mp3"
+Jun 14 14:16 : player: played "R3HAB x Mike Williams - Lullaby (Official Video).mp3"
+Jun 14 14:20 : player: played "marshmello-annemarie-friends.mp3"
+Jun 14 16:06 : player: played "Soprano - fresh prince  Parole _ Lyrics.mp3"
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 184.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Jun 14 17:42 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 14 17:42 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 14 17:42 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1151.
+Jun 14 17:42 : update: added /Mélalcoolie et insomnie.mp3
+Jun 14 17:42 : update: added /Melfiano：Alizé(ProdElGaouli⧸Scratchs：DJEskondo).opus
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 178.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Jun 14 17:42 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 14 17:42 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 14 17:42 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1151.
+Jun 14 17:42 : update: added /MELFIANOfeatMAGESTICSTREETVIDEOFREESTYLEBYRADIORAPNET.opus
+Jun 14 17:42 : update: added /Melfiano：CherchePasIHOMMAGEALAFFI(ProdElGaouli).opus
+Jun 14 17:42 : player: played "Soprano - fresh prince  Parole _ Lyrics.mp3"
+Jun 14 17:43 : player: played "Melfiano：Alizé(ProdElGaouli⧸Scratchs：DJEskondo).opus"
+Jun 14 17:43 : player: played "Melfiano：CherchePasIHOMMAGEALAFFI(ProdElGaouli).opus"
+Jun 14 17:43 : player: played "MELFIANOfeatMAGESTICSTREETVIDEOFREESTYLEBYRADIORAPNET.opus"
+Jun 14 17:44 : update: removing Melfiano：CherchePasIHOMMAGEALAFFI(ProdElGaouli).opus
+Jun 14 17:44 : update: removing Melfiano：Alizé(ProdElGaouli⧸Scratchs：DJEskondo).opus
+Jun 14 17:44 : update: removing MELFIANOfeatMAGESTICSTREETVIDEOFREESTYLEBYRADIORAPNET.opus
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 184.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Jun 14 17:44 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 14 17:44 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 14 17:44 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1151.
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 178.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Jun 14 17:44 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 14 17:44 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 14 17:44 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1151.
