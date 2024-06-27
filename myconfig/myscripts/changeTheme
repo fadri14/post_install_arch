@@ -2,7 +2,7 @@
 
 name="$1"
 
-source $HOME/.config/mythemes/$(cat .actual_theme.txt)
+source $HOME/.config/mythemes/$(cat $HOME/.config/myscripts/.actual_theme.txt)
 theme_prev=$THEMEFOND
 
 if [[ "$name" != "" ]]
@@ -12,8 +12,8 @@ then
         exit 1
     fi
 
-    echo "$name" > .actual_theme.txt
-    source $HOME/.config/mythemes/$(cat .actual_theme.txt)
+    echo "$name" > $HOME/.config/myscripts/.actual_theme.txt
+    source $HOME/.config/mythemes/$(cat $HOME/.config/myscripts/.actual_theme.txt)
 fi
 
 # neovim
