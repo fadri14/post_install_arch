@@ -15061,3 +15061,53 @@ Jun 27 12:30 : mad: input does not appear to be a mp3 bit stream
 Jun 27 12:30 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
 Jun 27 12:30 : ffmpeg/matroska,webm: Discarding ID3 tags because more suitable tags were found.
 Jun 27 12:30 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jun 27 12:39 : update: added /Louane-Pardonne-moi(Visualizer).opus
+Jun 27 12:39 : update: added /M.Pokora-Sit'espaslà(Clipofficiel).opus
+Jun 27 12:39 : update: added /Louane-Lebateaucoule(Visualizer).opus
+Jun 27 12:39 : update: added /MaîtreGims-J'metire(Clipofficiel).opus
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 184.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Jun 27 12:39 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 27 12:39 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 27 12:39 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Jun 27 12:39 : update: added /TAL-LeSensdelaVie(ClipOfficiel).opus
+Jun 27 12:39 : update: added /MaîtreGims-Tuvasmemanquer(Clipofficiel).opus
+Jun 27 12:39 : update: added /MaîtreGims-Brisé(Clipofficiel).opus
+Jun 27 12:39 : update: added /Louane-LesÉtoiles(ClipOfficiel).opus
+Jun 27 12:39 : update: added /TAL-RienN'estParfait(ClipOfficiel).opus
+Jun 27 12:39 : update: added /Manau-LatribudeDana(ClipOfficielremasterisé).opus
+Jun 27 12:39 : update: added /Louane-Secret.opus
+Jun 27 12:39 : update: added /TAL-JePrendsleLarge(ClipOfficiel).opus
+Jun 27 12:39 : update: added /TAL-Àl'international(ClipOfficiel).opus
+Jun 27 12:39 : update: added /Sexiond'Assaut-Avantqu'elleparte(Clipofficiel).opus
+Jun 27 12:39 : update: added /Louane-NosSecrets(VidéoLyricsOfficielle).opus
+Jun 27 12:39 : update: added /Vitaa-GameOverft.MaîtreGims.opus
+Jun 27 12:39 : update: added /VITAA&SLIMANE-Avanttoi(ClipOfficiel).opus
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 178.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Jun 27 12:39 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 27 12:39 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 27 12:39 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Jun 27 12:39 : update: added /Louane-Aidez-moi(Visualizer).opus
+Jun 27 12:39 : update: added /Louane-Stp(Visualizer).opus
+Jun 27 12:39 : update: added /Canardo«M'enAller»feat.Tal(Clipofficiel).opus
+Jun 27 12:39 : update: added /Stromae-Formidable(cecin'estpasuneleçon).opus
+Jun 27 12:39 : update: added /M.Pokora-Tombé(Clipofficiel).opus
+Jun 27 12:39 : update: added /Soprano-Clown(Clipofficiel).opus
+Jun 27 12:39 : update: added /Sexiond'Assaut-Madirection(Clipofficiel).opus
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 184.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Jun 27 12:41 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 27 12:41 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 27 12:41 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 178.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Jun 27 12:41 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 27 12:41 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 27 12:41 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Jun 27 12:41 : player: played "Melfiano  ： Qui vivre verra Feat Hill G (Xmen) ⧸ scratchs Dj Eskondo.mp3"
+Jun 27 12:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
