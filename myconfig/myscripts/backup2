@@ -7,9 +7,10 @@ declare -a folders=(
     "Musique"
     "Images"
     "Vidéos"
+    "Notes"
     ".password-store"
     ".ssh"
-    "Notes"
+    ".enhancd"
 )
 
 path_mount="$HOME/mymount"
