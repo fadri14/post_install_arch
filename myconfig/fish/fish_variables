@@ -17,8 +17,8 @@ SETUVAR --export ENHANCD_FILTER:fzy\x3afzf\x3apeco\x3ask\x3azf
 SETUVAR --export ENHANCD_HYPHEN_NUM:10
 SETUVAR --export ENHANCD_ROOT:/home/adrien/\x2econfig/fish/functions/enhancd
 SETUVAR --export ENHANCD_USE_ABBREV:false
-SETUVAR --export SSH_AGENT_PID:11157
-SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dXXXXXXUfPIj5/agent\x2e11156
+SETUVAR --export SSH_AGENT_PID:10763
+SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dXXXXXXw1QZRy/agent\x2e10762
 SETUVAR SSH_KEYS_TO_AUTOLOAD:/home/adrien/\x2essh/github
 SETUVAR --export _ENHANCD_VERSION:\x1d
 SETUVAR __fish_initialized:3400
