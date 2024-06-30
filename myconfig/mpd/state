@@ -1,8 +1,6 @@
 sw_volume: 80
 audio_device_state:1:My Pulse Output
-state: pause
-current: 9
-time: 123.538000
+state: stop
 random: 1
 repeat: 0
 single: 0
@@ -11,18 +9,4 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Louane-Aidez-moi(Visualizer).opus
-1:Louane-Lebateaucoule(Visualizer).opus
-2:Louane-LesÉtoiles(ClipOfficiel).opus
-3:Louane-NosSecrets(VidéoLyricsOfficielle).opus
-4:Louane-Pardonne-moi(Visualizer).opus
-5:Louane-Stp(Visualizer).opus
-6:MaîtreGims-Brisé(Clipofficiel).opus
-7:MaîtreGims-Tuvasmemanquer(Clipofficiel).opus
-8:Manau-LatribudeDana(ClipOfficielremasterisé).opus
-9:M.Pokora-Tombé(Clipofficiel).opus
-10:Soprano-Clown(Clipofficiel).opus
-11:TAL-JePrendsleLarge(ClipOfficiel).opus
-12:TAL-LeSensdelaVie(ClipOfficiel).opus
-13:VITAA&SLIMANE-Avanttoi(ClipOfficiel).opus
 playlist_end

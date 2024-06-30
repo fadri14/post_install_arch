@@ -6,25 +6,13 @@ then
     exit 1
 fi
 
-download()
-{
-    yt-dlp -x "$1" > /dev/null
-    url_code=$(echo "$1" | cut -d '/' -f4)
-    full_name=$(ls | grep "$url_code")
-    name=$(echo "$full_name" | cut -d "[" -f1)
-    name=$(echo "$name" | tr -d ' ')
-    mv "$full_name" "${name}.opus"
-    id3v2 -t "$name" "${name}.opus"
-    echo "OK : $name"
-}
-
 if [[ -e "$1" ]]
 then
     urls=$(cat "$1")
     for url in $urls
     do
-        download "$url"
+        yt-dlp -x --audio-format mp3 --add-metadata --metadata-from-title "%(title)s" -o "%(title)s.%(ext)s" "$url" > /dev/null
     done
 else
-    download "$1"
+        yt-dlp -x --audio-format mp3 --add-metadata --metadata-from-title "%(title)s" -o "%(title)s.%(ext)s" "$1" > /dev/null
 fi

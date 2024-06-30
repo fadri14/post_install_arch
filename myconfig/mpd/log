@@ -21540,3 +21540,71 @@ Jun 27 19:03 : player: played "M.Pokora-Tombé(Clipofficiel).opus"
 Jun 27 19:59 : ffmpeg/opus: Could not update timestamps for skipped samples.
 Jun 27 22:16 : player: played "M.Pokora-Tombé(Clipofficiel).opus"
 Jun 28 17:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jun 28 18:31 : player: played "M.Pokora-Tombé(Clipofficiel).opus"
+Jun 28 20:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jun 28 21:02 : player: played "M.Pokora-Tombé(Clipofficiel).opus"
+Jun 30 13:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jun 30 13:57 : player: played "M.Pokora-Tombé(Clipofficiel).opus"
+Jun 30 13:59 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jun 30 14:33 : player: played "M.Pokora-Tombé(Clipofficiel).opus"
+Jun 30 17:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jun 30 17:34 : player: played "M.Pokora-Tombé(Clipofficiel).opus"
+Jun 30 17:34 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 178.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Jun 30 17:36 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 30 17:36 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 30 17:36 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 184.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Jun 30 17:36 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 30 17:36 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 30 17:36 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Jun 30 17:36 : update: added /audio_tagged.opus
+Jun 30 17:36 : player: played "Louane-Stp(Visualizer).opus"
+Jun 30 17:39 : player: played "audio_tagged.opus"
+Jun 30 17:44 : player: played "audio_tagged.opus"
+Jun 30 17:44 : exception: Not playing
+Jun 30 17:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jun 30 17:48 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jun 30 17:48 : player: played "MaîtreGims-Tuvasmemanquer(Clipofficiel).opus"
+Jun 30 17:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jun 30 17:52 : player: played "M.Pokora-Tombé(Clipofficiel).opus"
+Jun 30 17:52 : player: played "VITAA&SLIMANE-Avanttoi(ClipOfficiel).opus"
+Jun 30 18:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jun 30 18:34 : update: removing audio_tagged.opus
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 178.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Jun 30 18:34 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 30 18:34 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 30 18:34 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 184.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Jun 30 18:34 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 30 18:34 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 30 18:34 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Jun 30 18:34 : update: added /Louane - Secret(test).mp3
+Jun 30 18:34 : player: played "VITAA&SLIMANE-Avanttoi(ClipOfficiel).opus"
+Jun 30 18:35 : player: played "Louane - Secret(test).mp3"
+Jun 30 18:35 : exception: Not playing
+Jun 30 18:35 : exception: Not playing
+Jun 30 18:35 : exception: Not playing
+Jun 30 18:36 : exception: Failed to decode /home/adrien/Musique/Louane - Secret(test).mp3; Failed to open '/home/adrien/Musique/Louane - Secret(test).mp3': No such file or directory
+Jun 30 18:36 : player: played "Louane - Secret(test).mp3"
+Jun 30 18:36 : update: removing Louane - Secret(test).mp3
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 178.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Jun 30 18:36 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 30 18:36 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 30 18:36 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Note: Illegal Audio-MPEG-Header 0x00000000 at offset 184.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Jun 30 18:36 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 30 18:36 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 30 18:36 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
